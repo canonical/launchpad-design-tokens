@@ -1,0 +1,178 @@
+{
+  "tmp": {
+    "color": {
+      "$type": "color",
+      "positive": {
+        "$value": "#62A36C"
+      },
+      "negative": {
+        "$value": "#D17B85"
+      },
+      "information": {
+        "$value": "#5EA6ED"
+      },
+      "caution": {
+        "$value": "#C48831"
+      },
+      "text": {
+        "$value": "#ffffff"
+      },
+      "text-muted": {
+        "$value": "rgba(255, 255, 255, 0.6)"
+      },
+      "text-inactive": {
+        "$value": "rgba(255, 255, 255, 0.75)"
+      },
+      "text-reversed": {
+        "$value": "#000000"
+      },
+      "text-link-default": {
+        "$value": "#6699cc"
+      },
+      "text-link-visited": {
+        "$value": "#a679d2"
+      },
+      "background-neutral-default": {
+        "$value": "rgba(255, 255, 255, 0.15)"
+      },
+      "background-neutral-hover": {
+        "$value": "rgba(255, 255, 255, 0.20)"
+      },
+      "background-neutral-active": {
+        "$value": "rgba(255, 255, 255, 0.25)"
+      },
+      "background-positive-default": {
+        "$value": "rgba(10, 189, 37, 0.20)"
+      },
+      "background-positive-hover": {
+        "$value": "rgba(0, 199, 30, 0.30)"
+      },
+      "background-positive-active": {
+        "$value": "rgba(0, 199, 30, 0.36)"
+      },
+      "background-negative-default": {
+        "$value": "rgba(255, 102, 120, 0.20)"
+      },
+      "background-negative-hover": {
+        "$value": "rgba(255, 102, 120, 0.30)"
+      },
+      "background-negative-active": {
+        "$value": "rgba(255, 102, 120, 0.36)"
+      },
+      "background-information-default": {
+        "$value": "rgba(0, 137, 255, 0.20)"
+      },
+      "background-information-hover": {
+        "$value": "rgba(0, 137, 255, 0.30)"
+      },
+      "background-information-active": {
+        "$value": "rgba(0, 137, 255, 0.36)"
+      },
+      "background-caution-default": {
+        "$value": "rgba(255, 115, 0, 0.20)"
+      },
+      "background-caution-hover": {
+        "$value": "rgba(255, 143, 51, 0.30)"
+      },
+      "background-caution-caution-active": {
+        "$value": "rgba(255, 115, 0, 0.36)"
+      },
+      "background-input": {
+        "$value": "#2f2f2f"
+      },
+      "background-overlay": {
+        "$value": "rgba(17, 17, 17, 0.85)"
+      },
+      "background-button-positive-default": {
+        "$value": "#008013"
+      },
+      "background-button-positive-hover": {
+        "$value": "#00670f"
+      },
+      "background-button-positive-active": {
+        "$value": "#00570d"
+      },
+      "background-button-negative-default": {
+        "$value": "#a11223"
+      },
+      "background-button-negative-hover": {
+        "$value": "#8a0f1e"
+      },
+      "background-button-negative-active": {
+        "$value": "#7c0e1b"
+      },
+      "border-default": {
+        "$value": "rgba(255, 255, 255, 0.20)"
+      },
+      "border-high-contrast": {
+        "$value": "#939393"
+      },
+      "border-low-contrast": {
+        "$value": "rgba(255, 255, 255, 0.10)"
+      },
+      "border-neutral": {
+        "$value": "#a6a6a6"
+      },
+      "border-positive": {
+        "$value": "#62A36C"
+      },
+      "border-negative": {
+        "$value": "#D17B85"
+      },
+      "border-information": {
+        "$value": "#5EA6ED"
+      },
+      "border-caution": {
+        "$value": "#C48831"
+      },
+      "icon-default": {
+        "$value": "#000000"
+      },
+      "icon-muted": {
+        "$value": "rgba(0, 0, 0, 0.60)"
+      },
+      "icon-positive": {
+        "$value": "#0e8420"
+      },
+      "icon-negative": {
+        "$value": "#c7162b"
+      },
+      "icon-information": {
+        "$value": "#24598f"
+      },
+      "icon-caution": {
+        "$value": "#cc7900"
+      },
+      "icon-link": {
+        "$value": "#0066cc"
+      },
+      "icon-status-shade-1": {
+        "$value": "#f7f7f7"
+      },
+      "icon-status-shade-2": {
+        "$value": "#d9d9d9"
+      },
+      "icon-status-queued": {
+        "$value": "#808080"
+      },
+      "icon-canonical-logo": {
+        "$value": "#ffffff"
+      },
+      "icon-button-brand": {
+        "$value": "#ffffff"
+      },
+      "icon-button-default": {
+        "$value": "#000000"
+      },
+      "icon-button-base": {
+        "$value": "#000000"
+      },
+      "icon-button-positive": {
+        "$value": "#ffffff"
+      },
+      "icon-button-negative": {
+        "$value": "#ffffff"
+      }
+    }
+  }
+}

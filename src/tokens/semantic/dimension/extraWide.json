@@ -1,0 +1,67 @@
+{
+  "tmp": {
+    "dimension": {
+      "$type": "dimension",
+      "spacing": {
+        "inline": {
+          "xxxSmall": {
+            "$value": "{dimension.050}"
+          },
+          "xxSmall": {
+            "$value": "{dimension.100}"
+          },
+          "xSmall": {
+            "$value": "{dimension.150}"
+          },
+          "small": {
+            "$value": "{dimension.200}"
+          },
+          "medium": {
+            "$value": "{dimension.300}"
+          },
+          "large": {
+            "$value": "{dimension.400}"
+          },
+          "xLarge": {
+            "$value": "{dimension.500}"
+          },
+          "xxLarge": {
+            "$value": "{dimension.600}"
+          },
+          "xxxLarge": {
+            "$value": "{dimension.700}"
+          }
+        },
+        "block": {
+          "xxxSmall": {
+            "$value": "{dimension.050}"
+          },
+          "xxSmall": {
+            "$value": "{dimension.100}"
+          },
+          "xSmall": {
+            "$value": "{dimension.150}"
+          },
+          "small": {
+            "$value": "{dimension.200}"
+          },
+          "medium": {
+            "$value": "{dimension.300}"
+          },
+          "large": {
+            "$value": "{dimension.400}"
+          },
+          "xLarge": {
+            "$value": "{dimension.500}"
+          },
+          "xxLarge": {
+            "$value": "{dimension.600}"
+          },
+          "xxxLarge": {
+            "$value": "{dimension.700}"
+          }
+        }
+      }
+    }
+  }
+}
