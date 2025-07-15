@@ -2,21 +2,14 @@
   "name": "@canonical/launchpad-design-tokens",
   "version": "1.0.0",
   "description": "Design tokens for Canonical's Launchpad",
-  "files": [
-    "dist/css"
-  ],
+  "files": ["dist/css"],
   "type": "module",
   "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/canonical/launchpad-design-tokens.git"
   },
-  "keywords": [
-    "design-tokens",
-    "canonical",
-    "launchpad",
-    "style-dictionary"
-  ],
+  "keywords": ["design-tokens", "canonical", "launchpad", "style-dictionary"],
   "author": {
     "email": "webteam@canonical.com",
     "name": "Canonical Webteam"
