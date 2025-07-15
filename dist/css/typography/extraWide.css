@@ -3,16 +3,16 @@
  */
 
 :root {
-  --tmp-typography-font-size-x-small: 12rem;
-  --tmp-typography-font-size-small: 14rem;
-  --tmp-typography-font-size-medium: 16rem;
-  --tmp-typography-font-size-large: 24rem;
-  --tmp-typography-font-size-x-large: 28rem;
-  --tmp-typography-font-size-xx-large: 32rem;
-  --tmp-typography-line-height-x-small: 18rem;
-  --tmp-typography-line-height-small: 21rem;
-  --tmp-typography-line-height-medium: 24rem;
-  --tmp-typography-line-height-large: 32rem;
+  --tmp-typography-font-size-x-small: 0.75rem;
+  --tmp-typography-font-size-small: 0.875rem;
+  --tmp-typography-font-size-medium: 1rem;
+  --tmp-typography-font-size-large: 1.5rem;
+  --tmp-typography-font-size-x-large: 1.75rem;
+  --tmp-typography-font-size-xx-large: 2rem;
+  --tmp-typography-line-height-x-small: 1.125rem;
+  --tmp-typography-line-height-small: 1.3125rem;
+  --tmp-typography-line-height-medium: 1.5rem;
+  --tmp-typography-line-height-large: 2rem;
   --tmp-typography-weight-180: 180;
   --tmp-typography-weight-200: 200;
   --tmp-typography-weight-300: 300;

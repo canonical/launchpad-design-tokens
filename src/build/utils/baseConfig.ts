@@ -23,9 +23,7 @@ StyleDictionary.registerTransform({
     const { unit, value } = $value as { unit?: string; value?: number };
     if (typeof unit !== "string" || typeof value !== "number") return $value;
 
-    return unit === "rem"
-      ? `${value * platform.basePxFontSize}${unit}`
-      : `${value}${unit}`;
+    return `${value}${unit}`;
   },
 });
 

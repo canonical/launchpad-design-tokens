@@ -3,45 +3,45 @@
     "typography": {
       "fontSize": {
         "xSmall": {
-          "$value": "192px",
+          "$value": "12px",
           "$type": "dimension"
         },
         "small": {
-          "$value": "224px",
+          "$value": "14px",
           "$type": "dimension"
         },
         "medium": {
-          "$value": "256px",
+          "$value": "16px",
           "$type": "dimension"
         },
         "large": {
-          "$value": "384px",
+          "$value": "24px",
           "$type": "dimension"
         },
         "xLarge": {
-          "$value": "448px",
+          "$value": "28px",
           "$type": "dimension"
         },
         "xxLarge": {
-          "$value": "512px",
+          "$value": "32px",
           "$type": "dimension"
         }
       },
       "lineHeight": {
         "xSmall": {
-          "$value": "288px",
+          "$value": "18px",
           "$type": "dimension"
         },
         "small": {
-          "$value": "336px",
+          "$value": "21px",
           "$type": "dimension"
         },
         "medium": {
-          "$value": "384px",
+          "$value": "24px",
           "$type": "dimension"
         },
         "large": {
-          "$value": "512px",
+          "$value": "32px",
           "$type": "dimension"
         }
       },
