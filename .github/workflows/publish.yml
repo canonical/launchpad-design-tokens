@@ -1,0 +1,80 @@
+name: Publish to NPM
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run linting and type checking
+        run: bun run check
+
+      - name: Build package
+        run: bun run build
+
+      - name: Bump patch version if needed
+        run: |
+          PACKAGE_VERSION=$(bun run -s -e "console.log(require('./package.json').version)")
+          PACKAGE_NAME=$(bun run -s -e "console.log(require('./package.json').name)")
+
+          # Check if version already exists on npm
+          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version 2>/dev/null; then
+            echo "Version $PACKAGE_VERSION already exists, bumping patch version"
+            
+            # Extract version parts
+            IFS='.' read -ra VERSION_PARTS <<< "$PACKAGE_VERSION"
+            MAJOR=${VERSION_PARTS[0]}
+            MINOR=${VERSION_PARTS[1]}
+            PATCH=${VERSION_PARTS[2]}
+            
+            # Bump patch version
+            NEW_PATCH=$((PATCH + 1))
+            NEW_VERSION="${MAJOR}.${MINOR}.${NEW_PATCH}"
+            
+            echo "Bumping to version: $NEW_VERSION"
+            
+            # Update package.json
+            bun run -e "
+              const fs = require('fs');
+              const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+              pkg.version = '$NEW_VERSION';
+              fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
+            "
+          else
+            echo "Version $PACKAGE_VERSION is new, proceeding with current version"
+          fi
+
+      - name: Publish to NPM
+        run: bun publish --access public
+        env:
+          NPM_CONFIG_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+      - name: Commit version bump
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add package.json
+          git commit -m "Bump version after publish" || exit 0
+          git push || exit 0
