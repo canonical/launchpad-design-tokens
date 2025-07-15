@@ -56,12 +56,7 @@ jobs:
             echo "Bumping to version: $NEW_VERSION"
             
             # Update package.json
-            bun run -e "
-              const fs = require('fs');
-              const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-              pkg.version = '$NEW_VERSION';
-              fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
-            "
+            bunx bumpp $NEW_VERSION -y --no-commit --no-tag --push=false
           else
             echo "Version $PACKAGE_VERSION is new, proceeding with current version"
           fi
