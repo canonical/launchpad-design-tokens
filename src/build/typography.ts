@@ -1,8 +1,8 @@
 import { mediaQueryMinWidths } from "./utils/consts.js";
 import {
+  type ModeToCSSCompose,
   buildCSSComposedMode,
   buildSimpleModes,
-  ModeToCSSCompose,
   readModes,
 } from "./utils/modes.js";
 

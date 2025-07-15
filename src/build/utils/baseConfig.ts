@@ -1,10 +1,10 @@
+import type { Config } from "style-dictionary";
+import { StyleDictionary } from "style-dictionary-utils";
 import {
   transformGroups,
-  transforms,
   transformTypes,
+  transforms,
 } from "style-dictionary/enums";
-import { Config } from "style-dictionary";
-import { StyleDictionary } from "style-dictionary-utils";
 
 enum customTransforms {
   flattenPropertiesDimension = "flatten-properties-dimension",

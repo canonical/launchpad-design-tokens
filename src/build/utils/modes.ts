@@ -1,7 +1,7 @@
 import { readdir, rm } from "node:fs/promises";
 import { StyleDictionary } from "style-dictionary-utils";
-import { baseConfig, logOptions } from "./baseConfig.js";
 import { formats } from "style-dictionary/enums";
+import { baseConfig, logOptions } from "./baseConfig.js";
 import { isSemantic } from "./filters.js";
 
 type Mode = {
@@ -155,9 +155,9 @@ async function mergeDirectory(directory: string) {
     return;
   }
 
-  if (directory.endsWith("/")) {
-    directory = directory.slice(0, -1);
-  }
+  const normalizedDirectory = directory.endsWith("/")
+    ? directory.slice(0, -1)
+    : directory;
 
   const contents = (
     await Promise.all(
@@ -165,7 +165,7 @@ async function mergeDirectory(directory: string) {
     )
   ).join("\n\n");
 
-  const outputPath = `${directory}.${extension}`;
+  const outputPath = `${normalizedDirectory}.${extension}`;
   const outputFile = Bun.file(outputPath);
 
   await Bun.write(outputFile, contents);

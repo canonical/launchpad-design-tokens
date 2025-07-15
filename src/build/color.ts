@@ -1,7 +1,7 @@
 import {
+  type ModeToCSSCompose,
   buildCSSComposedMode,
   buildSimpleModes,
-  ModeToCSSCompose,
   readModes,
 } from "./utils/modes.js";
 
@@ -19,7 +19,7 @@ await buildSimpleModes(category, simpleModes);
       options: {
         rules: [
           {
-            atRule: `@media (prefers-color-scheme: light)`,
+            atRule: "@media (prefers-color-scheme: light)",
             matcher: () => true,
           },
         ],
@@ -30,7 +30,7 @@ await buildSimpleModes(category, simpleModes);
       options: {
         rules: [
           {
-            atRule: `@media (prefers-color-scheme: dark)`,
+            atRule: "@media (prefers-color-scheme: dark)",
             matcher: () => true,
           },
         ],
