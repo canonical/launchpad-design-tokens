@@ -36,8 +36,8 @@ jobs:
 
       - name: Bump patch version if needed
         run: |
-          PACKAGE_VERSION=$(bun run -s -e "console.log(require('./package.json').version)")
-          PACKAGE_NAME=$(bun run -s -e "console.log(require('./package.json').name)")
+          PACKAGE_VERSION=$(bun -e "console.log(require('./package.json').version)")
+          PACKAGE_NAME=$(bun -e "console.log(require('./package.json').name)")
 
           # Check if version already exists on npm
           if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version 2>/dev/null; then
