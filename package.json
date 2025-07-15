@@ -1,9 +1,15 @@
 {
   "name": "launchpad-design-tokens",
-  "module": "index.ts",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "private": true,
   "scripts": {
+    "build": "bun run build:color && bun run build:typography && bun run build:dimension",
+    "build:color": "bun run src/build/color.ts",
+    "build:typography": "bun run src/build/typography.ts",
+    "build:dimension": "bun run src/build/dimension.ts",
     "check": "bun run check:biome && bun run check:ts",
     "check:fix": "bun run check:biome:fix && bun run check:ts",
     "check:biome": "biome check",
@@ -15,6 +21,8 @@
     "@canonical/biome-config": "^0.9.0",
     "@canonical/typescript-config-base": "^0.9.0",
     "@types/bun": "latest",
+    "style-dictionary": "^5.0.1",
+    "style-dictionary-utils": "^4.1.0",
     "typescript": "^5.8.3"
   }
 }
