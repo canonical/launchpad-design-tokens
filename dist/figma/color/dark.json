@@ -1,0 +1,234 @@
+{
+  "tmp": {
+    "color": {
+      "positive": {
+        "$value": "#62A36C",
+        "$type": "color"
+      },
+      "negative": {
+        "$value": "#D17B85",
+        "$type": "color"
+      },
+      "information": {
+        "$value": "#5EA6ED",
+        "$type": "color"
+      },
+      "caution": {
+        "$value": "#C48831",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "#ffffff",
+        "$type": "color"
+      },
+      "text-muted": {
+        "$value": "rgba(255, 255, 255, 0.6)",
+        "$type": "color"
+      },
+      "text-inactive": {
+        "$value": "rgba(255, 255, 255, 0.75)",
+        "$type": "color"
+      },
+      "text-reversed": {
+        "$value": "#000000",
+        "$type": "color"
+      },
+      "text-link-default": {
+        "$value": "#6699cc",
+        "$type": "color"
+      },
+      "text-link-visited": {
+        "$value": "#a679d2",
+        "$type": "color"
+      },
+      "background-neutral-default": {
+        "$value": "rgba(255, 255, 255, 0.15)",
+        "$type": "color"
+      },
+      "background-neutral-hover": {
+        "$value": "rgba(255, 255, 255, 0.20)",
+        "$type": "color"
+      },
+      "background-neutral-active": {
+        "$value": "rgba(255, 255, 255, 0.25)",
+        "$type": "color"
+      },
+      "background-positive-default": {
+        "$value": "rgba(10, 189, 37, 0.20)",
+        "$type": "color"
+      },
+      "background-positive-hover": {
+        "$value": "rgba(0, 199, 30, 0.30)",
+        "$type": "color"
+      },
+      "background-positive-active": {
+        "$value": "rgba(0, 199, 30, 0.36)",
+        "$type": "color"
+      },
+      "background-negative-default": {
+        "$value": "rgba(255, 102, 120, 0.20)",
+        "$type": "color"
+      },
+      "background-negative-hover": {
+        "$value": "rgba(255, 102, 120, 0.30)",
+        "$type": "color"
+      },
+      "background-negative-active": {
+        "$value": "rgba(255, 102, 120, 0.36)",
+        "$type": "color"
+      },
+      "background-information-default": {
+        "$value": "rgba(0, 137, 255, 0.20)",
+        "$type": "color"
+      },
+      "background-information-hover": {
+        "$value": "rgba(0, 137, 255, 0.30)",
+        "$type": "color"
+      },
+      "background-information-active": {
+        "$value": "rgba(0, 137, 255, 0.36)",
+        "$type": "color"
+      },
+      "background-caution-default": {
+        "$value": "rgba(255, 115, 0, 0.20)",
+        "$type": "color"
+      },
+      "background-caution-hover": {
+        "$value": "rgba(255, 143, 51, 0.30)",
+        "$type": "color"
+      },
+      "background-caution-caution-active": {
+        "$value": "rgba(255, 115, 0, 0.36)",
+        "$type": "color"
+      },
+      "background-input": {
+        "$value": "#2f2f2f",
+        "$type": "color"
+      },
+      "background-overlay": {
+        "$value": "rgba(17, 17, 17, 0.85)",
+        "$type": "color"
+      },
+      "background-button-positive-default": {
+        "$value": "#008013",
+        "$type": "color"
+      },
+      "background-button-positive-hover": {
+        "$value": "#00670f",
+        "$type": "color"
+      },
+      "background-button-positive-active": {
+        "$value": "#00570d",
+        "$type": "color"
+      },
+      "background-button-negative-default": {
+        "$value": "#a11223",
+        "$type": "color"
+      },
+      "background-button-negative-hover": {
+        "$value": "#8a0f1e",
+        "$type": "color"
+      },
+      "background-button-negative-active": {
+        "$value": "#7c0e1b",
+        "$type": "color"
+      },
+      "border-default": {
+        "$value": "rgba(255, 255, 255, 0.20)",
+        "$type": "color"
+      },
+      "border-high-contrast": {
+        "$value": "#939393",
+        "$type": "color"
+      },
+      "border-low-contrast": {
+        "$value": "rgba(255, 255, 255, 0.10)",
+        "$type": "color"
+      },
+      "border-neutral": {
+        "$value": "#a6a6a6",
+        "$type": "color"
+      },
+      "border-positive": {
+        "$value": "#62A36C",
+        "$type": "color"
+      },
+      "border-negative": {
+        "$value": "#D17B85",
+        "$type": "color"
+      },
+      "border-information": {
+        "$value": "#5EA6ED",
+        "$type": "color"
+      },
+      "border-caution": {
+        "$value": "#C48831",
+        "$type": "color"
+      },
+      "icon-default": {
+        "$value": "#000000",
+        "$type": "color"
+      },
+      "icon-muted": {
+        "$value": "rgba(0, 0, 0, 0.60)",
+        "$type": "color"
+      },
+      "icon-positive": {
+        "$value": "#0e8420",
+        "$type": "color"
+      },
+      "icon-negative": {
+        "$value": "#c7162b",
+        "$type": "color"
+      },
+      "icon-information": {
+        "$value": "#24598f",
+        "$type": "color"
+      },
+      "icon-caution": {
+        "$value": "#cc7900",
+        "$type": "color"
+      },
+      "icon-link": {
+        "$value": "#0066cc",
+        "$type": "color"
+      },
+      "icon-status-shade-1": {
+        "$value": "#f7f7f7",
+        "$type": "color"
+      },
+      "icon-status-shade-2": {
+        "$value": "#d9d9d9",
+        "$type": "color"
+      },
+      "icon-status-queued": {
+        "$value": "#808080",
+        "$type": "color"
+      },
+      "icon-canonical-logo": {
+        "$value": "#ffffff",
+        "$type": "color"
+      },
+      "icon-button-brand": {
+        "$value": "#ffffff",
+        "$type": "color"
+      },
+      "icon-button-default": {
+        "$value": "#000000",
+        "$type": "color"
+      },
+      "icon-button-base": {
+        "$value": "#000000",
+        "$type": "color"
+      },
+      "icon-button-positive": {
+        "$value": "#ffffff",
+        "$type": "color"
+      },
+      "icon-button-negative": {
+        "$value": "#ffffff",
+        "$type": "color"
+      }
+    }
+  }
+}

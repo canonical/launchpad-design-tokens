@@ -1,0 +1,15 @@
+{
+  "name": "Launchpad color tokens",
+  "collections": {
+    "color": {
+      "modes": {
+        "light": [
+          "light.json"
+        ],
+        "dark": [
+          "dark.json"
+        ]
+      }
+    }
+  }
+}

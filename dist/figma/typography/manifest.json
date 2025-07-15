@@ -1,0 +1,21 @@
+{
+  "name": "Launchpad typography tokens",
+  "collections": {
+    "typography": {
+      "modes": {
+        "wide": [
+          "wide.json"
+        ],
+        "medium": [
+          "medium.json"
+        ],
+        "narrow": [
+          "narrow.json"
+        ],
+        "extraWide": [
+          "extraWide.json"
+        ]
+      }
+    }
+  }
+}

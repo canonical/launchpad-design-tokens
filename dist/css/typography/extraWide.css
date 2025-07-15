@@ -1,0 +1,26 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --tmp-typography-font-size-x-small: 12rem;
+  --tmp-typography-font-size-small: 14rem;
+  --tmp-typography-font-size-medium: 16rem;
+  --tmp-typography-font-size-large: 24rem;
+  --tmp-typography-font-size-x-large: 28rem;
+  --tmp-typography-font-size-xx-large: 32rem;
+  --tmp-typography-line-height-x-small: 18rem;
+  --tmp-typography-line-height-small: 21rem;
+  --tmp-typography-line-height-medium: 24rem;
+  --tmp-typography-line-height-large: 32rem;
+  --tmp-typography-weight-180: 180;
+  --tmp-typography-weight-200: 200;
+  --tmp-typography-weight-300: 300;
+  --tmp-typography-weight-400: 400;
+  --tmp-typography-weight-450: 450;
+  --tmp-typography-letter-spacing-medium: 0em;
+  --tmp-typography-letter-spacing-large: 0.05em;
+  --tmp-typography-letter-spacing-x-large: 0.07em;
+  --tmp-typography-font-family-default: 'Ubuntu Sans';
+  --tmp-typography-font-family-mono: 'Ubuntu Sans Mono';
+}

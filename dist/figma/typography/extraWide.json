@@ -1,0 +1,96 @@
+{
+  "tmp": {
+    "typography": {
+      "fontSize": {
+        "xSmall": {
+          "$value": "192px",
+          "$type": "dimension"
+        },
+        "small": {
+          "$value": "224px",
+          "$type": "dimension"
+        },
+        "medium": {
+          "$value": "256px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "384px",
+          "$type": "dimension"
+        },
+        "xLarge": {
+          "$value": "448px",
+          "$type": "dimension"
+        },
+        "xxLarge": {
+          "$value": "512px",
+          "$type": "dimension"
+        }
+      },
+      "lineHeight": {
+        "xSmall": {
+          "$value": "288px",
+          "$type": "dimension"
+        },
+        "small": {
+          "$value": "336px",
+          "$type": "dimension"
+        },
+        "medium": {
+          "$value": "384px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "512px",
+          "$type": "dimension"
+        }
+      },
+      "weight": {
+        "180": {
+          "$value": 180,
+          "$type": "fontWeight"
+        },
+        "200": {
+          "$value": 200,
+          "$type": "fontWeight"
+        },
+        "300": {
+          "$value": 300,
+          "$type": "fontWeight"
+        },
+        "400": {
+          "$value": 400,
+          "$type": "fontWeight"
+        },
+        "450": {
+          "$value": 450,
+          "$type": "fontWeight"
+        }
+      },
+      "letterSpacing": {
+        "medium": {
+          "$value": "0px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "1px",
+          "$type": "dimension"
+        },
+        "xLarge": {
+          "$value": "1px",
+          "$type": "dimension"
+        }
+      },
+      "fontFamily": {
+        "default": {
+          "$value": "Ubuntu Sans",
+          "$type": "fontFamily"
+        },
+        "mono": {
+          "$value": "Ubuntu Sans Mono",
+          "$type": "fontFamily"
+        }
+      }
+    }
+  }
+}

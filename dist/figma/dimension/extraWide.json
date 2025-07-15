@@ -1,0 +1,84 @@
+{
+  "tmp": {
+    "dimension": {
+      "spacing": {
+        "inline": {
+          "xxxSmall": {
+            "$value": "64px",
+            "$type": "dimension"
+          },
+          "xxSmall": {
+            "$value": "128px",
+            "$type": "dimension"
+          },
+          "xSmall": {
+            "$value": "192px",
+            "$type": "dimension"
+          },
+          "small": {
+            "$value": "256px",
+            "$type": "dimension"
+          },
+          "medium": {
+            "$value": "384px",
+            "$type": "dimension"
+          },
+          "large": {
+            "$value": "512px",
+            "$type": "dimension"
+          },
+          "xLarge": {
+            "$value": "640px",
+            "$type": "dimension"
+          },
+          "xxLarge": {
+            "$value": "768px",
+            "$type": "dimension"
+          },
+          "xxxLarge": {
+            "$value": "896px",
+            "$type": "dimension"
+          }
+        },
+        "block": {
+          "xxxSmall": {
+            "$value": "64px",
+            "$type": "dimension"
+          },
+          "xxSmall": {
+            "$value": "128px",
+            "$type": "dimension"
+          },
+          "xSmall": {
+            "$value": "192px",
+            "$type": "dimension"
+          },
+          "small": {
+            "$value": "256px",
+            "$type": "dimension"
+          },
+          "medium": {
+            "$value": "384px",
+            "$type": "dimension"
+          },
+          "large": {
+            "$value": "512px",
+            "$type": "dimension"
+          },
+          "xLarge": {
+            "$value": "640px",
+            "$type": "dimension"
+          },
+          "xxLarge": {
+            "$value": "768px",
+            "$type": "dimension"
+          },
+          "xxxLarge": {
+            "$value": "896px",
+            "$type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}
