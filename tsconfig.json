@@ -1,6 +1,7 @@
 {
   "extends": "@canonical/typescript-config-base",
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "skipLibCheck": true
   }
 }
