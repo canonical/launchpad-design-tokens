@@ -13,10 +13,10 @@ await buildSimpleModes(category, simpleModes);
 {
   const modeName = "system";
 
-  const cssModesToCompose = [
+  const configs: Array<Omit<ModeToCSSCompose, "path">> = [
     {
       modeName: "light",
-      options: {
+      filesOptions: {
         rules: [
           {
             atRule: "@media (prefers-color-scheme: light)",
@@ -27,7 +27,7 @@ await buildSimpleModes(category, simpleModes);
     },
     {
       modeName: "dark",
-      options: {
+      filesOptions: {
         rules: [
           {
             atRule: "@media (prefers-color-scheme: dark)",
@@ -36,7 +36,9 @@ await buildSimpleModes(category, simpleModes);
         ],
       },
     },
-  ].map((mode) => {
+  ];
+
+  const cssModesToCompose = configs.map((mode) => {
     const path = simpleModes.find((m) => m.modeName === mode.modeName)?.path;
     if (!path)
       throw new Error(`Mode ${mode.modeName} not found in ${category}`);

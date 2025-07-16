@@ -1,10 +1,10 @@
 import { readdir, rm } from "node:fs/promises";
+import type { PlatformConfig, TransformedToken } from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
 import { formats } from "style-dictionary/enums";
 import { baseConfig, logOptions } from "./baseConfig.js";
-import { isSemantic } from "./filters.js";
 import { commonModesComponentName } from "./consts.js";
-import { TransformedToken } from "style-dictionary";
+import { isSemantic } from "./filters.js";
 
 type Mode = {
   path: string;
@@ -24,7 +24,8 @@ type CSSAdvancedOptions = {
 };
 
 export type ModeToCSSCompose = Mode & {
-  options?: CSSAdvancedOptions;
+  platformOptions?: PlatformConfig["options"];
+  filesOptions?: CSSAdvancedOptions;
   order?: number;
 };
 
@@ -94,18 +95,19 @@ export async function buildCSSComposedMode(
   const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
   const buildPath = `dist/css/${category}/${modeName}/`;
   const dictionaries = await Promise.all(
-    modesToCompose.map(({ path, modeName, options }) =>
+    modesToCompose.map(({ path, modeName, filesOptions, platformOptions }) =>
       new StyleDictionary(baseConfig, logOptions).extend({
         source: [commonModesComponentPath, path],
         platforms: {
           css: {
+            options: platformOptions,
             buildPath,
             files: [
               {
                 destination: `${modeName}.css`,
                 format: "css/advanced",
                 filter: isSemantic,
-                options,
+                options: filesOptions,
               },
             ],
           },

@@ -16,19 +16,22 @@ await buildSimpleModes(category, simpleModes);
 {
   const modeName = "responsive";
 
-  const cssModesToCompose = [
+  const configs: Array<Omit<ModeToCSSCompose, "path">> = [
     {
       modeName: "narrow",
       order: 1,
+      platformOptions: {
+        outputReferences: (token) => token.$type === "typography",
+      },
     },
     {
       modeName: "medium",
       order: 2,
-      options: {
+      filesOptions: {
         rules: [
           {
             atRule: `@media (min-width: ${mediaQueryMinWidths.medium})`,
-            matcher: (token: TransformedToken) => !isCommon(token),
+            matcher: (token) => !isCommon(token),
           },
         ],
       },
@@ -36,11 +39,11 @@ await buildSimpleModes(category, simpleModes);
     {
       modeName: "wide",
       order: 3,
-      options: {
+      filesOptions: {
         rules: [
           {
             atRule: `@media (min-width: ${mediaQueryMinWidths.large})`,
-            matcher: (token: TransformedToken) => !isCommon(token),
+            matcher: (token) => !isCommon(token),
           },
         ],
       },
@@ -48,16 +51,18 @@ await buildSimpleModes(category, simpleModes);
     {
       modeName: "extraWide",
       order: 4,
-      options: {
+      filesOptions: {
         rules: [
           {
             atRule: `@media (min-width: ${mediaQueryMinWidths.xlarge})`,
-            matcher: (token: TransformedToken) => !isCommon(token),
+            matcher: (token) => !isCommon(token),
           },
         ],
       },
     },
-  ].map((mode) => {
+  ];
+
+  const cssModesToCompose = configs.map((mode) => {
     const path = simpleModes.find((m) => m.modeName === mode.modeName)?.path;
     if (!path)
       throw new Error(`Mode ${mode.modeName} not found in ${category}`);

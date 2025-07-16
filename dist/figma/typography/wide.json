@@ -1,6 +1,205 @@
 {
   "tmp": {
     "typography": {
+      "paragraph": {
+        "xSmall": {
+          "$value": {
+            "fontFamily": [
+              "Ubuntu Sans",
+              "Ubuntu",
+              "-apple-system",
+              "Segoe UI",
+              "Roboto",
+              "Oxygen",
+              "Cantarell",
+              "Fira Sans",
+              "Droid Sans",
+              "Helvetica Neue",
+              "sans-serif"
+            ],
+            "fontSize": "10px",
+            "fontWeight": 400,
+            "lineHeight": "15px"
+          },
+          "$type": "typography"
+        },
+        "small": {
+          "$value": {
+            "fontFamily": [
+              "Ubuntu Sans",
+              "Ubuntu",
+              "-apple-system",
+              "Segoe UI",
+              "Roboto",
+              "Oxygen",
+              "Cantarell",
+              "Fira Sans",
+              "Droid Sans",
+              "Helvetica Neue",
+              "sans-serif"
+            ],
+            "fontSize": "12px",
+            "fontWeight": 400,
+            "lineHeight": "18px"
+          },
+          "$type": "typography"
+        },
+        "default": {
+          "$value": {
+            "fontFamily": [
+              "Ubuntu Sans",
+              "Ubuntu",
+              "-apple-system",
+              "Segoe UI",
+              "Roboto",
+              "Oxygen",
+              "Cantarell",
+              "Fira Sans",
+              "Droid Sans",
+              "Helvetica Neue",
+              "sans-serif"
+            ],
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": "21px"
+          },
+          "$type": "typography"
+        }
+      },
+      "code": {
+        "xSmall": {
+          "$value": {
+            "fontFamily": [
+              "Ubuntu Sans Mono",
+              "Ubuntu Mono",
+              "Consolas",
+              "Monaco",
+              "Courier",
+              "monospace"
+            ],
+            "fontSize": "10px",
+            "fontWeight": 400,
+            "lineHeight": "15px"
+          },
+          "$type": "typography"
+        },
+        "small": {
+          "$value": {
+            "fontFamily": [
+              "Ubuntu Sans Mono",
+              "Ubuntu Mono",
+              "Consolas",
+              "Monaco",
+              "Courier",
+              "monospace"
+            ],
+            "fontSize": "12px",
+            "fontWeight": 400,
+            "lineHeight": "18px"
+          },
+          "$type": "typography"
+        },
+        "default": {
+          "$value": {
+            "fontFamily": [
+              "Ubuntu Sans Mono",
+              "Ubuntu Mono",
+              "Consolas",
+              "Monaco",
+              "Courier",
+              "monospace"
+            ],
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": "21px"
+          },
+          "$type": "typography"
+        }
+      },
+      "h3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": [
+            "Ubuntu Sans",
+            "Ubuntu",
+            "-apple-system",
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            "sans-serif"
+          ],
+          "fontSize": "24px",
+          "fontWeight": 450,
+          "lineHeight": "28px"
+        }
+      },
+      "h4": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": [
+            "Ubuntu Sans",
+            "Ubuntu",
+            "-apple-system",
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            "sans-serif"
+          ],
+          "fontSize": "24px",
+          "fontWeight": 200,
+          "lineHeight": "28px"
+        }
+      },
+      "h5": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": [
+            "Ubuntu Sans",
+            "Ubuntu",
+            "-apple-system",
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            "sans-serif"
+          ],
+          "fontSize": "21px",
+          "fontWeight": 450,
+          "lineHeight": "28px"
+        }
+      },
+      "h6": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": [
+            "Ubuntu Sans",
+            "Ubuntu",
+            "-apple-system",
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            "sans-serif"
+          ],
+          "fontSize": "21px",
+          "fontWeight": 300,
+          "lineHeight": "28px"
+        }
+      },
       "weight": {
         "180": {
           "$value": 180,

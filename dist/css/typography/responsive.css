@@ -23,6 +23,16 @@
   --tmp-typography-line-height-small: 1.125rem;
   --tmp-typography-line-height-medium: 1.3125rem;
   --tmp-typography-line-height-large: 1.75rem;
+  --tmp-typography-paragraph-x-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-x-small) / var(--tmp-typography-line-height-x-small) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-small) / var(--tmp-typography-line-height-small) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-default: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-medium) / var(--tmp-typography-line-height-medium) var(--tmp-typography-font-family-default);
+  --tmp-typography-code-x-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-x-small) / var(--tmp-typography-line-height-x-small) var(--tmp-typography-font-family-mono);
+  --tmp-typography-code-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-small) / var(--tmp-typography-line-height-small) var(--tmp-typography-font-family-mono);
+  --tmp-typography-code-default: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-medium) / var(--tmp-typography-line-height-medium) var(--tmp-typography-font-family-mono);
+  --tmp-typography-h3: var(--tmp-typography-weight-450) var(--tmp-typography-font-size-x-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
+  --tmp-typography-h4: var(--tmp-typography-weight-200) var(--tmp-typography-font-size-x-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
+  --tmp-typography-h5: var(--tmp-typography-weight-450) var(--tmp-typography-font-size-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
+  --tmp-typography-h6: var(--tmp-typography-weight-300) var(--tmp-typography-font-size-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
 }
 
 

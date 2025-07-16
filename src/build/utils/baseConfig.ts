@@ -1,5 +1,6 @@
 import type { Config } from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
+
 import {
   transformGroups,
   transformTypes,
