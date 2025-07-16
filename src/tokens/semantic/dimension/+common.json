@@ -1,0 +1,51 @@
+{
+  "dimension": {
+    "$type": "dimension",
+    "stroke-thickness": {
+      "medium": {
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      }
+    },
+    "radius": {
+      "none": {
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "small": {
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "medium": {
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "full": {
+        "$value": {
+          "value": 9999,
+          "unit": "px"
+        }
+      }
+    }
+  }
+}

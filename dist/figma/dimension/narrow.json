@@ -1,79 +1,113 @@
 {
+  "dimension": {
+    "stroke-thickness": {
+      "medium": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "large": {
+        "$value": "2px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "none": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "small": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "medium": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "large": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "full": {
+        "$value": "9999px",
+        "$type": "dimension"
+      }
+    }
+  },
   "tmp": {
     "dimension": {
       "spacing": {
         "inline": {
-          "xxxSmall": {
+          "xxxs": {
             "$value": "2px",
             "$type": "dimension"
           },
-          "xxSmall": {
+          "xxs": {
             "$value": "4px",
             "$type": "dimension"
           },
-          "xSmall": {
+          "xs": {
             "$value": "6px",
             "$type": "dimension"
           },
-          "small": {
+          "s": {
             "$value": "8px",
             "$type": "dimension"
           },
-          "medium": {
+          "m": {
             "$value": "12px",
             "$type": "dimension"
           },
-          "large": {
+          "l": {
             "$value": "16px",
             "$type": "dimension"
           },
-          "xLarge": {
+          "xl": {
             "$value": "20px",
             "$type": "dimension"
           },
-          "xxLarge": {
+          "xxl": {
             "$value": "24px",
             "$type": "dimension"
           },
-          "xxxLarge": {
+          "xxxl": {
             "$value": "32px",
             "$type": "dimension"
           }
         },
         "block": {
-          "xxxSmall": {
+          "xxxs": {
             "$value": "2px",
             "$type": "dimension"
           },
-          "xxSmall": {
+          "xxs": {
             "$value": "4px",
             "$type": "dimension"
           },
-          "xSmall": {
+          "xs": {
             "$value": "6px",
             "$type": "dimension"
           },
-          "small": {
+          "s": {
             "$value": "8px",
             "$type": "dimension"
           },
-          "medium": {
+          "m": {
             "$value": "12px",
             "$type": "dimension"
           },
-          "large": {
+          "l": {
             "$value": "16px",
             "$type": "dimension"
           },
-          "xLarge": {
+          "xl": {
             "$value": "20px",
             "$type": "dimension"
           },
-          "xxLarge": {
+          "xxl": {
             "$value": "24px",
             "$type": "dimension"
           },
-          "xxxLarge": {
+          "xxxl": {
             "$value": "32px",
             "$type": "dimension"
           }

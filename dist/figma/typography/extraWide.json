@@ -2,7 +2,7 @@
   "tmp": {
     "typography": {
       "paragraph": {
-        "xSmall": {
+        "xs": {
           "$value": {
             "fontFamily": [
               "Ubuntu Sans",
@@ -23,7 +23,7 @@
           },
           "$type": "typography"
         },
-        "small": {
+        "s": {
           "$value": {
             "fontFamily": [
               "Ubuntu Sans",
@@ -67,7 +67,7 @@
         }
       },
       "code": {
-        "xSmall": {
+        "xs": {
           "$value": {
             "fontFamily": [
               "Ubuntu Sans Mono",
@@ -83,7 +83,7 @@
           },
           "$type": "typography"
         },
-        "small": {
+        "s": {
           "$value": {
             "fontFamily": [
               "Ubuntu Sans Mono",
@@ -223,16 +223,16 @@
         }
       },
       "letterSpacing": {
-        "medium": {
-          "$value": "0px",
+        "m": {
+          "$value": "0em",
           "$type": "dimension"
         },
-        "large": {
-          "$value": "1px",
+        "l": {
+          "$value": "0.05em",
           "$type": "dimension"
         },
-        "xLarge": {
-          "$value": "1px",
+        "xl": {
+          "$value": "0.07em",
           "$type": "dimension"
         }
       },
@@ -266,45 +266,45 @@
         }
       },
       "fontSize": {
-        "xSmall": {
+        "xs": {
           "$value": "12px",
           "$type": "dimension"
         },
-        "small": {
+        "s": {
           "$value": "14px",
           "$type": "dimension"
         },
-        "medium": {
+        "m": {
           "$value": "16px",
           "$type": "dimension"
         },
-        "large": {
+        "l": {
           "$value": "24px",
           "$type": "dimension"
         },
-        "xLarge": {
+        "xl": {
           "$value": "28px",
           "$type": "dimension"
         },
-        "xxLarge": {
+        "xxl": {
           "$value": "32px",
           "$type": "dimension"
         }
       },
       "lineHeight": {
-        "xSmall": {
+        "xs": {
           "$value": "18px",
           "$type": "dimension"
         },
-        "small": {
+        "s": {
           "$value": "21px",
           "$type": "dimension"
         },
-        "medium": {
+        "m": {
           "$value": "24px",
           "$type": "dimension"
         },
-        "large": {
+        "l": {
           "$value": "32px",
           "$type": "dimension"
         }

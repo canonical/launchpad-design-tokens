@@ -45,7 +45,7 @@ export const baseConfig = {
       basePxFontSize: 16,
       transforms: [
         customTransforms.flattenPropertiesDimension,
-        transforms.sizeRemToPx,
+        "dimension/remToPixel", // From style-dictionary-utils. In contrary to the build-in it takes the unit into account and only transforms rems.
         transforms.nameKebab,
       ],
     },

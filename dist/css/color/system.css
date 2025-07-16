@@ -14,6 +14,10 @@
     --tmp-color-text-reversed: #000000;
     --tmp-color-text-link-default: #6699cc;
     --tmp-color-text-link-visited: #a679d2;
+    --tmp-color-background-default: #262626;
+    --tmp-color-background-hover: #313131;
+    --tmp-color-background-active: #373737;
+    --tmp-color-background-alt: #202020;
     --tmp-color-background-neutral-default: rgba(255, 255, 255, 0.15);
     --tmp-color-background-neutral-hover: rgba(255, 255, 255, 0.2);
     --tmp-color-background-neutral-active: rgba(255, 255, 255, 0.25);
@@ -81,6 +85,10 @@
     --tmp-color-text-reversed: #ffffff;
     --tmp-color-text-link-default: #0066cc;
     --tmp-color-text-link-visited: #7d42b8;
+    --tmp-color-background-default: #ffffff;
+    --tmp-color-background-hover: #f2f2f2;
+    --tmp-color-background-active: #ebebeb;
+    --tmp-color-background-alt: #f7f7f7;
     --tmp-color-background-neutral-default: #f2f2f2;
     --tmp-color-background-neutral-hover: #e5e5e5;
     --tmp-color-background-neutral-active: #dedede;

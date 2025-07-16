@@ -8,31 +8,31 @@
   --tmp-typography-weight-300: 300;
   --tmp-typography-weight-400: 400;
   --tmp-typography-weight-450: 450;
-  --tmp-typography-letter-spacing-medium: 0em;
-  --tmp-typography-letter-spacing-large: 0.05em;
-  --tmp-typography-letter-spacing-x-large: 0.07em;
+  --tmp-typography-letter-spacing-m: 0em;
+  --tmp-typography-letter-spacing-l: 0.05em;
+  --tmp-typography-letter-spacing-xl: 0.07em;
   --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
-  --tmp-typography-font-size-x-small: 0.625rem;
-  --tmp-typography-font-size-small: 0.75rem;
-  --tmp-typography-font-size-medium: 0.875rem;
-  --tmp-typography-font-size-large: 1.3125rem;
-  --tmp-typography-font-size-x-large: 1.5rem;
-  --tmp-typography-font-size-xx-large: 1.75rem;
-  --tmp-typography-line-height-x-small: 0.9375rem;
-  --tmp-typography-line-height-small: 1.125rem;
-  --tmp-typography-line-height-medium: 1.3125rem;
-  --tmp-typography-line-height-large: 1.75rem;
-  --tmp-typography-paragraph-x-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-x-small) / var(--tmp-typography-line-height-x-small) var(--tmp-typography-font-family-default);
-  --tmp-typography-paragraph-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-small) / var(--tmp-typography-line-height-small) var(--tmp-typography-font-family-default);
-  --tmp-typography-paragraph-default: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-medium) / var(--tmp-typography-line-height-medium) var(--tmp-typography-font-family-default);
-  --tmp-typography-code-x-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-x-small) / var(--tmp-typography-line-height-x-small) var(--tmp-typography-font-family-mono);
-  --tmp-typography-code-small: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-small) / var(--tmp-typography-line-height-small) var(--tmp-typography-font-family-mono);
-  --tmp-typography-code-default: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-medium) / var(--tmp-typography-line-height-medium) var(--tmp-typography-font-family-mono);
-  --tmp-typography-h3: var(--tmp-typography-weight-450) var(--tmp-typography-font-size-x-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
-  --tmp-typography-h4: var(--tmp-typography-weight-200) var(--tmp-typography-font-size-x-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
-  --tmp-typography-h5: var(--tmp-typography-weight-450) var(--tmp-typography-font-size-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
-  --tmp-typography-h6: var(--tmp-typography-weight-300) var(--tmp-typography-font-size-large) / var(--tmp-typography-line-height-large) var(--tmp-typography-font-family-default);
+  --tmp-typography-font-size-xs: 0.625rem;
+  --tmp-typography-font-size-s: 0.75rem;
+  --tmp-typography-font-size-m: 0.875rem;
+  --tmp-typography-font-size-l: 1.3125rem;
+  --tmp-typography-font-size-xl: 1.5rem;
+  --tmp-typography-font-size-xxl: 1.75rem;
+  --tmp-typography-line-height-xs: 0.9375rem;
+  --tmp-typography-line-height-s: 1.125rem;
+  --tmp-typography-line-height-m: 1.3125rem;
+  --tmp-typography-line-height-l: 1.75rem;
+  --tmp-typography-paragraph-xs: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-xs) / var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-s: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-s) / var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-default: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-m) / var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-default);
+  --tmp-typography-code-xs: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-xs) / var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-mono);
+  --tmp-typography-code-s: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-s) / var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-mono);
+  --tmp-typography-code-default: var(--tmp-typography-weight-400) var(--tmp-typography-font-size-m) / var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-mono);
+  --tmp-typography-h3: var(--tmp-typography-weight-450) var(--tmp-typography-font-size-xl) / var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h4: var(--tmp-typography-weight-200) var(--tmp-typography-font-size-xl) / var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h5: var(--tmp-typography-weight-450) var(--tmp-typography-font-size-l) / var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h6: var(--tmp-typography-weight-300) var(--tmp-typography-font-size-l) / var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
 }
 
 
@@ -42,16 +42,16 @@
 
 @media (min-width: 621px) {
   :root {
-    --tmp-typography-font-size-x-small: 0.625rem;
-    --tmp-typography-font-size-small: 0.75rem;
-    --tmp-typography-font-size-medium: 0.875rem;
-    --tmp-typography-font-size-large: 1.3125rem;
-    --tmp-typography-font-size-x-large: 1.5rem;
-    --tmp-typography-font-size-xx-large: 1.75rem;
-    --tmp-typography-line-height-x-small: 0.9375rem;
-    --tmp-typography-line-height-small: 1.125rem;
-    --tmp-typography-line-height-medium: 1.3125rem;
-    --tmp-typography-line-height-large: 1.75rem;
+    --tmp-typography-font-size-xs: 0.625rem;
+    --tmp-typography-font-size-s: 0.75rem;
+    --tmp-typography-font-size-m: 0.875rem;
+    --tmp-typography-font-size-l: 1.3125rem;
+    --tmp-typography-font-size-xl: 1.5rem;
+    --tmp-typography-font-size-xxl: 1.75rem;
+    --tmp-typography-line-height-xs: 0.9375rem;
+    --tmp-typography-line-height-s: 1.125rem;
+    --tmp-typography-line-height-m: 1.3125rem;
+    --tmp-typography-line-height-l: 1.75rem;
   }
 }
 
@@ -62,16 +62,16 @@
 
 @media (min-width: 1037px) {
   :root {
-    --tmp-typography-font-size-x-small: 0.625rem;
-    --tmp-typography-font-size-small: 0.75rem;
-    --tmp-typography-font-size-medium: 0.875rem;
-    --tmp-typography-font-size-large: 1.3125rem;
-    --tmp-typography-font-size-x-large: 1.5rem;
-    --tmp-typography-font-size-xx-large: 1.75rem;
-    --tmp-typography-line-height-x-small: 0.9375rem;
-    --tmp-typography-line-height-small: 1.125rem;
-    --tmp-typography-line-height-medium: 1.3125rem;
-    --tmp-typography-line-height-large: 1.75rem;
+    --tmp-typography-font-size-xs: 0.625rem;
+    --tmp-typography-font-size-s: 0.75rem;
+    --tmp-typography-font-size-m: 0.875rem;
+    --tmp-typography-font-size-l: 1.3125rem;
+    --tmp-typography-font-size-xl: 1.5rem;
+    --tmp-typography-font-size-xxl: 1.75rem;
+    --tmp-typography-line-height-xs: 0.9375rem;
+    --tmp-typography-line-height-s: 1.125rem;
+    --tmp-typography-line-height-m: 1.3125rem;
+    --tmp-typography-line-height-l: 1.75rem;
   }
 }
 
@@ -82,15 +82,15 @@
 
 @media (min-width: 1681px) {
   :root {
-    --tmp-typography-font-size-x-small: 0.75rem;
-    --tmp-typography-font-size-small: 0.875rem;
-    --tmp-typography-font-size-medium: 1rem;
-    --tmp-typography-font-size-large: 1.5rem;
-    --tmp-typography-font-size-x-large: 1.75rem;
-    --tmp-typography-font-size-xx-large: 2rem;
-    --tmp-typography-line-height-x-small: 1.125rem;
-    --tmp-typography-line-height-small: 1.3125rem;
-    --tmp-typography-line-height-medium: 1.5rem;
-    --tmp-typography-line-height-large: 2rem;
+    --tmp-typography-font-size-xs: 0.75rem;
+    --tmp-typography-font-size-s: 0.875rem;
+    --tmp-typography-font-size-m: 1rem;
+    --tmp-typography-font-size-l: 1.5rem;
+    --tmp-typography-font-size-xl: 1.75rem;
+    --tmp-typography-font-size-xxl: 2rem;
+    --tmp-typography-line-height-xs: 1.125rem;
+    --tmp-typography-line-height-s: 1.3125rem;
+    --tmp-typography-line-height-m: 1.5rem;
+    --tmp-typography-line-height-l: 2rem;
   }
 }

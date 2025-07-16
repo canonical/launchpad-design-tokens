@@ -32,6 +32,18 @@
       "text-link-visited": {
         "$value": "#a679d2"
       },
+      "background-default": {
+        "$value": "#262626"
+      },
+      "background-hover": {
+        "$value": "#313131"
+      },
+      "background-active": {
+        "$value": "#373737"
+      },
+      "background-alt": {
+        "$value": "#202020"
+      },
       "background-neutral-default": {
         "$value": "rgba(255, 255, 255, 0.15)"
       },

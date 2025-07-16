@@ -3,55 +3,55 @@
     "typography": {
       "paragraph": {
         "$type": "typography",
-        "xSmall": {
+        "xs": {
           "$value": {
             "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.xSmall}",
+            "fontSize": "{tmp.typography.fontSize.xs}",
             "fontWeight": "{tmp.typography.weight.400}",
-            "lineHeight": "{tmp.typography.lineHeight.xSmall}"
+            "lineHeight": "{tmp.typography.lineHeight.xs}"
           }
         },
-        "small": {
+        "s": {
           "$value": {
             "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.small}",
+            "fontSize": "{tmp.typography.fontSize.s}",
             "fontWeight": "{tmp.typography.weight.400}",
-            "lineHeight": "{tmp.typography.lineHeight.small}"
+            "lineHeight": "{tmp.typography.lineHeight.s}"
           }
         },
         "default": {
           "$value": {
             "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.medium}",
+            "fontSize": "{tmp.typography.fontSize.m}",
             "fontWeight": "{tmp.typography.weight.400}",
-            "lineHeight": "{tmp.typography.lineHeight.medium}"
+            "lineHeight": "{tmp.typography.lineHeight.m}"
           }
         }
       },
       "code": {
         "$type": "typography",
-        "xSmall": {
+        "xs": {
           "$value": {
             "fontFamily": "{tmp.typography.fontFamily.mono}",
-            "fontSize": "{tmp.typography.fontSize.xSmall}",
+            "fontSize": "{tmp.typography.fontSize.xs}",
             "fontWeight": "{tmp.typography.weight.400}",
-            "lineHeight": "{tmp.typography.lineHeight.xSmall}"
+            "lineHeight": "{tmp.typography.lineHeight.xs}"
           }
         },
-        "small": {
+        "s": {
           "$value": {
             "fontFamily": "{tmp.typography.fontFamily.mono}",
-            "fontSize": "{tmp.typography.fontSize.small}",
+            "fontSize": "{tmp.typography.fontSize.s}",
             "fontWeight": "{tmp.typography.weight.400}",
-            "lineHeight": "{tmp.typography.lineHeight.small}"
+            "lineHeight": "{tmp.typography.lineHeight.s}"
           }
         },
         "default": {
           "$value": {
             "fontFamily": "{tmp.typography.fontFamily.mono}",
-            "fontSize": "{tmp.typography.fontSize.medium}",
+            "fontSize": "{tmp.typography.fontSize.m}",
             "fontWeight": "{tmp.typography.weight.400}",
-            "lineHeight": "{tmp.typography.lineHeight.medium}"
+            "lineHeight": "{tmp.typography.lineHeight.m}"
           }
         }
       },
@@ -59,36 +59,36 @@
         "$type": "typography",
         "$value": {
           "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.xLarge}",
+          "fontSize": "{tmp.typography.fontSize.xl}",
           "fontWeight": "{tmp.typography.weight.450}",
-          "lineHeight": "{tmp.typography.lineHeight.large}"
+          "lineHeight": "{tmp.typography.lineHeight.l}"
         }
       },
       "h4": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.xLarge}",
+          "fontSize": "{tmp.typography.fontSize.xl}",
           "fontWeight": "{tmp.typography.weight.200}",
-          "lineHeight": "{tmp.typography.lineHeight.large}"
+          "lineHeight": "{tmp.typography.lineHeight.l}"
         }
       },
       "h5": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.large}",
+          "fontSize": "{tmp.typography.fontSize.l}",
           "fontWeight": "{tmp.typography.weight.450}",
-          "lineHeight": "{tmp.typography.lineHeight.large}"
+          "lineHeight": "{tmp.typography.lineHeight.l}"
         }
       },
       "h6": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.large}",
+          "fontSize": "{tmp.typography.fontSize.l}",
           "fontWeight": "{tmp.typography.weight.300}",
-          "lineHeight": "{tmp.typography.lineHeight.large}"
+          "lineHeight": "{tmp.typography.lineHeight.l}"
         }
       },
       "weight": {
@@ -111,19 +111,19 @@
       },
       "letterSpacing": {
         "$type": "dimension",
-        "medium": {
+        "m": {
           "$value": {
             "value": 0,
             "unit": "em"
           }
         },
-        "large": {
+        "l": {
           "$value": {
             "value": 0.05,
             "unit": "em"
           }
         },
-        "xLarge": {
+        "xl": {
           "$value": {
             "value": 0.07,
             "unit": "em"
