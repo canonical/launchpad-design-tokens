@@ -3,77 +3,77 @@
     "dimension": {
       "spacing": {
         "inline": {
-          "xxxSmall": {
+          "xxxs": {
             "$value": "4px",
             "$type": "dimension"
           },
-          "xxSmall": {
+          "xxs": {
             "$value": "8px",
             "$type": "dimension"
           },
-          "xSmall": {
+          "xs": {
             "$value": "12px",
             "$type": "dimension"
           },
-          "small": {
+          "s": {
             "$value": "16px",
             "$type": "dimension"
           },
-          "medium": {
+          "m": {
             "$value": "24px",
             "$type": "dimension"
           },
-          "large": {
+          "l": {
             "$value": "32px",
             "$type": "dimension"
           },
-          "xLarge": {
+          "xl": {
             "$value": "40px",
             "$type": "dimension"
           },
-          "xxLarge": {
+          "xxl": {
             "$value": "48px",
             "$type": "dimension"
           },
-          "xxxLarge": {
+          "xxxl": {
             "$value": "56px",
             "$type": "dimension"
           }
         },
         "block": {
-          "xxxSmall": {
+          "xxxs": {
             "$value": "4px",
             "$type": "dimension"
           },
-          "xxSmall": {
+          "xxs": {
             "$value": "8px",
             "$type": "dimension"
           },
-          "xSmall": {
+          "xs": {
             "$value": "12px",
             "$type": "dimension"
           },
-          "small": {
+          "s": {
             "$value": "16px",
             "$type": "dimension"
           },
-          "medium": {
+          "m": {
             "$value": "24px",
             "$type": "dimension"
           },
-          "large": {
+          "l": {
             "$value": "32px",
             "$type": "dimension"
           },
-          "xLarge": {
+          "xl": {
             "$value": "40px",
             "$type": "dimension"
           },
-          "xxLarge": {
+          "xxl": {
             "$value": "48px",
             "$type": "dimension"
           },
-          "xxxLarge": {
+          "xxxl": {
             "$value": "56px",
             "$type": "dimension"
           }

@@ -4,60 +4,60 @@
       "$type": "dimension",
       "spacing": {
         "inline": {
-          "xxxSmall": {
+          "xxxs": {
             "$value": "{dimension.025}"
           },
-          "xxSmall": {
+          "xxs": {
             "$value": "{dimension.050}"
           },
-          "xSmall": {
+          "xs": {
             "$value": "{tmp.dimension.075}"
           },
-          "small": {
+          "s": {
             "$value": "{dimension.100}"
           },
-          "medium": {
+          "m": {
             "$value": "{dimension.150}"
           },
-          "large": {
+          "l": {
             "$value": "{dimension.200}"
           },
-          "xLarge": {
+          "xl": {
             "$value": "{dimension.250}"
           },
-          "xxLarge": {
+          "xxl": {
             "$value": "{dimension.300}"
           },
-          "xxxLarge": {
+          "xxxl": {
             "$value": "{dimension.400}"
           }
         },
         "block": {
-          "xxxSmall": {
+          "xxxs": {
             "$value": "{dimension.025}"
           },
-          "xxSmall": {
+          "xxs": {
             "$value": "{dimension.050}"
           },
-          "xSmall": {
+          "xs": {
             "$value": "{tmp.dimension.075}"
           },
-          "small": {
+          "s": {
             "$value": "{dimension.100}"
           },
-          "medium": {
+          "m": {
             "$value": "{dimension.150}"
           },
-          "large": {
+          "l": {
             "$value": "{dimension.200}"
           },
-          "xLarge": {
+          "xl": {
             "$value": "{dimension.250}"
           },
-          "xxLarge": {
+          "xxl": {
             "$value": "{dimension.300}"
           },
-          "xxxLarge": {
+          "xxxl": {
             "$value": "{dimension.400}"
           }
         }
