@@ -13,6 +13,10 @@
   --tmp-color-text-reversed: #000000;
   --tmp-color-text-link-default: #6699cc;
   --tmp-color-text-link-visited: #a679d2;
+  --tmp-color-background-default: #262626;
+  --tmp-color-background-hover: #313131;
+  --tmp-color-background-active: #373737;
+  --tmp-color-background-alt: #202020;
   --tmp-color-background-neutral-default: rgba(255, 255, 255, 0.15);
   --tmp-color-background-neutral-hover: rgba(255, 255, 255, 0.2);
   --tmp-color-background-neutral-active: rgba(255, 255, 255, 0.25);

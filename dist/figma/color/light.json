@@ -41,6 +41,22 @@
         "$value": "#7d42b8",
         "$type": "color"
       },
+      "background-default": {
+        "$value": "#ffffff",
+        "$type": "color"
+      },
+      "background-hover": {
+        "$value": "#f2f2f2",
+        "$type": "color"
+      },
+      "background-active": {
+        "$value": "#ebebeb",
+        "$type": "color"
+      },
+      "background-alt": {
+        "$value": "#f7f7f7",
+        "$type": "color"
+      },
       "background-neutral-default": {
         "$value": "#f2f2f2",
         "$type": "color"

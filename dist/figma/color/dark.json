@@ -41,6 +41,22 @@
         "$value": "#a679d2",
         "$type": "color"
       },
+      "background-default": {
+        "$value": "#262626",
+        "$type": "color"
+      },
+      "background-hover": {
+        "$value": "#313131",
+        "$type": "color"
+      },
+      "background-active": {
+        "$value": "#373737",
+        "$type": "color"
+      },
+      "background-alt": {
+        "$value": "#202020",
+        "$type": "color"
+      },
       "background-neutral-default": {
         "$value": "rgba(255, 255, 255, 0.15)",
         "$type": "color"
