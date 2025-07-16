@@ -224,15 +224,15 @@
       },
       "letterSpacing": {
         "m": {
-          "$value": "0px",
+          "$value": "0em",
           "$type": "dimension"
         },
         "l": {
-          "$value": "1px",
+          "$value": "0.05em",
           "$type": "dimension"
         },
         "xl": {
-          "$value": "1px",
+          "$value": "0.07em",
           "$type": "dimension"
         }
       },
