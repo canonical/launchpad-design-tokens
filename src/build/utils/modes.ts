@@ -23,6 +23,7 @@ type CSSAdvancedOptions = {
 
 export type ModeToCSSCompose = Mode & {
   options?: CSSAdvancedOptions;
+  order?: number;
 };
 
 export async function readModes(category: string): Promise<Mode[]> {
@@ -109,7 +110,20 @@ export async function buildCSSComposedMode(
     dictionaries.map((dictionary) => dictionary.buildPlatform("css")),
   );
 
-  await mergeDirectory(buildPath);
+  const modeNamesInOrder = modesToCompose.some(
+    (mode) => mode.order !== undefined,
+  )
+    ? [...modesToCompose]
+        .sort((a, b) => {
+          if (a.order === undefined && b.order === undefined) return 0;
+          if (a.order === undefined) return 1;
+          if (b.order === undefined) return -1;
+          return a.order - b.order;
+        })
+        .map((mode) => mode.modeName)
+    : null;
+
+  await mergeDirectory(buildPath, modeNamesInOrder);
 }
 
 async function writeFigmaManifest(collection: string, modes: Mode[]) {
@@ -136,13 +150,24 @@ async function writeFigmaManifest(collection: string, modes: Mode[]) {
   );
 }
 
-async function mergeDirectory(directory: string) {
+async function mergeDirectory(
+  directory: string,
+  modeNamesInOrder: string[] | null,
+) {
   const files = (
     await readdir(directory, {
       withFileTypes: true,
       recursive: false,
     })
   ).filter((file) => file.isFile());
+
+  if (modeNamesInOrder) {
+    files.sort((a, b) => {
+      const aName = a.name.replace(/\.css$/, "");
+      const bName = b.name.replace(/\.css$/, "");
+      return modeNamesInOrder.indexOf(aName) - modeNamesInOrder.indexOf(bName);
+    });
+  }
 
   if (files.length === 0) {
     console.warn(`No files found in directory: ${directory}`);

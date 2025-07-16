@@ -17,9 +17,11 @@ await buildSimpleModes(category, simpleModes);
   const cssModesToCompose = [
     {
       modeName: "narrow",
+      order: 1,
     },
     {
       modeName: "medium",
+      order: 2,
       options: {
         rules: [
           {
@@ -31,6 +33,7 @@ await buildSimpleModes(category, simpleModes);
     },
     {
       modeName: "wide",
+      order: 3,
       options: {
         rules: [
           {
@@ -42,6 +45,7 @@ await buildSimpleModes(category, simpleModes);
     },
     {
       modeName: "extraWide",
+      order: 4,
       options: {
         rules: [
           {
