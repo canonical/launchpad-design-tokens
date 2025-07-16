@@ -1,4 +1,5 @@
 import { mediaQueryMinWidths } from "./utils/consts.js";
+import { isCommon } from "./utils/filters.js";
 import {
   type ModeToCSSCompose,
   buildCSSComposedMode,
@@ -26,7 +27,7 @@ await buildSimpleModes(category, simpleModes);
         rules: [
           {
             atRule: `@media (min-width: ${mediaQueryMinWidths.medium})`,
-            matcher: () => true,
+            matcher: (token) => !isCommon(token),
           },
         ],
       },
@@ -38,7 +39,7 @@ await buildSimpleModes(category, simpleModes);
         rules: [
           {
             atRule: `@media (min-width: ${mediaQueryMinWidths.large})`,
-            matcher: () => true,
+            matcher: (token) => !isCommon(token),
           },
         ],
       },
@@ -50,7 +51,7 @@ await buildSimpleModes(category, simpleModes);
         rules: [
           {
             atRule: `@media (min-width: ${mediaQueryMinWidths.xlarge})`,
-            matcher: () => true,
+            matcher: (token) => !isCommon(token),
           },
         ],
       },

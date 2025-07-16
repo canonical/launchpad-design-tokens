@@ -3,6 +3,13 @@
  */
 
 :root {
+  --dimension-stroke-thickness-medium: 1px;
+  --dimension-stroke-thickness-large: 2px;
+  --dimension-radius-none: 0px;
+  --dimension-radius-small: 0px;
+  --dimension-radius-medium: 0px;
+  --dimension-radius-large: 0px;
+  --dimension-radius-full: 9999px;
   --tmp-dimension-spacing-inline-xxxs: 0.125rem;
   --tmp-dimension-spacing-inline-xxs: 0.25rem;
   --tmp-dimension-spacing-inline-xs: 0.5rem;
