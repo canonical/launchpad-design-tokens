@@ -2,6 +2,34 @@
  * Do not edit directly, this file was auto-generated.
  */
 
+:root {
+  --tmp-typography-weight-180: 180;
+  --tmp-typography-weight-200: 200;
+  --tmp-typography-weight-300: 300;
+  --tmp-typography-weight-400: 400;
+  --tmp-typography-weight-450: 450;
+  --tmp-typography-letter-spacing-medium: 0em;
+  --tmp-typography-letter-spacing-large: 0.05em;
+  --tmp-typography-letter-spacing-x-large: 0.07em;
+  --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
+  --tmp-typography-font-size-x-small: 0.625rem;
+  --tmp-typography-font-size-small: 0.75rem;
+  --tmp-typography-font-size-medium: 0.875rem;
+  --tmp-typography-font-size-large: 1.3125rem;
+  --tmp-typography-font-size-x-large: 1.5rem;
+  --tmp-typography-font-size-xx-large: 1.75rem;
+  --tmp-typography-line-height-x-small: 0.9375rem;
+  --tmp-typography-line-height-small: 1.125rem;
+  --tmp-typography-line-height-medium: 1.3125rem;
+  --tmp-typography-line-height-large: 1.75rem;
+}
+
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
 @media (min-width: 621px) {
   :root {
     --tmp-typography-font-size-x-small: 0.625rem;
@@ -14,16 +42,6 @@
     --tmp-typography-line-height-small: 1.125rem;
     --tmp-typography-line-height-medium: 1.3125rem;
     --tmp-typography-line-height-large: 1.75rem;
-    --tmp-typography-weight-180: 180;
-    --tmp-typography-weight-200: 200;
-    --tmp-typography-weight-300: 300;
-    --tmp-typography-weight-400: 400;
-    --tmp-typography-weight-450: 450;
-    --tmp-typography-letter-spacing-medium: 0em;
-    --tmp-typography-letter-spacing-large: 0.05em;
-    --tmp-typography-letter-spacing-x-large: 0.07em;
-    --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
   }
 }
 
@@ -44,16 +62,6 @@
     --tmp-typography-line-height-small: 1.125rem;
     --tmp-typography-line-height-medium: 1.3125rem;
     --tmp-typography-line-height-large: 1.75rem;
-    --tmp-typography-weight-180: 180;
-    --tmp-typography-weight-200: 200;
-    --tmp-typography-weight-300: 300;
-    --tmp-typography-weight-400: 400;
-    --tmp-typography-weight-450: 450;
-    --tmp-typography-letter-spacing-medium: 0em;
-    --tmp-typography-letter-spacing-large: 0.05em;
-    --tmp-typography-letter-spacing-x-large: 0.07em;
-    --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
   }
 }
 
@@ -74,43 +82,5 @@
     --tmp-typography-line-height-small: 1.3125rem;
     --tmp-typography-line-height-medium: 1.5rem;
     --tmp-typography-line-height-large: 2rem;
-    --tmp-typography-weight-180: 180;
-    --tmp-typography-weight-200: 200;
-    --tmp-typography-weight-300: 300;
-    --tmp-typography-weight-400: 400;
-    --tmp-typography-weight-450: 450;
-    --tmp-typography-letter-spacing-medium: 0em;
-    --tmp-typography-letter-spacing-large: 0.05em;
-    --tmp-typography-letter-spacing-x-large: 0.07em;
-    --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
   }
-}
-
-
-/**
- * Do not edit directly, this file was auto-generated.
- */
-
-:root {
-  --tmp-typography-font-size-x-small: 0.625rem;
-  --tmp-typography-font-size-small: 0.75rem;
-  --tmp-typography-font-size-medium: 0.875rem;
-  --tmp-typography-font-size-large: 1.3125rem;
-  --tmp-typography-font-size-x-large: 1.5rem;
-  --tmp-typography-font-size-xx-large: 1.75rem;
-  --tmp-typography-line-height-x-small: 0.9375rem;
-  --tmp-typography-line-height-small: 1.125rem;
-  --tmp-typography-line-height-medium: 1.3125rem;
-  --tmp-typography-line-height-large: 1.75rem;
-  --tmp-typography-weight-180: 180;
-  --tmp-typography-weight-200: 200;
-  --tmp-typography-weight-300: 300;
-  --tmp-typography-weight-400: 400;
-  --tmp-typography-weight-450: 450;
-  --tmp-typography-letter-spacing-medium: 0em;
-  --tmp-typography-letter-spacing-large: 0.05em;
-  --tmp-typography-letter-spacing-x-large: 0.07em;
-  --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
 }

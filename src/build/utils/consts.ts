@@ -6,3 +6,5 @@ export enum mediaQueryMinWidths {
   large = "1037px",
   xlarge = "1681px",
 }
+
+export const commonModesComponentName = "+common.json";

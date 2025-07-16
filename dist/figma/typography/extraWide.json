@@ -1,50 +1,6 @@
 {
   "tmp": {
     "typography": {
-      "fontSize": {
-        "xSmall": {
-          "$value": "12px",
-          "$type": "dimension"
-        },
-        "small": {
-          "$value": "14px",
-          "$type": "dimension"
-        },
-        "medium": {
-          "$value": "16px",
-          "$type": "dimension"
-        },
-        "large": {
-          "$value": "24px",
-          "$type": "dimension"
-        },
-        "xLarge": {
-          "$value": "28px",
-          "$type": "dimension"
-        },
-        "xxLarge": {
-          "$value": "32px",
-          "$type": "dimension"
-        }
-      },
-      "lineHeight": {
-        "xSmall": {
-          "$value": "18px",
-          "$type": "dimension"
-        },
-        "small": {
-          "$value": "21px",
-          "$type": "dimension"
-        },
-        "medium": {
-          "$value": "24px",
-          "$type": "dimension"
-        },
-        "large": {
-          "$value": "32px",
-          "$type": "dimension"
-        }
-      },
       "weight": {
         "180": {
           "$value": 180,
@@ -108,6 +64,50 @@
             "monospace"
           ],
           "$type": "fontFamily"
+        }
+      },
+      "fontSize": {
+        "xSmall": {
+          "$value": "12px",
+          "$type": "dimension"
+        },
+        "small": {
+          "$value": "14px",
+          "$type": "dimension"
+        },
+        "medium": {
+          "$value": "16px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "24px",
+          "$type": "dimension"
+        },
+        "xLarge": {
+          "$value": "28px",
+          "$type": "dimension"
+        },
+        "xxLarge": {
+          "$value": "32px",
+          "$type": "dimension"
+        }
+      },
+      "lineHeight": {
+        "xSmall": {
+          "$value": "18px",
+          "$type": "dimension"
+        },
+        "small": {
+          "$value": "21px",
+          "$type": "dimension"
+        },
+        "medium": {
+          "$value": "24px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "32px",
+          "$type": "dimension"
         }
       }
     }

@@ -3,6 +3,8 @@ import { StyleDictionary } from "style-dictionary-utils";
 import { formats } from "style-dictionary/enums";
 import { baseConfig, logOptions } from "./baseConfig.js";
 import { isSemantic } from "./filters.js";
+import { commonModesComponentName } from "./consts.js";
+import { TransformedToken } from "style-dictionary";
 
 type Mode = {
   path: string;
@@ -17,7 +19,7 @@ type CSSAdvancedOptions = {
   rules?: Array<{
     atRule?: string;
     selector?: string;
-    matcher: () => boolean;
+    matcher: (token: TransformedToken) => boolean;
   }>;
 };
 
@@ -27,14 +29,17 @@ export type ModeToCSSCompose = Mode & {
 };
 
 export async function readModes(category: string): Promise<Mode[]> {
-  const basePath = `src/tokens/semantic/${category}`;
+  const basePath = getBaseCategoryPath(category);
 
   return (
     await readdir(basePath, {
       recursive: true,
     })
   )
-    .filter((path) => path.endsWith(".json"))
+    .filter(
+      (path) =>
+        path.endsWith(".json") && !path.endsWith(commonModesComponentName),
+    )
     .map((path) => ({
       path: `${basePath}/${path}`,
       modeName: path.replace(/\.json$/, "").replace("/", "-"),
@@ -42,10 +47,12 @@ export async function readModes(category: string): Promise<Mode[]> {
 }
 
 export async function buildSimpleModes(category: string, modes: Mode[]) {
+  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
+
   const dictionaries = await Promise.all(
     modes.map(({ path, modeName }) =>
       new StyleDictionary(baseConfig, logOptions).extend({
-        source: [path],
+        source: [commonModesComponentPath, path],
         platforms: {
           css: {
             buildPath: `dist/css/${category}/`,
@@ -84,11 +91,12 @@ export async function buildCSSComposedMode(
   modeName: string,
   modesToCompose: ModeToCSSCompose[],
 ) {
+  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
   const buildPath = `dist/css/${category}/${modeName}/`;
   const dictionaries = await Promise.all(
     modesToCompose.map(({ path, modeName, options }) =>
       new StyleDictionary(baseConfig, logOptions).extend({
-        source: [path],
+        source: [commonModesComponentPath, path],
         platforms: {
           css: {
             buildPath,
@@ -198,4 +206,8 @@ async function mergeDirectory(
   console.log(`Merged files into: ${outputPath}`);
 
   await rm(directory, { recursive: true });
+}
+
+function getBaseCategoryPath(category: string): string {
+  return `src/tokens/semantic/${category}`;
 }
