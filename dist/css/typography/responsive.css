@@ -22,8 +22,8 @@
     --tmp-typography-letter-spacing-medium: 0em;
     --tmp-typography-letter-spacing-large: 0.05em;
     --tmp-typography-letter-spacing-x-large: 0.07em;
-    --tmp-typography-font-family-default: "Ubuntu Sans";
-    --tmp-typography-font-family-mono: "Ubuntu Sans Mono";
+    --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
   }
 }
 
@@ -52,8 +52,8 @@
     --tmp-typography-letter-spacing-medium: 0em;
     --tmp-typography-letter-spacing-large: 0.05em;
     --tmp-typography-letter-spacing-x-large: 0.07em;
-    --tmp-typography-font-family-default: "Ubuntu Sans";
-    --tmp-typography-font-family-mono: "Ubuntu Sans Mono";
+    --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
   }
 }
 
@@ -82,8 +82,8 @@
     --tmp-typography-letter-spacing-medium: 0em;
     --tmp-typography-letter-spacing-large: 0.05em;
     --tmp-typography-letter-spacing-x-large: 0.07em;
-    --tmp-typography-font-family-default: "Ubuntu Sans";
-    --tmp-typography-font-family-mono: "Ubuntu Sans Mono";
+    --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
   }
 }
 
@@ -111,6 +111,6 @@
   --tmp-typography-letter-spacing-medium: 0em;
   --tmp-typography-letter-spacing-large: 0.05em;
   --tmp-typography-letter-spacing-x-large: 0.07em;
-  --tmp-typography-font-family-default: "Ubuntu Sans";
-  --tmp-typography-font-family-mono: "Ubuntu Sans Mono";
+  --tmp-typography-font-family-default: "Ubuntu Sans", Ubuntu, -apple-system, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --tmp-typography-font-family-mono: "Ubuntu Sans Mono", "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
 }

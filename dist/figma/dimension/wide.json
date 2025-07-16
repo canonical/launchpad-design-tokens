@@ -4,77 +4,77 @@
       "spacing": {
         "inline": {
           "xxxSmall": {
-            "$value": "32px",
+            "$value": "2px",
             "$type": "dimension"
           },
           "xxSmall": {
-            "$value": "64px",
+            "$value": "4px",
             "$type": "dimension"
           },
           "xSmall": {
-            "$value": "128px",
+            "$value": "8px",
             "$type": "dimension"
           },
           "small": {
-            "$value": "192px",
+            "$value": "12px",
             "$type": "dimension"
           },
           "medium": {
-            "$value": "256px",
+            "$value": "16px",
             "$type": "dimension"
           },
           "large": {
-            "$value": "384px",
+            "$value": "24px",
             "$type": "dimension"
           },
           "xLarge": {
-            "$value": "512px",
+            "$value": "32px",
             "$type": "dimension"
           },
           "xxLarge": {
-            "$value": "640px",
+            "$value": "40px",
             "$type": "dimension"
           },
           "xxxLarge": {
-            "$value": "768px",
+            "$value": "48px",
             "$type": "dimension"
           }
         },
         "block": {
           "xxxSmall": {
-            "$value": "32px",
+            "$value": "2px",
             "$type": "dimension"
           },
           "xxSmall": {
-            "$value": "64px",
+            "$value": "4px",
             "$type": "dimension"
           },
           "xSmall": {
-            "$value": "128px",
+            "$value": "8px",
             "$type": "dimension"
           },
           "small": {
-            "$value": "192px",
+            "$value": "12px",
             "$type": "dimension"
           },
           "medium": {
-            "$value": "256px",
+            "$value": "16px",
             "$type": "dimension"
           },
           "large": {
-            "$value": "384px",
+            "$value": "24px",
             "$type": "dimension"
           },
           "xLarge": {
-            "$value": "512px",
+            "$value": "32px",
             "$type": "dimension"
           },
           "xxLarge": {
-            "$value": "640px",
+            "$value": "40px",
             "$type": "dimension"
           },
           "xxxLarge": {
-            "$value": "768px",
+            "$value": "48px",
             "$type": "dimension"
           }
         }

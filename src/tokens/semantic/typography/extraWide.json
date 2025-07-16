@@ -109,10 +109,29 @@
       "fontFamily": {
         "$type": "fontFamily",
         "default": {
-          "$value": "Ubuntu Sans"
+          "$value": [
+            "Ubuntu Sans",
+            "Ubuntu",
+            "-apple-system",
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            "sans-serif"
+          ]
         },
         "mono": {
-          "$value": "Ubuntu Sans Mono"
+          "$value": [
+            "Ubuntu Sans Mono",
+            "Ubuntu Mono",
+            "Consolas",
+            "Monaco",
+            "Courier",
+            "monospace"
+          ]
         }
       }
     }
