@@ -66,54 +66,6 @@
             "unit": "rem"
           }
         }
-      },
-      "weight": {
-        "$type": "fontWeight",
-        "180": {
-          "$value": 180
-        },
-        "200": {
-          "$value": 200
-        },
-        "300": {
-          "$value": 300
-        },
-        "400": {
-          "$value": 400
-        },
-        "450": {
-          "$value": 450
-        }
-      },
-      "letterSpacing": {
-        "$type": "dimension",
-        "medium": {
-          "$value": {
-            "value": 0,
-            "unit": "em"
-          }
-        },
-        "large": {
-          "$value": {
-            "value": 0.05,
-            "unit": "em"
-          }
-        },
-        "xLarge": {
-          "$value": {
-            "value": 0.07,
-            "unit": "em"
-          }
-        }
-      },
-      "fontFamily": {
-        "$type": "fontFamily",
-        "default": {
-          "$value": "Ubuntu Sans"
-        },
-        "mono": {
-          "$value": "Ubuntu Sans Mono"
-        }
       }
     }
   }

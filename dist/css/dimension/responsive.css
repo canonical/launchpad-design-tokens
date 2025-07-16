@@ -2,26 +2,52 @@
  * Do not edit directly, this file was auto-generated.
  */
 
+:root {
+  --tmp-dimension-spacing-inline-xxx-small: 0.125rem;
+  --tmp-dimension-spacing-inline-xx-small: 0.25rem;
+  --tmp-dimension-spacing-inline-x-small: 0.375rem;
+  --tmp-dimension-spacing-inline-small: 0.5rem;
+  --tmp-dimension-spacing-inline-medium: 0.75rem;
+  --tmp-dimension-spacing-inline-large: 1rem;
+  --tmp-dimension-spacing-inline-x-large: 1.25rem;
+  --tmp-dimension-spacing-inline-xx-large: 1.5rem;
+  --tmp-dimension-spacing-inline-xxx-large: 2rem;
+  --tmp-dimension-spacing-block-xxx-small: 0.125rem;
+  --tmp-dimension-spacing-block-xx-small: 0.25rem;
+  --tmp-dimension-spacing-block-x-small: 0.375rem;
+  --tmp-dimension-spacing-block-small: 0.5rem;
+  --tmp-dimension-spacing-block-medium: 0.75rem;
+  --tmp-dimension-spacing-block-large: 1rem;
+  --tmp-dimension-spacing-block-x-large: 1.25rem;
+  --tmp-dimension-spacing-block-xx-large: 1.5rem;
+  --tmp-dimension-spacing-block-xxx-large: 2rem;
+}
+
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
 @media (min-width: 621px) {
   :root {
-    --tmp-dimension-spacing-inline-xxx-small: 2rem;
-    --tmp-dimension-spacing-inline-xx-small: 4rem;
-    --tmp-dimension-spacing-inline-x-small: 8rem;
-    --tmp-dimension-spacing-inline-small: 12rem;
-    --tmp-dimension-spacing-inline-medium: 16rem;
-    --tmp-dimension-spacing-inline-large: 24rem;
-    --tmp-dimension-spacing-inline-x-large: 32rem;
-    --tmp-dimension-spacing-inline-xx-large: 40rem;
-    --tmp-dimension-spacing-inline-xxx-large: 48rem;
-    --tmp-dimension-spacing-block-xxx-small: 2rem;
-    --tmp-dimension-spacing-block-xx-small: 4rem;
-    --tmp-dimension-spacing-block-x-small: 8rem;
-    --tmp-dimension-spacing-block-small: 12rem;
-    --tmp-dimension-spacing-block-medium: 16rem;
-    --tmp-dimension-spacing-block-large: 24rem;
-    --tmp-dimension-spacing-block-x-large: 32rem;
-    --tmp-dimension-spacing-block-xx-large: 40rem;
-    --tmp-dimension-spacing-block-xxx-large: 48rem;
+    --tmp-dimension-spacing-inline-xxx-small: 0.125rem;
+    --tmp-dimension-spacing-inline-xx-small: 0.25rem;
+    --tmp-dimension-spacing-inline-x-small: 0.5rem;
+    --tmp-dimension-spacing-inline-small: 0.75rem;
+    --tmp-dimension-spacing-inline-medium: 1rem;
+    --tmp-dimension-spacing-inline-large: 1.5rem;
+    --tmp-dimension-spacing-inline-x-large: 2rem;
+    --tmp-dimension-spacing-inline-xx-large: 2.5rem;
+    --tmp-dimension-spacing-inline-xxx-large: 3rem;
+    --tmp-dimension-spacing-block-xxx-small: 0.125rem;
+    --tmp-dimension-spacing-block-xx-small: 0.25rem;
+    --tmp-dimension-spacing-block-x-small: 0.5rem;
+    --tmp-dimension-spacing-block-small: 0.75rem;
+    --tmp-dimension-spacing-block-medium: 1rem;
+    --tmp-dimension-spacing-block-large: 1.5rem;
+    --tmp-dimension-spacing-block-x-large: 2rem;
+    --tmp-dimension-spacing-block-xx-large: 2.5rem;
+    --tmp-dimension-spacing-block-xxx-large: 3rem;
   }
 }
 
@@ -32,24 +58,24 @@
 
 @media (min-width: 1037px) {
   :root {
-    --tmp-dimension-spacing-inline-xxx-small: 2rem;
-    --tmp-dimension-spacing-inline-xx-small: 4rem;
-    --tmp-dimension-spacing-inline-x-small: 8rem;
-    --tmp-dimension-spacing-inline-small: 12rem;
-    --tmp-dimension-spacing-inline-medium: 16rem;
-    --tmp-dimension-spacing-inline-large: 24rem;
-    --tmp-dimension-spacing-inline-x-large: 32rem;
-    --tmp-dimension-spacing-inline-xx-large: 40rem;
-    --tmp-dimension-spacing-inline-xxx-large: 48rem;
-    --tmp-dimension-spacing-block-xxx-small: 2rem;
-    --tmp-dimension-spacing-block-xx-small: 4rem;
-    --tmp-dimension-spacing-block-x-small: 8rem;
-    --tmp-dimension-spacing-block-small: 12rem;
-    --tmp-dimension-spacing-block-medium: 16rem;
-    --tmp-dimension-spacing-block-large: 24rem;
-    --tmp-dimension-spacing-block-x-large: 32rem;
-    --tmp-dimension-spacing-block-xx-large: 40rem;
-    --tmp-dimension-spacing-block-xxx-large: 48rem;
+    --tmp-dimension-spacing-inline-xxx-small: 0.125rem;
+    --tmp-dimension-spacing-inline-xx-small: 0.25rem;
+    --tmp-dimension-spacing-inline-x-small: 0.5rem;
+    --tmp-dimension-spacing-inline-small: 0.75rem;
+    --tmp-dimension-spacing-inline-medium: 1rem;
+    --tmp-dimension-spacing-inline-large: 1.5rem;
+    --tmp-dimension-spacing-inline-x-large: 2rem;
+    --tmp-dimension-spacing-inline-xx-large: 2.5rem;
+    --tmp-dimension-spacing-inline-xxx-large: 3rem;
+    --tmp-dimension-spacing-block-xxx-small: 0.125rem;
+    --tmp-dimension-spacing-block-xx-small: 0.25rem;
+    --tmp-dimension-spacing-block-x-small: 0.5rem;
+    --tmp-dimension-spacing-block-small: 0.75rem;
+    --tmp-dimension-spacing-block-medium: 1rem;
+    --tmp-dimension-spacing-block-large: 1.5rem;
+    --tmp-dimension-spacing-block-x-large: 2rem;
+    --tmp-dimension-spacing-block-xx-large: 2.5rem;
+    --tmp-dimension-spacing-block-xxx-large: 3rem;
   }
 }
 
@@ -60,49 +86,23 @@
 
 @media (min-width: 1681px) {
   :root {
-    --tmp-dimension-spacing-inline-xxx-small: 4rem;
-    --tmp-dimension-spacing-inline-xx-small: 8rem;
-    --tmp-dimension-spacing-inline-x-small: 12rem;
-    --tmp-dimension-spacing-inline-small: 16rem;
-    --tmp-dimension-spacing-inline-medium: 24rem;
-    --tmp-dimension-spacing-inline-large: 32rem;
-    --tmp-dimension-spacing-inline-x-large: 40rem;
-    --tmp-dimension-spacing-inline-xx-large: 48rem;
-    --tmp-dimension-spacing-inline-xxx-large: 56rem;
-    --tmp-dimension-spacing-block-xxx-small: 4rem;
-    --tmp-dimension-spacing-block-xx-small: 8rem;
-    --tmp-dimension-spacing-block-x-small: 12rem;
-    --tmp-dimension-spacing-block-small: 16rem;
-    --tmp-dimension-spacing-block-medium: 24rem;
-    --tmp-dimension-spacing-block-large: 32rem;
-    --tmp-dimension-spacing-block-x-large: 40rem;
-    --tmp-dimension-spacing-block-xx-large: 48rem;
-    --tmp-dimension-spacing-block-xxx-large: 56rem;
+    --tmp-dimension-spacing-inline-xxx-small: 0.25rem;
+    --tmp-dimension-spacing-inline-xx-small: 0.5rem;
+    --tmp-dimension-spacing-inline-x-small: 0.75rem;
+    --tmp-dimension-spacing-inline-small: 1rem;
+    --tmp-dimension-spacing-inline-medium: 1.5rem;
+    --tmp-dimension-spacing-inline-large: 2rem;
+    --tmp-dimension-spacing-inline-x-large: 2.5rem;
+    --tmp-dimension-spacing-inline-xx-large: 3rem;
+    --tmp-dimension-spacing-inline-xxx-large: 3.5rem;
+    --tmp-dimension-spacing-block-xxx-small: 0.25rem;
+    --tmp-dimension-spacing-block-xx-small: 0.5rem;
+    --tmp-dimension-spacing-block-x-small: 0.75rem;
+    --tmp-dimension-spacing-block-small: 1rem;
+    --tmp-dimension-spacing-block-medium: 1.5rem;
+    --tmp-dimension-spacing-block-large: 2rem;
+    --tmp-dimension-spacing-block-x-large: 2.5rem;
+    --tmp-dimension-spacing-block-xx-large: 3rem;
+    --tmp-dimension-spacing-block-xxx-large: 3.5rem;
   }
-}
-
-
-/**
- * Do not edit directly, this file was auto-generated.
- */
-
-:root {
-  --tmp-dimension-spacing-inline-xxx-small: 2rem;
-  --tmp-dimension-spacing-inline-xx-small: 4rem;
-  --tmp-dimension-spacing-inline-x-small: 6rem;
-  --tmp-dimension-spacing-inline-small: 8rem;
-  --tmp-dimension-spacing-inline-medium: 12rem;
-  --tmp-dimension-spacing-inline-large: 16rem;
-  --tmp-dimension-spacing-inline-x-large: 20rem;
-  --tmp-dimension-spacing-inline-xx-large: 24rem;
-  --tmp-dimension-spacing-inline-xxx-large: 32rem;
-  --tmp-dimension-spacing-block-xxx-small: 2rem;
-  --tmp-dimension-spacing-block-xx-small: 4rem;
-  --tmp-dimension-spacing-block-x-small: 6rem;
-  --tmp-dimension-spacing-block-small: 8rem;
-  --tmp-dimension-spacing-block-medium: 12rem;
-  --tmp-dimension-spacing-block-large: 16rem;
-  --tmp-dimension-spacing-block-x-large: 20rem;
-  --tmp-dimension-spacing-block-xx-large: 24rem;
-  --tmp-dimension-spacing-block-xxx-large: 32rem;
 }

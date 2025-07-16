@@ -1,7 +1,9 @@
 import { readdir, rm } from "node:fs/promises";
+import type { PlatformConfig, TransformedToken } from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
 import { formats } from "style-dictionary/enums";
 import { baseConfig, logOptions } from "./baseConfig.js";
+import { commonModesComponentName } from "./consts.js";
 import { isSemantic } from "./filters.js";
 
 type Mode = {
@@ -17,23 +19,28 @@ type CSSAdvancedOptions = {
   rules?: Array<{
     atRule?: string;
     selector?: string;
-    matcher: () => boolean;
+    matcher: (token: TransformedToken) => boolean;
   }>;
 };
 
 export type ModeToCSSCompose = Mode & {
-  options?: CSSAdvancedOptions;
+  platformOptions?: PlatformConfig["options"];
+  filesOptions?: CSSAdvancedOptions;
+  order?: number;
 };
 
 export async function readModes(category: string): Promise<Mode[]> {
-  const basePath = `src/tokens/semantic/${category}`;
+  const basePath = getBaseCategoryPath(category);
 
   return (
     await readdir(basePath, {
       recursive: true,
     })
   )
-    .filter((path) => path.endsWith(".json"))
+    .filter(
+      (path) =>
+        path.endsWith(".json") && !path.endsWith(commonModesComponentName),
+    )
     .map((path) => ({
       path: `${basePath}/${path}`,
       modeName: path.replace(/\.json$/, "").replace("/", "-"),
@@ -41,10 +48,12 @@ export async function readModes(category: string): Promise<Mode[]> {
 }
 
 export async function buildSimpleModes(category: string, modes: Mode[]) {
+  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
+
   const dictionaries = await Promise.all(
     modes.map(({ path, modeName }) =>
       new StyleDictionary(baseConfig, logOptions).extend({
-        source: [path],
+        source: [commonModesComponentPath, path],
         platforms: {
           css: {
             buildPath: `dist/css/${category}/`,
@@ -83,20 +92,22 @@ export async function buildCSSComposedMode(
   modeName: string,
   modesToCompose: ModeToCSSCompose[],
 ) {
+  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
   const buildPath = `dist/css/${category}/${modeName}/`;
   const dictionaries = await Promise.all(
-    modesToCompose.map(({ path, modeName, options }) =>
+    modesToCompose.map(({ path, modeName, filesOptions, platformOptions }) =>
       new StyleDictionary(baseConfig, logOptions).extend({
-        source: [path],
+        source: [commonModesComponentPath, path],
         platforms: {
           css: {
+            options: platformOptions,
             buildPath,
             files: [
               {
                 destination: `${modeName}.css`,
                 format: "css/advanced",
                 filter: isSemantic,
-                options,
+                options: filesOptions,
               },
             ],
           },
@@ -109,7 +120,20 @@ export async function buildCSSComposedMode(
     dictionaries.map((dictionary) => dictionary.buildPlatform("css")),
   );
 
-  await mergeDirectory(buildPath);
+  const modeNamesInOrder = modesToCompose.some(
+    (mode) => mode.order !== undefined,
+  )
+    ? [...modesToCompose]
+        .sort((a, b) => {
+          if (a.order === undefined && b.order === undefined) return 0;
+          if (a.order === undefined) return 1;
+          if (b.order === undefined) return -1;
+          return a.order - b.order;
+        })
+        .map((mode) => mode.modeName)
+    : null;
+
+  await mergeDirectory(buildPath, modeNamesInOrder);
 }
 
 async function writeFigmaManifest(collection: string, modes: Mode[]) {
@@ -136,13 +160,24 @@ async function writeFigmaManifest(collection: string, modes: Mode[]) {
   );
 }
 
-async function mergeDirectory(directory: string) {
+async function mergeDirectory(
+  directory: string,
+  modeNamesInOrder: string[] | null,
+) {
   const files = (
     await readdir(directory, {
       withFileTypes: true,
       recursive: false,
     })
   ).filter((file) => file.isFile());
+
+  if (modeNamesInOrder) {
+    files.sort((a, b) => {
+      const aName = a.name.replace(/\.css$/, "");
+      const bName = b.name.replace(/\.css$/, "");
+      return modeNamesInOrder.indexOf(aName) - modeNamesInOrder.indexOf(bName);
+    });
+  }
 
   if (files.length === 0) {
     console.warn(`No files found in directory: ${directory}`);
@@ -173,4 +208,8 @@ async function mergeDirectory(directory: string) {
   console.log(`Merged files into: ${outputPath}`);
 
   await rm(directory, { recursive: true });
+}
+
+function getBaseCategoryPath(category: string): string {
+  return `src/tokens/semantic/${category}`;
 }

@@ -3,22 +3,22 @@
  */
 
 :root {
-  --tmp-dimension-spacing-inline-xxx-small: 2rem;
-  --tmp-dimension-spacing-inline-xx-small: 4rem;
-  --tmp-dimension-spacing-inline-x-small: 6rem;
-  --tmp-dimension-spacing-inline-small: 8rem;
-  --tmp-dimension-spacing-inline-medium: 12rem;
-  --tmp-dimension-spacing-inline-large: 16rem;
-  --tmp-dimension-spacing-inline-x-large: 20rem;
-  --tmp-dimension-spacing-inline-xx-large: 24rem;
-  --tmp-dimension-spacing-inline-xxx-large: 32rem;
-  --tmp-dimension-spacing-block-xxx-small: 2rem;
-  --tmp-dimension-spacing-block-xx-small: 4rem;
-  --tmp-dimension-spacing-block-x-small: 6rem;
-  --tmp-dimension-spacing-block-small: 8rem;
-  --tmp-dimension-spacing-block-medium: 12rem;
-  --tmp-dimension-spacing-block-large: 16rem;
-  --tmp-dimension-spacing-block-x-large: 20rem;
-  --tmp-dimension-spacing-block-xx-large: 24rem;
-  --tmp-dimension-spacing-block-xxx-large: 32rem;
+  --tmp-dimension-spacing-inline-xxx-small: 0.125rem;
+  --tmp-dimension-spacing-inline-xx-small: 0.25rem;
+  --tmp-dimension-spacing-inline-x-small: 0.375rem;
+  --tmp-dimension-spacing-inline-small: 0.5rem;
+  --tmp-dimension-spacing-inline-medium: 0.75rem;
+  --tmp-dimension-spacing-inline-large: 1rem;
+  --tmp-dimension-spacing-inline-x-large: 1.25rem;
+  --tmp-dimension-spacing-inline-xx-large: 1.5rem;
+  --tmp-dimension-spacing-inline-xxx-large: 2rem;
+  --tmp-dimension-spacing-block-xxx-small: 0.125rem;
+  --tmp-dimension-spacing-block-xx-small: 0.25rem;
+  --tmp-dimension-spacing-block-x-small: 0.375rem;
+  --tmp-dimension-spacing-block-small: 0.5rem;
+  --tmp-dimension-spacing-block-medium: 0.75rem;
+  --tmp-dimension-spacing-block-large: 1rem;
+  --tmp-dimension-spacing-block-x-large: 1.25rem;
+  --tmp-dimension-spacing-block-xx-large: 1.5rem;
+  --tmp-dimension-spacing-block-xxx-large: 2rem;
 }
