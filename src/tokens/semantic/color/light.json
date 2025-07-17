@@ -152,39 +152,39 @@
           "$value": "rgba(0, 0, 0, 0.56)"
         },
         "positive": {
-          "$value": "#0E8420"
+          "$value": "{tmp.color.positive}"
         },
         "negative": {
-          "$value": "#C7162B"
+          "$value": "{tmp.color.negative}"
         },
         "information": {
-          "$value": "#24598F"
+          "$value": "{tmp.color.information}"
         },
         "caution": {
-          "$value": "#CC7900"
+          "$value": "{tmp.color.caution}"
         }
       },
       "icon": {
         "default": {
-          "$value": "#000000"
+          "$value": "{tmp.color.text.default}"
         },
         "muted": {
-          "$value": "rgba(0, 0, 0, 0.60)"
+          "$value": "{tmp.color.text.muted}"
         },
         "positive": {
-          "$value": "#0e8420"
+          "$value": "{tmp.color.positive}"
         },
         "negative": {
-          "$value": "#c7162b"
+          "$value": "{tmp.color.negative}"
         },
         "information": {
-          "$value": "#24598f"
+          "$value": "{tmp.color.information}"
         },
         "caution": {
-          "$value": "#cc7900"
+          "$value": "{tmp.color.caution}"
         },
         "link": {
-          "$value": "#0066cc"
+          "$value": "{tmp.color.text.link.default}"
         },
         "status": {
           "shade-1": {

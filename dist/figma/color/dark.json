@@ -211,31 +211,31 @@
       },
       "icon": {
         "default": {
-          "$value": "#000000",
+          "$value": "#ffffff",
           "$type": "color"
         },
         "muted": {
-          "$value": "rgba(0, 0, 0, 0.60)",
+          "$value": "rgba(255, 255, 255, 0.6)",
           "$type": "color"
         },
         "positive": {
-          "$value": "#0e8420",
+          "$value": "#62A36C",
           "$type": "color"
         },
         "negative": {
-          "$value": "#c7162b",
+          "$value": "#D17B85",
           "$type": "color"
         },
         "information": {
-          "$value": "#24598f",
+          "$value": "#5EA6ED",
           "$type": "color"
         },
         "caution": {
-          "$value": "#cc7900",
+          "$value": "#C48831",
           "$type": "color"
         },
         "link": {
-          "$value": "#0066cc",
+          "$value": "#6699cc",
           "$type": "color"
         },
         "status": {
