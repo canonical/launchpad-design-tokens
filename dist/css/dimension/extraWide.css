@@ -3,8 +3,8 @@
  */
 
 :root {
-  --dimension-stroke-thickness-medium: 1px;
-  --dimension-stroke-thickness-large: 2px;
+  --dimension-stroke-thickness-default: 1px;
+  --dimension-stroke-thickness-large: 3px;
   --dimension-radius-none: 0px;
   --dimension-radius-small: 0px;
   --dimension-radius-medium: 0px;
