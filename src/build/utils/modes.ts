@@ -100,7 +100,10 @@ export async function buildCSSComposedMode(
         source: [commonModesComponentPath, path],
         platforms: {
           css: {
-            options: platformOptions,
+            options: {
+              ...baseConfig.platforms.css.options,
+              ...platformOptions,
+            },
             buildPath,
             files: [
               {

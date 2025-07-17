@@ -45,17 +45,6 @@
   --tmp-color-border-high-contrast: #939393;
   --tmp-color-border-low-contrast: rgba(255, 255, 255, 0.1);
   --tmp-color-border-neutral: #a6a6a6;
-  --tmp-color-border-positive: #62a36c;
-  --tmp-color-border-negative: #d17b85;
-  --tmp-color-border-information: #5ea6ed;
-  --tmp-color-border-caution: #c48831;
-  --tmp-color-icon-default: #ffffff;
-  --tmp-color-icon-muted: rgba(255, 255, 255, 0.6);
-  --tmp-color-icon-positive: #62a36c;
-  --tmp-color-icon-negative: #d17b85;
-  --tmp-color-icon-information: #5ea6ed;
-  --tmp-color-icon-caution: #c48831;
-  --tmp-color-icon-link: #6699cc;
   --tmp-color-icon-status-shade-1: #f7f7f7;
   --tmp-color-icon-status-shade-2: #d9d9d9;
   --tmp-color-icon-status-queued: #808080;
@@ -71,4 +60,15 @@
   --tmp-color-fill-negative-default: #a11223;
   --tmp-color-fill-negative-hover: #8a0f1e;
   --tmp-color-fill-negative-active: #7c0e1b;
+  --tmp-color-border-positive: var(--tmp-color-positive);
+  --tmp-color-border-negative: var(--tmp-color-negative);
+  --tmp-color-border-information: var(--tmp-color-information);
+  --tmp-color-border-caution: var(--tmp-color-caution);
+  --tmp-color-icon-default: var(--tmp-color-text-default);
+  --tmp-color-icon-muted: var(--tmp-color-text-muted);
+  --tmp-color-icon-positive: var(--tmp-color-positive);
+  --tmp-color-icon-negative: var(--tmp-color-negative);
+  --tmp-color-icon-information: var(--tmp-color-information);
+  --tmp-color-icon-caution: var(--tmp-color-caution);
+  --tmp-color-icon-link: var(--tmp-color-text-link-default);
 }

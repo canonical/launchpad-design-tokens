@@ -1,11 +1,17 @@
-import type { Config } from "style-dictionary";
+import type {
+  Config,
+  TransformedToken,
+  TransformedTokens,
+} from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
+import { getReferences, usesReferences } from "style-dictionary/utils";
 
 import {
   transformGroups,
   transformTypes,
   transforms,
 } from "style-dictionary/enums";
+import { isSemantic } from "./filters.js";
 
 enum customTransforms {
   flattenPropertiesDimension = "flatten-properties-dimension",
@@ -32,6 +38,10 @@ export const baseConfig = {
   include: ["src/tokens/primitives/**/*.json"],
   platforms: {
     css: {
+      options: {
+        outputReferences: (token, { dictionary: { tokens } }) =>
+          areReferencedOnlySemantic(token, tokens),
+      },
       basePxFontSize: 16,
       transformGroup: transformGroups.css,
       transforms: [customTransforms.flattenPropertiesDimension],
@@ -55,3 +65,17 @@ export const baseConfig = {
 export const logOptions = {
   verbosity: "verbose",
 } satisfies ConstructorParameters<typeof StyleDictionary>[1];
+
+function areReferencedOnlySemantic(
+  token: TransformedToken,
+  tokens: TransformedTokens,
+) {
+  try {
+    const referenced = getReferences(token.original.$value, tokens);
+    return referenced.every(isSemantic);
+  } catch {
+    // Getting references can fail if the referenced tokens are filtered out.
+    // But if that's the case, they were primitive in the first place, and we don't want the references
+    return false;
+  }
+}
