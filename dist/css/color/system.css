@@ -8,7 +8,7 @@
     --tmp-color-negative: #d17b85;
     --tmp-color-information: #5ea6ed;
     --tmp-color-caution: #c48831;
-    --tmp-color-text: #ffffff;
+    --tmp-color-text-default: #ffffff;
     --tmp-color-text-muted: rgba(255, 255, 255, 0.6);
     --tmp-color-text-inactive: rgba(255, 255, 255, 0.75);
     --tmp-color-text-reversed: #000000;
@@ -32,7 +32,7 @@
     --tmp-color-background-information-active: rgba(0, 137, 255, 0.36);
     --tmp-color-background-caution-default: rgba(255, 115, 0, 0.2);
     --tmp-color-background-caution-hover: rgba(255, 143, 51, 0.3);
-    --tmp-color-background-caution-caution-active: rgba(255, 115, 0, 0.36);
+    --tmp-color-background-caution-active: rgba(255, 115, 0, 0.36);
     --tmp-color-background-input: #2f2f2f;
     --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
     --tmp-color-background-button-positive-default: #008013;
@@ -79,7 +79,7 @@
     --tmp-color-negative: #c7162b;
     --tmp-color-information: #24598f;
     --tmp-color-caution: #cc7900;
-    --tmp-color-text: #000000;
+    --tmp-color-text-default: #000000;
     --tmp-color-text-muted: rgba(0, 0, 0, 0.6);
     --tmp-color-text-inactive: rgba(0, 0, 0, 0.75);
     --tmp-color-text-reversed: #ffffff;
@@ -103,7 +103,7 @@
     --tmp-color-background-information-active: rgba(0, 99, 199, 0.18);
     --tmp-color-background-caution-default: rgba(199, 90, 0, 0.1);
     --tmp-color-background-caution-hover: rgba(199, 90, 0, 0.15);
-    --tmp-color-background-caution-caution-active: rgba(199, 90, 0, 0.18);
+    --tmp-color-background-caution-active: rgba(199, 90, 0, 0.18);
     --tmp-color-background-input: #f5f5f5;
     --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
     --tmp-color-background-button-positive-default: #0e8420;

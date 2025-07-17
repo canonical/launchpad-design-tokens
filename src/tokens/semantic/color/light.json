@@ -15,175 +15,205 @@
         "$value": "#CC7900"
       },
       "text": {
-        "$value": "#000000"
+        "default": {
+          "$value": "#000000"
+        },
+        "muted": {
+          "$value": "rgba(0, 0, 0, 0.60)"
+        },
+        "inactive": {
+          "$value": "rgba(0, 0, 0, 0.75)"
+        },
+        "reversed": {
+          "$value": "#ffffff"
+        },
+        "link": {
+          "default": {
+            "$value": "#0066cc"
+          },
+          "visited": {
+            "$value": "#7d42b8"
+          }
+        }
       },
-      "text-muted": {
-        "$value": "rgba(0, 0, 0, 0.60)"
+      "background": {
+        "default": {
+          "$value": "#ffffff"
+        },
+        "hover": {
+          "$value": "#f2f2f2"
+        },
+        "active": {
+          "$value": "#ebebeb"
+        },
+        "alt": {
+          "$value": "#f7f7f7"
+        },
+        "neutral": {
+          "default": {
+            "$value": "#f2f2f2"
+          },
+          "hover": {
+            "$value": "#e5e5e5"
+          },
+          "active": {
+            "$value": "#dedede"
+          }
+        },
+        "positive": {
+          "default": {
+            "$value": "rgba(10, 189, 37, 0.10)"
+          },
+          "hover": {
+            "$value": "rgba(0, 199, 30, 0.15)"
+          },
+          "active": {
+            "$value": "rgba(0, 199, 30, 0.18)"
+          }
+        },
+        "negative": {
+          "default": {
+            "$value": "rgba(199, 0, 20, 0.10)"
+          },
+          "hover": {
+            "$value": "rgba(199, 0, 20, 0.15)"
+          },
+          "active": {
+            "$value": "rgba(199, 0, 20, 0.18)"
+          }
+        },
+        "information": {
+          "default": {
+            "$value": "rgba(0, 99, 199, 0.10)"
+          },
+          "hover": {
+            "$value": "rgba(0, 99, 199, 0.15)"
+          },
+          "active": {
+            "$value": "rgba(0, 99, 199, 0.18)"
+          }
+        },
+        "caution": {
+          "default": {
+            "$value": "rgba(199, 90, 0, 0.10)"
+          },
+          "hover": {
+            "$value": "rgba(199, 90, 0, 0.15)"
+          },
+          "active": {
+            "$value": "rgba(199, 90, 0, 0.18)"
+          }
+        },
+        "input": {
+          "$value": "#f5f5f5"
+        },
+        "overlay": {
+          "$value": "rgba(17, 17, 17, 0.85)"
+        },
+        "button": {
+          "positive": {
+            "default": {
+              "$value": "#0e8420"
+            },
+            "hover": {
+              "$value": "#0c6d1a"
+            },
+            "active": {
+              "$value": "#0a5f17"
+            }
+          },
+          "negative": {
+            "default": {
+              "$value": "#c7162b"
+            },
+            "hover": {
+              "$value": "#b01326"
+            },
+            "active": {
+              "$value": "#a21223"
+            }
+          }
+        }
       },
-      "text-inactive": {
-        "$value": "rgba(0, 0, 0, 0.75)"
+      "border": {
+        "default": {
+          "$value": "rgba(0, 0, 0, 0.20)"
+        },
+        "high-contrast": {
+          "$value": "#707070"
+        },
+        "low-contrast": {
+          "$value": "rgba(0, 0, 0, 0.10)"
+        },
+        "neutral": {
+          "$value": "rgba(0, 0, 0, 0.56)"
+        },
+        "positive": {
+          "$value": "#0E8420"
+        },
+        "negative": {
+          "$value": "#C7162B"
+        },
+        "information": {
+          "$value": "#24598F"
+        },
+        "caution": {
+          "$value": "#CC7900"
+        }
       },
-      "text-reversed": {
-        "$value": "#ffffff"
-      },
-      "text-link-default": {
-        "$value": "#0066cc"
-      },
-      "text-link-visited": {
-        "$value": "#7d42b8"
-      },
-      "background-default": {
-        "$value": "#ffffff"
-      },
-      "background-hover": {
-        "$value": "#f2f2f2"
-      },
-      "background-active": {
-        "$value": "#ebebeb"
-      },
-      "background-alt": {
-        "$value": "#f7f7f7"
-      },
-      "background-neutral-default": {
-        "$value": "#f2f2f2"
-      },
-      "background-neutral-hover": {
-        "$value": "#e5e5e5"
-      },
-      "background-neutral-active": {
-        "$value": "#dedede"
-      },
-      "background-positive-default": {
-        "$value": "rgba(10, 189, 37, 0.10)"
-      },
-      "background-positive-hover": {
-        "$value": "rgba(0, 199, 30, 0.15)"
-      },
-      "background-positive-active": {
-        "$value": "rgba(0, 199, 30, 0.18)"
-      },
-      "background-negative-default": {
-        "$value": "rgba(199, 0, 20, 0.10)"
-      },
-      "background-negative-hover": {
-        "$value": "rgba(199, 0, 20, 0.15)"
-      },
-      "background-negative-active": {
-        "$value": "rgba(199, 0, 20, 0.18)"
-      },
-      "background-information-default": {
-        "$value": "rgba(0, 99, 199, 0.10)"
-      },
-      "background-information-hover": {
-        "$value": "rgba(0, 99, 199, 0.15)"
-      },
-      "background-information-active": {
-        "$value": "rgba(0, 99, 199, 0.18)"
-      },
-      "background-caution-default": {
-        "$value": "rgba(199, 90, 0, 0.10)"
-      },
-      "background-caution-hover": {
-        "$value": "rgba(199, 90, 0, 0.15)"
-      },
-      "background-caution-caution-active": {
-        "$value": "rgba(199, 90, 0, 0.18)"
-      },
-      "background-input": {
-        "$value": "#f5f5f5"
-      },
-      "background-overlay": {
-        "$value": "rgba(17, 17, 17, 0.85)"
-      },
-      "background-button-positive-default": {
-        "$value": "#0e8420"
-      },
-      "background-button-positive-hover": {
-        "$value": "#0c6d1a"
-      },
-      "background-button-positive-active": {
-        "$value": "#0a5f17"
-      },
-      "background-button-negative-default": {
-        "$value": "#c7162b"
-      },
-      "background-button-negative-hover": {
-        "$value": "#b01326"
-      },
-      "background-button-negative-active": {
-        "$value": "#a21223"
-      },
-      "border-default": {
-        "$value": "rgba(0, 0, 0, 0.20)"
-      },
-      "border-high-contrast": {
-        "$value": "#707070"
-      },
-      "border-low-contrast": {
-        "$value": "rgba(0, 0, 0, 0.10)"
-      },
-      "border-neutral": {
-        "$value": "rgba(0, 0, 0, 0.56)"
-      },
-      "border-positive": {
-        "$value": "#0E8420"
-      },
-      "border-negative": {
-        "$value": "#C7162B"
-      },
-      "border-information": {
-        "$value": "#24598F"
-      },
-      "border-caution": {
-        "$value": "#CC7900"
-      },
-      "icon-default": {
-        "$value": "#000000"
-      },
-      "icon-muted": {
-        "$value": "rgba(0, 0, 0, 0.60)"
-      },
-      "icon-positive": {
-        "$value": "#0e8420"
-      },
-      "icon-negative": {
-        "$value": "#c7162b"
-      },
-      "icon-information": {
-        "$value": "#24598f"
-      },
-      "icon-caution": {
-        "$value": "#cc7900"
-      },
-      "icon-link": {
-        "$value": "#0066cc"
-      },
-      "icon-status-shade-1": {
-        "$value": "#f7f7f7"
-      },
-      "icon-status-shade-2": {
-        "$value": "#d9d9d9"
-      },
-      "icon-status-queued": {
-        "$value": "#808080"
-      },
-      "icon-canonical-logo": {
-        "$value": "#ffffff"
-      },
-      "icon-button-brand": {
-        "$value": "#ffffff"
-      },
-      "icon-button-default": {
-        "$value": "#000000"
-      },
-      "icon-button-base": {
-        "$value": "#000000"
-      },
-      "icon-button-positive": {
-        "$value": "#ffffff"
-      },
-      "icon-button-negative": {
-        "$value": "#ffffff"
+      "icon": {
+        "default": {
+          "$value": "#000000"
+        },
+        "muted": {
+          "$value": "rgba(0, 0, 0, 0.60)"
+        },
+        "positive": {
+          "$value": "#0e8420"
+        },
+        "negative": {
+          "$value": "#c7162b"
+        },
+        "information": {
+          "$value": "#24598f"
+        },
+        "caution": {
+          "$value": "#cc7900"
+        },
+        "link": {
+          "$value": "#0066cc"
+        },
+        "status": {
+          "shade-1": {
+            "$value": "#f7f7f7"
+          },
+          "shade-2": {
+            "$value": "#d9d9d9"
+          },
+          "queued": {
+            "$value": "#808080"
+          }
+        },
+        "canonical-logo": {
+          "$value": "#ffffff"
+        },
+        "button": {
+          "brand": {
+            "$value": "#ffffff"
+          },
+          "default": {
+            "$value": "#000000"
+          },
+          "base": {
+            "$value": "#000000"
+          },
+          "positive": {
+            "$value": "#ffffff"
+          },
+          "negative": {
+            "$value": "#ffffff"
+          }
+        }
       }
     }
   }

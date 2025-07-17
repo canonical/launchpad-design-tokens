@@ -201,23 +201,23 @@
         }
       },
       "weight": {
-        "180": {
+        "extraThin": {
           "$value": 180,
           "$type": "fontWeight"
         },
-        "200": {
+        "thin": {
           "$value": 200,
           "$type": "fontWeight"
         },
-        "300": {
+        "light": {
           "$value": 300,
           "$type": "fontWeight"
         },
-        "400": {
+        "regular": {
           "$value": 400,
           "$type": "fontWeight"
         },
-        "450": {
+        "medium": {
           "$value": 450,
           "$type": "fontWeight"
         }
