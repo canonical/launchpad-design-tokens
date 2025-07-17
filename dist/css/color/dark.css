@@ -41,6 +41,7 @@
   --tmp-color-background-button-negative-hover: #8a0f1e;
   --tmp-color-background-button-negative-active: #7c0e1b;
   --tmp-color-border-default: rgba(255, 255, 255, 0.2);
+  --tmp-color-border-highlight: #ffffff;
   --tmp-color-border-high-contrast: #939393;
   --tmp-color-border-low-contrast: rgba(255, 255, 255, 0.1);
   --tmp-color-border-neutral: #a6a6a6;
@@ -64,4 +65,10 @@
   --tmp-color-icon-button-base: #000000;
   --tmp-color-icon-button-positive: #ffffff;
   --tmp-color-icon-button-negative: #ffffff;
+  --tmp-color-fill-positive-default: #008013;
+  --tmp-color-fill-positive-hover: #00670f;
+  --tmp-color-fill-positive-active: #00570d;
+  --tmp-color-fill-negative-default: #a11223;
+  --tmp-color-fill-negative-hover: #8a0f1e;
+  --tmp-color-fill-negative-active: #7c0e1b;
 }

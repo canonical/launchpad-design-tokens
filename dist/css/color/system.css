@@ -42,6 +42,7 @@
     --tmp-color-background-button-negative-hover: #8a0f1e;
     --tmp-color-background-button-negative-active: #7c0e1b;
     --tmp-color-border-default: rgba(255, 255, 255, 0.2);
+    --tmp-color-border-highlight: #ffffff;
     --tmp-color-border-high-contrast: #939393;
     --tmp-color-border-low-contrast: rgba(255, 255, 255, 0.1);
     --tmp-color-border-neutral: #a6a6a6;
@@ -65,6 +66,12 @@
     --tmp-color-icon-button-base: #000000;
     --tmp-color-icon-button-positive: #ffffff;
     --tmp-color-icon-button-negative: #ffffff;
+    --tmp-color-fill-positive-default: #008013;
+    --tmp-color-fill-positive-hover: #00670f;
+    --tmp-color-fill-positive-active: #00570d;
+    --tmp-color-fill-negative-default: #a11223;
+    --tmp-color-fill-negative-hover: #8a0f1e;
+    --tmp-color-fill-negative-active: #7c0e1b;
   }
 }
 
@@ -113,6 +120,7 @@
     --tmp-color-background-button-negative-hover: #b01326;
     --tmp-color-background-button-negative-active: #a21223;
     --tmp-color-border-default: rgba(0, 0, 0, 0.2);
+    --tmp-color-border-highlight: #000000;
     --tmp-color-border-high-contrast: #707070;
     --tmp-color-border-low-contrast: rgba(0, 0, 0, 0.1);
     --tmp-color-border-neutral: rgba(0, 0, 0, 0.56);
@@ -136,5 +144,11 @@
     --tmp-color-icon-button-base: #000000;
     --tmp-color-icon-button-positive: #ffffff;
     --tmp-color-icon-button-negative: #ffffff;
+    --tmp-color-fill-positive-default: #0e8420;
+    --tmp-color-fill-positive-hover: #0c6d1a;
+    --tmp-color-fill-positive-active: #0a5f17;
+    --tmp-color-fill-negative-default: #c7162b;
+    --tmp-color-fill-negative-hover: #b01326;
+    --tmp-color-fill-negative-active: #a21223;
   }
 }

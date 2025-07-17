@@ -139,6 +139,9 @@
         "default": {
           "$value": "rgba(0, 0, 0, 0.20)"
         },
+        "highlight": {
+          "$value": "#000000"
+        },
         "high-contrast": {
           "$value": "#707070"
         },
@@ -212,6 +215,30 @@
           },
           "negative": {
             "$value": "#ffffff"
+          }
+        }
+      },
+      "fill": {
+        "positive": {
+          "default": {
+            "$value": "{tmp.color.positive}"
+          },
+          "hover": {
+            "$value": "#0c6d1a"
+          },
+          "active": {
+            "$value": "#0a5f17"
+          }
+        },
+        "negative": {
+          "default": {
+            "$value": "{tmp.color.negative}"
+          },
+          "hover": {
+            "$value": "#b01326"
+          },
+          "active": {
+            "$value": "#a21223"
           }
         }
       }
