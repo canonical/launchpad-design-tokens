@@ -2,7 +2,7 @@
   "dimension": {
     "$type": "dimension",
     "stroke-thickness": {
-      "medium": {
+      "default": {
         "$value": {
           "value": 1,
           "unit": "px"
@@ -10,7 +10,7 @@
       },
       "large": {
         "$value": {
-          "value": 2,
+          "value": 3,
           "unit": "px"
         }
       }

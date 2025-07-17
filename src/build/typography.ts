@@ -20,9 +20,6 @@ await buildSimpleModes(category, simpleModes);
     {
       modeName: "narrow",
       order: 1,
-      platformOptions: {
-        outputReferences: (token) => token.$type === "typography",
-      },
     },
     {
       modeName: "medium",

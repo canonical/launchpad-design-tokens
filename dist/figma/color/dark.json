@@ -176,6 +176,10 @@
           "$value": "rgba(255, 255, 255, 0.20)",
           "$type": "color"
         },
+        "highlight": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
         "high-contrast": {
           "$value": "#939393",
           "$type": "color"
@@ -207,31 +211,31 @@
       },
       "icon": {
         "default": {
-          "$value": "#000000",
+          "$value": "#ffffff",
           "$type": "color"
         },
         "muted": {
-          "$value": "rgba(0, 0, 0, 0.60)",
+          "$value": "rgba(255, 255, 255, 0.6)",
           "$type": "color"
         },
         "positive": {
-          "$value": "#0e8420",
+          "$value": "#62A36C",
           "$type": "color"
         },
         "negative": {
-          "$value": "#c7162b",
+          "$value": "#D17B85",
           "$type": "color"
         },
         "information": {
-          "$value": "#24598f",
+          "$value": "#5EA6ED",
           "$type": "color"
         },
         "caution": {
-          "$value": "#cc7900",
+          "$value": "#C48831",
           "$type": "color"
         },
         "link": {
-          "$value": "#0066cc",
+          "$value": "#6699cc",
           "$type": "color"
         },
         "status": {
@@ -271,6 +275,36 @@
           },
           "negative": {
             "$value": "#ffffff",
+            "$type": "color"
+          }
+        }
+      },
+      "fill": {
+        "positive": {
+          "default": {
+            "$value": "#008013",
+            "$type": "color"
+          },
+          "hover": {
+            "$value": "#00670f",
+            "$type": "color"
+          },
+          "active": {
+            "$value": "#00570d",
+            "$type": "color"
+          }
+        },
+        "negative": {
+          "default": {
+            "$value": "#a11223",
+            "$type": "color"
+          },
+          "hover": {
+            "$value": "#8a0f1e",
+            "$type": "color"
+          },
+          "active": {
+            "$value": "#7c0e1b",
             "$type": "color"
           }
         }

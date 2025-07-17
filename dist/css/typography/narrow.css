@@ -3,16 +3,6 @@
  */
 
 :root {
-  --tmp-typography-paragraph-xs: 400 0.625rem/0.9375rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --tmp-typography-paragraph-s: 400 0.75rem/1.125rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --tmp-typography-paragraph-default: 400 0.875rem/1.3125rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --tmp-typography-code-xs: 400 0.625rem/0.9375rem 'Ubuntu Sans Mono', 'Ubuntu Mono', Consolas, Monaco, Courier, monospace;
-  --tmp-typography-code-s: 400 0.75rem/1.125rem 'Ubuntu Sans Mono', 'Ubuntu Mono', Consolas, Monaco, Courier, monospace;
-  --tmp-typography-code-default: 400 0.875rem/1.3125rem 'Ubuntu Sans Mono', 'Ubuntu Mono', Consolas, Monaco, Courier, monospace;
-  --tmp-typography-h3: 450 1.5rem/1.75rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --tmp-typography-h4: 200 1.5rem/1.75rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --tmp-typography-h5: 450 1.3125rem/1.75rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --tmp-typography-h6: 300 1.3125rem/1.75rem 'Ubuntu Sans', Ubuntu, -apple-system, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --tmp-typography-weight-extra-thin: 180;
   --tmp-typography-weight-thin: 200;
   --tmp-typography-weight-light: 300;
@@ -33,4 +23,14 @@
   --tmp-typography-line-height-s: 1.125rem;
   --tmp-typography-line-height-m: 1.3125rem;
   --tmp-typography-line-height-l: 1.75rem;
+  --tmp-typography-paragraph-xs: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-s: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-default: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-default);
+  --tmp-typography-code-xs: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-mono);
+  --tmp-typography-code-s: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-mono);
+  --tmp-typography-code-default: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-mono);
+  --tmp-typography-h3: var(--tmp-typography-weight-medium) var(--tmp-typography-font-size-xl)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h4: var(--tmp-typography-weight-thin) var(--tmp-typography-font-size-xl)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h5: var(--tmp-typography-weight-medium) var(--tmp-typography-font-size-l)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h6: var(--tmp-typography-weight-light) var(--tmp-typography-font-size-l)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
 }

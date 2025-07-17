@@ -139,6 +139,9 @@
         "default": {
           "$value": "rgba(0, 0, 0, 0.20)"
         },
+        "highlight": {
+          "$value": "#000000"
+        },
         "high-contrast": {
           "$value": "#707070"
         },
@@ -149,39 +152,39 @@
           "$value": "rgba(0, 0, 0, 0.56)"
         },
         "positive": {
-          "$value": "#0E8420"
+          "$value": "{tmp.color.positive}"
         },
         "negative": {
-          "$value": "#C7162B"
+          "$value": "{tmp.color.negative}"
         },
         "information": {
-          "$value": "#24598F"
+          "$value": "{tmp.color.information}"
         },
         "caution": {
-          "$value": "#CC7900"
+          "$value": "{tmp.color.caution}"
         }
       },
       "icon": {
         "default": {
-          "$value": "#000000"
+          "$value": "{tmp.color.text.default}"
         },
         "muted": {
-          "$value": "rgba(0, 0, 0, 0.60)"
+          "$value": "{tmp.color.text.muted}"
         },
         "positive": {
-          "$value": "#0e8420"
+          "$value": "{tmp.color.positive}"
         },
         "negative": {
-          "$value": "#c7162b"
+          "$value": "{tmp.color.negative}"
         },
         "information": {
-          "$value": "#24598f"
+          "$value": "{tmp.color.information}"
         },
         "caution": {
-          "$value": "#cc7900"
+          "$value": "{tmp.color.caution}"
         },
         "link": {
-          "$value": "#0066cc"
+          "$value": "{tmp.color.text.link.default}"
         },
         "status": {
           "shade-1": {
@@ -212,6 +215,30 @@
           },
           "negative": {
             "$value": "#ffffff"
+          }
+        }
+      },
+      "fill": {
+        "positive": {
+          "default": {
+            "$value": "{tmp.color.positive}"
+          },
+          "hover": {
+            "$value": "#0c6d1a"
+          },
+          "active": {
+            "$value": "#0a5f17"
+          }
+        },
+        "negative": {
+          "default": {
+            "$value": "{tmp.color.negative}"
+          },
+          "hover": {
+            "$value": "#b01326"
+          },
+          "active": {
+            "$value": "#a21223"
           }
         }
       }

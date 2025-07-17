@@ -176,6 +176,10 @@
           "$value": "rgba(0, 0, 0, 0.20)",
           "$type": "color"
         },
+        "highlight": {
+          "$value": "#000000",
+          "$type": "color"
+        },
         "high-contrast": {
           "$value": "#707070",
           "$type": "color"
@@ -215,19 +219,19 @@
           "$type": "color"
         },
         "positive": {
-          "$value": "#0e8420",
+          "$value": "#0E8420",
           "$type": "color"
         },
         "negative": {
-          "$value": "#c7162b",
+          "$value": "#C7162B",
           "$type": "color"
         },
         "information": {
-          "$value": "#24598f",
+          "$value": "#24598F",
           "$type": "color"
         },
         "caution": {
-          "$value": "#cc7900",
+          "$value": "#CC7900",
           "$type": "color"
         },
         "link": {
@@ -271,6 +275,36 @@
           },
           "negative": {
             "$value": "#ffffff",
+            "$type": "color"
+          }
+        }
+      },
+      "fill": {
+        "positive": {
+          "default": {
+            "$value": "#0E8420",
+            "$type": "color"
+          },
+          "hover": {
+            "$value": "#0c6d1a",
+            "$type": "color"
+          },
+          "active": {
+            "$value": "#0a5f17",
+            "$type": "color"
+          }
+        },
+        "negative": {
+          "default": {
+            "$value": "#C7162B",
+            "$type": "color"
+          },
+          "hover": {
+            "$value": "#b01326",
+            "$type": "color"
+          },
+          "active": {
+            "$value": "#a21223",
             "$type": "color"
           }
         }
