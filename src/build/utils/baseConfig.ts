@@ -1,10 +1,11 @@
 import type {
   Config,
+  Dictionary,
+  PreprocessedTokens,
   TransformedToken,
-  TransformedTokens,
 } from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
-import { getReferences, usesReferences } from "style-dictionary/utils";
+import { getReferences } from "style-dictionary/utils";
 
 import {
   transformGroups,
@@ -17,7 +18,54 @@ enum customTransforms {
   flattenPropertiesDimension = "flatten-properties-dimension",
 }
 
-// This is needed, until https://github.com/style-dictionary/style-dictionary/issues/1398 is resolved
+export enum customFormats {
+  figma = "figma",
+}
+
+/**
+ * This is needed, because {@link https://styledictionary.com/reference/hooks/formats/predefined/#json|build in JSON format} does not support controlling whether references are output or not
+ */
+StyleDictionary.registerFormat({
+  name: customFormats.figma,
+  format: ({ dictionary, options: { outputReferences } }) => {
+    function recurse(
+      currentObject: PreprocessedTokens,
+      targetObject: PreprocessedTokens,
+    ) {
+      for (const key in currentObject) {
+        const value = currentObject[key];
+
+        if (isToken(value)) {
+          let { $value, $type, $description, original } = value;
+
+          if (
+            outputReferences &&
+            (typeof outputReferences !== "function" ||
+              outputReferences(value, { dictionary }))
+          ) {
+            $value = original.$value;
+          }
+
+          targetObject[key] = { $value, $type, $description };
+        } else {
+          if (!targetObject[key]) {
+            targetObject[key] = {};
+          }
+          recurse(value, targetObject[key]);
+        }
+      }
+    }
+
+    const output: PreprocessedTokens = {};
+    recurse(dictionary.tokens, output);
+
+    return `${JSON.stringify(output, null, 2)}\n`;
+  },
+});
+
+/**
+ * This is needed, until {@link https://github.com/style-dictionary/style-dictionary/issues/1398} is resolved
+ */
 StyleDictionary.registerTransform({
   name: customTransforms.flattenPropertiesDimension,
   transitive: false,
@@ -39,8 +87,7 @@ export const baseConfig = {
   platforms: {
     css: {
       options: {
-        outputReferences: (token, { dictionary: { tokens } }) =>
-          areReferencedOnlySemantic(token, tokens),
+        outputReferences: areReferencedOnlySemantic,
       },
       basePxFontSize: 16,
       transformGroup: transformGroups.css,
@@ -48,9 +95,7 @@ export const baseConfig = {
     },
     figma: {
       options: {
-        stripMeta: {
-          keep: ["$type", "$value"],
-        },
+        outputReferences: areReferencedOnlySemantic,
       },
       basePxFontSize: 16,
       transforms: [
@@ -68,14 +113,27 @@ export const logOptions = {
 
 function areReferencedOnlySemantic(
   token: TransformedToken,
-  tokens: TransformedTokens,
-) {
-  try {
-    const referenced = getReferences(token.original.$value, tokens);
-    return referenced.every(isSemantic);
-  } catch {
-    // Getting references can fail if the referenced tokens are filtered out.
-    // But if that's the case, they were primitive in the first place, and we don't want the references
-    return false;
-  }
+  options: {
+    dictionary: Dictionary;
+  },
+): boolean {
+  const {
+    dictionary: { unfilteredTokens, tokens },
+  } = options;
+
+  const referenced = getReferences(
+    token.original.$value,
+    unfilteredTokens ?? tokens,
+  );
+
+  return referenced.length > 0 && referenced.every(isSemantic);
+}
+
+function isToken(object: PreprocessedTokens): object is TransformedToken {
+  return (
+    typeof object === "object" &&
+    object !== null &&
+    Object.hasOwn(object, "$type") &&
+    typeof object.$type === "string"
+  );
 }
