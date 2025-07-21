@@ -1,6 +1,20 @@
 {
   "tmp": {
     "color": {
+      "brand": {
+        "default": {
+          "$value": "#e95420",
+          "$type": "color"
+        },
+        "hover": {
+          "$value": "#da4816",
+          "$type": "color"
+        },
+        "active": {
+          "$value": "#cc4414",
+          "$type": "color"
+        }
+      },
       "positive": {
         "$value": "#62A36C",
         "$type": "color"
@@ -139,36 +153,6 @@
         "overlay": {
           "$value": "rgba(17, 17, 17, 0.85)",
           "$type": "color"
-        },
-        "button": {
-          "positive": {
-            "default": {
-              "$value": "#008013",
-              "$type": "color"
-            },
-            "hover": {
-              "$value": "#00670f",
-              "$type": "color"
-            },
-            "active": {
-              "$value": "#00570d",
-              "$type": "color"
-            }
-          },
-          "negative": {
-            "default": {
-              "$value": "#a11223",
-              "$type": "color"
-            },
-            "hover": {
-              "$value": "#8a0f1e",
-              "$type": "color"
-            },
-            "active": {
-              "$value": "#7c0e1b",
-              "$type": "color"
-            }
-          }
         }
       },
       "border": {
@@ -249,32 +233,6 @@
           },
           "queued": {
             "$value": "#808080",
-            "$type": "color"
-          }
-        },
-        "canonical-logo": {
-          "$value": "#ffffff",
-          "$type": "color"
-        },
-        "button": {
-          "brand": {
-            "$value": "#ffffff",
-            "$type": "color"
-          },
-          "default": {
-            "$value": "#000000",
-            "$type": "color"
-          },
-          "base": {
-            "$value": "#000000",
-            "$type": "color"
-          },
-          "positive": {
-            "$value": "#ffffff",
-            "$type": "color"
-          },
-          "negative": {
-            "$value": "#ffffff",
             "$type": "color"
           }
         }

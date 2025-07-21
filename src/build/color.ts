@@ -1,3 +1,4 @@
+import type { Category } from "./utils/consts.js";
 import {
   type ModeToCSSCompose,
   buildCSSComposedMode,
@@ -5,7 +6,7 @@ import {
   readModes,
 } from "./utils/modes.js";
 
-const category = "color";
+const category: Category = "color";
 const simpleModes = await readModes(category);
 
 await buildSimpleModes(category, simpleModes);

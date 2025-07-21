@@ -3,6 +3,9 @@
  */
 
 :root {
+  --tmp-color-brand-default: #e95420;
+  --tmp-color-brand-hover: #da4816;
+  --tmp-color-brand-active: #cc4414;
   --tmp-color-positive: #0e8420;
   --tmp-color-negative: #c7162b;
   --tmp-color-information: #24598f;
@@ -34,12 +37,6 @@
   --tmp-color-background-caution-active: rgba(199, 90, 0, 0.18);
   --tmp-color-background-input: #f5f5f5;
   --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
-  --tmp-color-background-button-positive-default: #0e8420;
-  --tmp-color-background-button-positive-hover: #0c6d1a;
-  --tmp-color-background-button-positive-active: #0a5f17;
-  --tmp-color-background-button-negative-default: #c7162b;
-  --tmp-color-background-button-negative-hover: #b01326;
-  --tmp-color-background-button-negative-active: #a21223;
   --tmp-color-border-default: rgba(0, 0, 0, 0.2);
   --tmp-color-border-highlight: #000000;
   --tmp-color-border-high-contrast: #707070;
@@ -48,12 +45,6 @@
   --tmp-color-icon-status-shade-1: #f7f7f7;
   --tmp-color-icon-status-shade-2: #d9d9d9;
   --tmp-color-icon-status-queued: #808080;
-  --tmp-color-icon-canonical-logo: #ffffff;
-  --tmp-color-icon-button-brand: #ffffff;
-  --tmp-color-icon-button-default: #000000;
-  --tmp-color-icon-button-base: #000000;
-  --tmp-color-icon-button-positive: #ffffff;
-  --tmp-color-icon-button-negative: #ffffff;
   --tmp-color-fill-positive-hover: #0c6d1a;
   --tmp-color-fill-positive-active: #0a5f17;
   --tmp-color-fill-negative-hover: #b01326;
