@@ -7,4 +7,14 @@ export enum mediaQueryMinWidths {
   xlarge = "1681px",
 }
 
-export const commonModesComponentName = "+common.json";
+export const commonModesTokensName = "+common.json";
+
+export const baseTokensPath = "src/tokens";
+export const baseBuildPath = "dist";
+export const categories = ["color", "typography", "dimension"] as const;
+export const tokenTypes = ["primitives", "semantic", "component"] as const;
+export const platforms = ["css", "figma"] as const;
+
+export type Category = (typeof categories)[number];
+export type TokenType = (typeof tokenTypes)[number];
+export type Platform = (typeof platforms)[number];

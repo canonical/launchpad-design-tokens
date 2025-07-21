@@ -2,77 +2,16 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --tmp-color-positive: #62a36c;
-    --tmp-color-negative: #d17b85;
-    --tmp-color-information: #5ea6ed;
-    --tmp-color-caution: #c48831;
-    --tmp-color-text-default: #ffffff;
-    --tmp-color-text-muted: rgba(255, 255, 255, 0.6);
-    --tmp-color-text-inactive: rgba(255, 255, 255, 0.75);
-    --tmp-color-text-reversed: #000000;
-    --tmp-color-text-link-default: #6699cc;
-    --tmp-color-text-link-visited: #a679d2;
-    --tmp-color-background-default: #262626;
-    --tmp-color-background-hover: #313131;
-    --tmp-color-background-active: #373737;
-    --tmp-color-background-alt: #202020;
-    --tmp-color-background-neutral-default: rgba(255, 255, 255, 0.15);
-    --tmp-color-background-neutral-hover: rgba(255, 255, 255, 0.2);
-    --tmp-color-background-neutral-active: rgba(255, 255, 255, 0.25);
-    --tmp-color-background-positive-default: rgba(10, 189, 37, 0.2);
-    --tmp-color-background-positive-hover: rgba(0, 199, 30, 0.3);
-    --tmp-color-background-positive-active: rgba(0, 199, 30, 0.36);
-    --tmp-color-background-negative-default: rgba(255, 102, 120, 0.2);
-    --tmp-color-background-negative-hover: rgba(255, 102, 120, 0.3);
-    --tmp-color-background-negative-active: rgba(255, 102, 120, 0.36);
-    --tmp-color-background-information-default: rgba(0, 137, 255, 0.2);
-    --tmp-color-background-information-hover: rgba(0, 137, 255, 0.3);
-    --tmp-color-background-information-active: rgba(0, 137, 255, 0.36);
-    --tmp-color-background-caution-default: rgba(255, 115, 0, 0.2);
-    --tmp-color-background-caution-hover: rgba(255, 143, 51, 0.3);
-    --tmp-color-background-caution-active: rgba(255, 115, 0, 0.36);
-    --tmp-color-background-input: #2f2f2f;
-    --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
-    --tmp-color-background-button-positive-default: #008013;
-    --tmp-color-background-button-positive-hover: #00670f;
-    --tmp-color-background-button-positive-active: #00570d;
-    --tmp-color-background-button-negative-default: #a11223;
-    --tmp-color-background-button-negative-hover: #8a0f1e;
-    --tmp-color-background-button-negative-active: #7c0e1b;
-    --tmp-color-border-default: rgba(255, 255, 255, 0.2);
-    --tmp-color-border-highlight: #ffffff;
-    --tmp-color-border-high-contrast: #939393;
-    --tmp-color-border-low-contrast: rgba(255, 255, 255, 0.1);
-    --tmp-color-border-neutral: #a6a6a6;
-    --tmp-color-icon-status-shade-1: #f7f7f7;
-    --tmp-color-icon-status-shade-2: #d9d9d9;
-    --tmp-color-icon-status-queued: #808080;
-    --tmp-color-icon-canonical-logo: #ffffff;
-    --tmp-color-icon-button-brand: #ffffff;
-    --tmp-color-icon-button-default: #000000;
-    --tmp-color-icon-button-base: #000000;
-    --tmp-color-icon-button-positive: #ffffff;
-    --tmp-color-icon-button-negative: #ffffff;
-    --tmp-color-fill-positive-default: #008013;
-    --tmp-color-fill-positive-hover: #00670f;
-    --tmp-color-fill-positive-active: #00570d;
-    --tmp-color-fill-negative-default: #a11223;
-    --tmp-color-fill-negative-hover: #8a0f1e;
-    --tmp-color-fill-negative-active: #7c0e1b;
-    --tmp-color-border-positive: var(--tmp-color-positive);
-    --tmp-color-border-negative: var(--tmp-color-negative);
-    --tmp-color-border-information: var(--tmp-color-information);
-    --tmp-color-border-caution: var(--tmp-color-caution);
-    --tmp-color-icon-default: var(--tmp-color-text-default);
-    --tmp-color-icon-muted: var(--tmp-color-text-muted);
-    --tmp-color-icon-positive: var(--tmp-color-positive);
-    --tmp-color-icon-negative: var(--tmp-color-negative);
-    --tmp-color-icon-information: var(--tmp-color-information);
-    --tmp-color-icon-caution: var(--tmp-color-caution);
-    --tmp-color-icon-link: var(--tmp-color-text-link-default);
-  }
+:root {
+  --tmp-color-background-button-brand-default: var(--tmp-color-brand-default);
+  --tmp-color-background-button-brand-hover: var(--tmp-color-brand-hover);
+  --tmp-color-background-button-brand-active: var(--tmp-color-brand-active);
+  --tmp-color-background-button-positive-hover: var(--tmp-color-fill-positive-hover);
+  --tmp-color-background-button-positive-active: var(--tmp-color-fill-positive-active);
+  --tmp-color-background-button-negative-hover: var(--tmp-color-fill-negative-hover);
+  --tmp-color-background-button-negative-active: var(--tmp-color-fill-negative-active);
+  --tmp-color-background-button-positive-default: var(--tmp-color-fill-positive-default);
+  --tmp-color-background-button-negative-default: var(--tmp-color-fill-negative-default);
 }
 
 
@@ -82,6 +21,9 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --tmp-color-brand-default: #e95420;
+    --tmp-color-brand-hover: #da4816;
+    --tmp-color-brand-active: #cc4414;
     --tmp-color-positive: #0e8420;
     --tmp-color-negative: #c7162b;
     --tmp-color-information: #24598f;
@@ -113,12 +55,6 @@
     --tmp-color-background-caution-active: rgba(199, 90, 0, 0.18);
     --tmp-color-background-input: #f5f5f5;
     --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
-    --tmp-color-background-button-positive-default: #0e8420;
-    --tmp-color-background-button-positive-hover: #0c6d1a;
-    --tmp-color-background-button-positive-active: #0a5f17;
-    --tmp-color-background-button-negative-default: #c7162b;
-    --tmp-color-background-button-negative-hover: #b01326;
-    --tmp-color-background-button-negative-active: #a21223;
     --tmp-color-border-default: rgba(0, 0, 0, 0.2);
     --tmp-color-border-highlight: #000000;
     --tmp-color-border-high-contrast: #707070;
@@ -127,12 +63,6 @@
     --tmp-color-icon-status-shade-1: #f7f7f7;
     --tmp-color-icon-status-shade-2: #d9d9d9;
     --tmp-color-icon-status-queued: #808080;
-    --tmp-color-icon-canonical-logo: #ffffff;
-    --tmp-color-icon-button-brand: #ffffff;
-    --tmp-color-icon-button-default: #000000;
-    --tmp-color-icon-button-base: #000000;
-    --tmp-color-icon-button-positive: #ffffff;
-    --tmp-color-icon-button-negative: #ffffff;
     --tmp-color-fill-positive-hover: #0c6d1a;
     --tmp-color-fill-positive-active: #0a5f17;
     --tmp-color-fill-negative-hover: #b01326;
@@ -150,5 +80,74 @@
     --tmp-color-icon-link: var(--tmp-color-text-link-default);
     --tmp-color-fill-positive-default: var(--tmp-color-positive);
     --tmp-color-fill-negative-default: var(--tmp-color-negative);
+  }
+}
+
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tmp-color-brand-default: #e95420;
+    --tmp-color-brand-hover: #da4816;
+    --tmp-color-brand-active: #cc4414;
+    --tmp-color-positive: #62a36c;
+    --tmp-color-negative: #d17b85;
+    --tmp-color-information: #5ea6ed;
+    --tmp-color-caution: #c48831;
+    --tmp-color-text-default: #ffffff;
+    --tmp-color-text-muted: rgba(255, 255, 255, 0.6);
+    --tmp-color-text-inactive: rgba(255, 255, 255, 0.75);
+    --tmp-color-text-reversed: #000000;
+    --tmp-color-text-link-default: #6699cc;
+    --tmp-color-text-link-visited: #a679d2;
+    --tmp-color-background-default: #262626;
+    --tmp-color-background-hover: #313131;
+    --tmp-color-background-active: #373737;
+    --tmp-color-background-alt: #202020;
+    --tmp-color-background-neutral-default: rgba(255, 255, 255, 0.15);
+    --tmp-color-background-neutral-hover: rgba(255, 255, 255, 0.2);
+    --tmp-color-background-neutral-active: rgba(255, 255, 255, 0.25);
+    --tmp-color-background-positive-default: rgba(10, 189, 37, 0.2);
+    --tmp-color-background-positive-hover: rgba(0, 199, 30, 0.3);
+    --tmp-color-background-positive-active: rgba(0, 199, 30, 0.36);
+    --tmp-color-background-negative-default: rgba(255, 102, 120, 0.2);
+    --tmp-color-background-negative-hover: rgba(255, 102, 120, 0.3);
+    --tmp-color-background-negative-active: rgba(255, 102, 120, 0.36);
+    --tmp-color-background-information-default: rgba(0, 137, 255, 0.2);
+    --tmp-color-background-information-hover: rgba(0, 137, 255, 0.3);
+    --tmp-color-background-information-active: rgba(0, 137, 255, 0.36);
+    --tmp-color-background-caution-default: rgba(255, 115, 0, 0.2);
+    --tmp-color-background-caution-hover: rgba(255, 143, 51, 0.3);
+    --tmp-color-background-caution-active: rgba(255, 115, 0, 0.36);
+    --tmp-color-background-input: #2f2f2f;
+    --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
+    --tmp-color-border-default: rgba(255, 255, 255, 0.2);
+    --tmp-color-border-highlight: #ffffff;
+    --tmp-color-border-high-contrast: #939393;
+    --tmp-color-border-low-contrast: rgba(255, 255, 255, 0.1);
+    --tmp-color-border-neutral: #a6a6a6;
+    --tmp-color-icon-status-shade-1: #f7f7f7;
+    --tmp-color-icon-status-shade-2: #d9d9d9;
+    --tmp-color-icon-status-queued: #808080;
+    --tmp-color-fill-positive-default: #008013;
+    --tmp-color-fill-positive-hover: #00670f;
+    --tmp-color-fill-positive-active: #00570d;
+    --tmp-color-fill-negative-default: #a11223;
+    --tmp-color-fill-negative-hover: #8a0f1e;
+    --tmp-color-fill-negative-active: #7c0e1b;
+    --tmp-color-border-positive: var(--tmp-color-positive);
+    --tmp-color-border-negative: var(--tmp-color-negative);
+    --tmp-color-border-information: var(--tmp-color-information);
+    --tmp-color-border-caution: var(--tmp-color-caution);
+    --tmp-color-icon-default: var(--tmp-color-text-default);
+    --tmp-color-icon-muted: var(--tmp-color-text-muted);
+    --tmp-color-icon-positive: var(--tmp-color-positive);
+    --tmp-color-icon-negative: var(--tmp-color-negative);
+    --tmp-color-icon-information: var(--tmp-color-information);
+    --tmp-color-icon-caution: var(--tmp-color-caution);
+    --tmp-color-icon-link: var(--tmp-color-text-link-default);
   }
 }

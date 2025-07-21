@@ -1,6 +1,20 @@
 {
   "tmp": {
     "color": {
+      "brand": {
+        "default": {
+          "$value": "#e95420",
+          "$type": "color"
+        },
+        "hover": {
+          "$value": "#da4816",
+          "$type": "color"
+        },
+        "active": {
+          "$value": "#cc4414",
+          "$type": "color"
+        }
+      },
       "positive": {
         "$value": "#0E8420",
         "$type": "color"
@@ -141,31 +155,45 @@
           "$type": "color"
         },
         "button": {
-          "positive": {
+          "brand": {
             "default": {
-              "$value": "#0e8420",
+              "$value": "{tmp.color.brand.default}",
               "$type": "color"
             },
             "hover": {
-              "$value": "#0c6d1a",
+              "$value": "{tmp.color.brand.hover}",
               "$type": "color"
             },
             "active": {
-              "$value": "#0a5f17",
+              "$value": "{tmp.color.brand.active}",
+              "$type": "color"
+            }
+          },
+          "positive": {
+            "default": {
+              "$value": "{tmp.color.fill.positive.default}",
+              "$type": "color"
+            },
+            "hover": {
+              "$value": "{tmp.color.fill.positive.hover}",
+              "$type": "color"
+            },
+            "active": {
+              "$value": "{tmp.color.fill.positive.active}",
               "$type": "color"
             }
           },
           "negative": {
             "default": {
-              "$value": "#c7162b",
+              "$value": "{tmp.color.fill.negative.default}",
               "$type": "color"
             },
             "hover": {
-              "$value": "#b01326",
+              "$value": "{tmp.color.fill.negative.hover}",
               "$type": "color"
             },
             "active": {
-              "$value": "#a21223",
+              "$value": "{tmp.color.fill.negative.active}",
               "$type": "color"
             }
           }
@@ -249,32 +277,6 @@
           },
           "queued": {
             "$value": "#808080",
-            "$type": "color"
-          }
-        },
-        "canonical-logo": {
-          "$value": "#ffffff",
-          "$type": "color"
-        },
-        "button": {
-          "brand": {
-            "$value": "#ffffff",
-            "$type": "color"
-          },
-          "default": {
-            "$value": "#000000",
-            "$type": "color"
-          },
-          "base": {
-            "$value": "#000000",
-            "$type": "color"
-          },
-          "positive": {
-            "$value": "#ffffff",
-            "$type": "color"
-          },
-          "negative": {
-            "$value": "#ffffff",
             "$type": "color"
           }
         }

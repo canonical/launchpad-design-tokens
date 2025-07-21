@@ -1,3 +1,5 @@
+import type { Category } from "./utils/consts.js";
+import { isComponent } from "./utils/filters.js";
 import {
   type ModeToCSSCompose,
   buildCSSComposedMode,
@@ -5,7 +7,7 @@ import {
   readModes,
 } from "./utils/modes.js";
 
-const category = "color";
+const category: Category = "color";
 const simpleModes = await readModes(category);
 
 await buildSimpleModes(category, simpleModes);
@@ -15,12 +17,25 @@ await buildSimpleModes(category, simpleModes);
 
   const configs: Array<Omit<ModeToCSSCompose, "path">> = [
     {
+      // Not an actual mode, but a way to keep the component tokens defined once, outside the media queries.
+      // `modeName` is of an actual mode, to allow StyleDictionary to resolve and verify references to semantic tokens.
+      // If it was something else, StyleDictionary would complain (and rightfully so) that referenced tokens don't exist.
+      modeName: "light",
+      filesOptions: {
+        rules: [
+          {
+            matcher: (token) => isComponent(token),
+          },
+        ],
+      },
+    },
+    {
       modeName: "light",
       filesOptions: {
         rules: [
           {
             atRule: "@media (prefers-color-scheme: light)",
-            matcher: () => true,
+            matcher: (token) => !isComponent(token),
           },
         ],
       },
@@ -31,7 +46,7 @@ await buildSimpleModes(category, simpleModes);
         rules: [
           {
             atRule: "@media (prefers-color-scheme: dark)",
-            matcher: () => true,
+            matcher: (token) => !isComponent(token),
           },
         ],
       },

@@ -1,0 +1,44 @@
+{
+  "tmp": {
+    "color": {
+      "$type": "color",
+      "background": {
+        "button": {
+          "brand": {
+            "default": {
+              "$value": "{tmp.color.brand.default}"
+            },
+            "hover": {
+              "$value": "{tmp.color.brand.hover}"
+            },
+            "active": {
+              "$value": "{tmp.color.brand.active}"
+            }
+          },
+          "positive": {
+            "default": {
+              "$value": "{tmp.color.fill.positive.default}"
+            },
+            "hover": {
+              "$value": "{tmp.color.fill.positive.hover}"
+            },
+            "active": {
+              "$value": "{tmp.color.fill.positive.active}"
+            }
+          },
+          "negative": {
+            "default": {
+              "$value": "{tmp.color.fill.negative.default}"
+            },
+            "hover": {
+              "$value": "{tmp.color.fill.negative.hover}"
+            },
+            "active": {
+              "$value": "{tmp.color.fill.negative.active}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
