@@ -30,10 +30,10 @@
           "$value": "#ffffff"
         },
         "muted": {
-          "$value": "rgba(255, 255, 255, 0.6)"
+          "$value": "#ffffff99"
         },
         "inactive": {
-          "$value": "rgba(255, 255, 255, 0.75)"
+          "$value": "#ffffffbf"
         },
         "reversed": {
           "$value": "#000000"
@@ -62,69 +62,69 @@
         },
         "neutral": {
           "default": {
-            "$value": "rgba(255, 255, 255, 0.15)"
+            "$value": "#ffffff26"
           },
           "hover": {
-            "$value": "rgba(255, 255, 255, 0.20)"
+            "$value": "#ffffff33"
           },
           "active": {
-            "$value": "rgba(255, 255, 255, 0.25)"
+            "$value": "#ffffff40"
           }
         },
         "positive": {
           "default": {
-            "$value": "rgba(10, 189, 37, 0.20)"
+            "$value": "#0abd2533"
           },
           "hover": {
-            "$value": "rgba(0, 199, 30, 0.30)"
+            "$value": "#00c71e4d"
           },
           "active": {
-            "$value": "rgba(0, 199, 30, 0.36)"
+            "$value": "#00c71e5c"
           }
         },
         "negative": {
           "default": {
-            "$value": "rgba(255, 102, 120, 0.20)"
+            "$value": "#ff667833"
           },
           "hover": {
-            "$value": "rgba(255, 102, 120, 0.30)"
+            "$value": "#ff66784d"
           },
           "active": {
-            "$value": "rgba(255, 102, 120, 0.36)"
+            "$value": "#ff66785c"
           }
         },
         "information": {
           "default": {
-            "$value": "rgba(0, 137, 255, 0.20)"
+            "$value": "#0089ff33"
           },
           "hover": {
-            "$value": "rgba(0, 137, 255, 0.30)"
+            "$value": "#0089ff4d"
           },
           "active": {
-            "$value": "rgba(0, 137, 255, 0.36)"
+            "$value": "#0089ff5c"
           }
         },
         "caution": {
           "default": {
-            "$value": "rgba(255, 115, 0, 0.20)"
+            "$value": "#ff730033"
           },
           "hover": {
-            "$value": "rgba(255, 143, 51, 0.30)"
+            "$value": "#ff8f334d"
           },
           "active": {
-            "$value": "rgba(255, 115, 0, 0.36)"
+            "$value": "#ff73005c"
           }
         },
         "input": {
           "$value": "#2f2f2f"
         },
         "overlay": {
-          "$value": "rgba(17, 17, 17, 0.85)"
+          "$value": "#111111d9"
         }
       },
       "border": {
         "default": {
-          "$value": "rgba(255, 255, 255, 0.20)"
+          "$value": "#ffffff33"
         },
         "highlight": {
           "$value": "#ffffff"
@@ -133,7 +133,7 @@
           "$value": "#939393"
         },
         "low-contrast": {
-          "$value": "rgba(255, 255, 255, 0.10)"
+          "$value": "#ffffff1a"
         },
         "neutral": {
           "$value": "#a6a6a6"

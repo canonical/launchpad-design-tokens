@@ -37,11 +37,11 @@
           "$type": "color"
         },
         "muted": {
-          "$value": "rgba(255, 255, 255, 0.6)",
+          "$value": "#ffffff99",
           "$type": "color"
         },
         "inactive": {
-          "$value": "rgba(255, 255, 255, 0.75)",
+          "$value": "#ffffffbf",
           "$type": "color"
         },
         "reversed": {
@@ -78,71 +78,71 @@
         },
         "neutral": {
           "default": {
-            "$value": "rgba(255, 255, 255, 0.15)",
+            "$value": "#ffffff26",
             "$type": "color"
           },
           "hover": {
-            "$value": "rgba(255, 255, 255, 0.20)",
+            "$value": "#ffffff33",
             "$type": "color"
           },
           "active": {
-            "$value": "rgba(255, 255, 255, 0.25)",
+            "$value": "#ffffff40",
             "$type": "color"
           }
         },
         "positive": {
           "default": {
-            "$value": "rgba(10, 189, 37, 0.20)",
+            "$value": "#0abd2533",
             "$type": "color"
           },
           "hover": {
-            "$value": "rgba(0, 199, 30, 0.30)",
+            "$value": "#00c71e4d",
             "$type": "color"
           },
           "active": {
-            "$value": "rgba(0, 199, 30, 0.36)",
+            "$value": "#00c71e5c",
             "$type": "color"
           }
         },
         "negative": {
           "default": {
-            "$value": "rgba(255, 102, 120, 0.20)",
+            "$value": "#ff667833",
             "$type": "color"
           },
           "hover": {
-            "$value": "rgba(255, 102, 120, 0.30)",
+            "$value": "#ff66784d",
             "$type": "color"
           },
           "active": {
-            "$value": "rgba(255, 102, 120, 0.36)",
+            "$value": "#ff66785c",
             "$type": "color"
           }
         },
         "information": {
           "default": {
-            "$value": "rgba(0, 137, 255, 0.20)",
+            "$value": "#0089ff33",
             "$type": "color"
           },
           "hover": {
-            "$value": "rgba(0, 137, 255, 0.30)",
+            "$value": "#0089ff4d",
             "$type": "color"
           },
           "active": {
-            "$value": "rgba(0, 137, 255, 0.36)",
+            "$value": "#0089ff5c",
             "$type": "color"
           }
         },
         "caution": {
           "default": {
-            "$value": "rgba(255, 115, 0, 0.20)",
+            "$value": "#ff730033",
             "$type": "color"
           },
           "hover": {
-            "$value": "rgba(255, 143, 51, 0.30)",
+            "$value": "#ff8f334d",
             "$type": "color"
           },
           "active": {
-            "$value": "rgba(255, 115, 0, 0.36)",
+            "$value": "#ff73005c",
             "$type": "color"
           }
         },
@@ -151,13 +151,13 @@
           "$type": "color"
         },
         "overlay": {
-          "$value": "rgba(17, 17, 17, 0.85)",
+          "$value": "#111111d9",
           "$type": "color"
         }
       },
       "border": {
         "default": {
-          "$value": "rgba(255, 255, 255, 0.20)",
+          "$value": "#ffffff33",
           "$type": "color"
         },
         "highlight": {
@@ -169,7 +169,7 @@
           "$type": "color"
         },
         "low-contrast": {
-          "$value": "rgba(255, 255, 255, 0.10)",
+          "$value": "#ffffff1a",
           "$type": "color"
         },
         "neutral": {
