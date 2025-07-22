@@ -1,4 +1,4 @@
-import { mediaQueryMinWidths } from "./utils/consts.js";
+import { type Category, mediaQueryMinWidths } from "./utils/consts.js";
 import { isCommon } from "./utils/filters.js";
 import {
   type ModeToCSSCompose,
@@ -7,7 +7,7 @@ import {
   readModes,
 } from "./utils/modes.js";
 
-const category = "dimension";
+const category: Category = "dimension";
 const simpleModes = await readModes(category);
 
 await buildSimpleModes(category, simpleModes);
@@ -18,11 +18,9 @@ await buildSimpleModes(category, simpleModes);
   const configs: Array<Omit<ModeToCSSCompose, "path">> = [
     {
       modeName: "narrow",
-      order: 1,
     },
     {
       modeName: "medium",
-      order: 2,
       filesOptions: {
         rules: [
           {
@@ -34,7 +32,6 @@ await buildSimpleModes(category, simpleModes);
     },
     {
       modeName: "wide",
-      order: 3,
       filesOptions: {
         rules: [
           {
@@ -46,7 +43,6 @@ await buildSimpleModes(category, simpleModes);
     },
     {
       modeName: "extraWide",
-      order: 4,
       filesOptions: {
         rules: [
           {

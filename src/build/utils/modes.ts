@@ -3,8 +3,9 @@ import type { PlatformConfig, TransformedToken } from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
 import { formats } from "style-dictionary/enums";
 import { baseConfig, customFormats, logOptions } from "./baseConfig.js";
-import { commonModesComponentName } from "./consts.js";
-import { isSemantic } from "./filters.js";
+import { type Category, commonModesTokensName } from "./consts.js";
+import { isPrimitive } from "./filters.js";
+import { getBaseCategoryPath, getBuildPath } from "./path.js";
 
 type Mode = {
   path: string;
@@ -26,10 +27,9 @@ type CSSAdvancedOptions = {
 export type ModeToCSSCompose = Mode & {
   platformOptions?: PlatformConfig["options"];
   filesOptions?: CSSAdvancedOptions;
-  order?: number;
 };
 
-export async function readModes(category: string): Promise<Mode[]> {
+export async function readModes(category: Category): Promise<Mode[]> {
   const basePath = getBaseCategoryPath(category);
 
   return (
@@ -38,8 +38,7 @@ export async function readModes(category: string): Promise<Mode[]> {
     })
   )
     .filter(
-      (path) =>
-        path.endsWith(".json") && !path.endsWith(commonModesComponentName),
+      (path) => path.endsWith(".json") && !path.endsWith(commonModesTokensName),
     )
     .map((path) => ({
       path: `${basePath}/${path}`,
@@ -47,8 +46,8 @@ export async function readModes(category: string): Promise<Mode[]> {
     }));
 }
 
-export async function buildSimpleModes(category: string, modes: Mode[]) {
-  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
+export async function buildSimpleModes(category: Category, modes: Mode[]) {
+  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesTokensName}`;
 
   const dictionaries = await Promise.all(
     modes.map(({ path, modeName }) =>
@@ -56,22 +55,22 @@ export async function buildSimpleModes(category: string, modes: Mode[]) {
         source: [commonModesComponentPath, path],
         platforms: {
           css: {
-            buildPath: `dist/css/${category}/`,
+            buildPath: getBuildPath("css", category),
             files: [
               {
                 destination: `${modeName}.css`,
                 format: formats.cssVariables,
-                filter: isSemantic,
+                filter: (token) => !isPrimitive(token),
               },
             ],
           },
           figma: {
-            buildPath: `dist/figma/${category}/`,
+            buildPath: getBuildPath("figma", category),
             files: [
               {
                 destination: `${modeName}.json`,
                 format: customFormats.figma,
-                filter: isSemantic,
+                filter: (token) => !isPrimitive(token),
               },
             ],
           },
@@ -88,16 +87,17 @@ export async function buildSimpleModes(category: string, modes: Mode[]) {
 }
 
 export async function buildCSSComposedMode(
-  category: string,
+  category: Category,
   modeName: string,
   modesToCompose: ModeToCSSCompose[],
 ) {
-  const commonModesComponentPath = `${getBaseCategoryPath(category)}/${commonModesComponentName}`;
-  const buildPath = `dist/css/${category}/${modeName}/`;
+  const commonModesTokensPath = `${getBaseCategoryPath(category)}/${commonModesTokensName}`;
+  const buildPath = `${getBuildPath("css", category)}/${modeName}/`;
+
   const dictionaries = await Promise.all(
-    modesToCompose.map(({ path, modeName, filesOptions, platformOptions }) =>
+    modesToCompose.map(({ path, filesOptions, platformOptions }, i) =>
       new StyleDictionary(baseConfig, logOptions).extend({
-        source: [commonModesComponentPath, path],
+        source: [commonModesTokensPath, path],
         platforms: {
           css: {
             options: {
@@ -107,9 +107,9 @@ export async function buildCSSComposedMode(
             buildPath,
             files: [
               {
-                destination: `${modeName}.css`,
+                destination: `${i}.css`,
                 format: "css/advanced",
-                filter: isSemantic,
+                filter: (token) => !isPrimitive(token),
                 options: filesOptions,
               },
             ],
@@ -123,30 +123,17 @@ export async function buildCSSComposedMode(
     dictionaries.map((dictionary) => dictionary.buildPlatform("css")),
   );
 
-  const modeNamesInOrder = modesToCompose.some(
-    (mode) => mode.order !== undefined,
-  )
-    ? [...modesToCompose]
-        .sort((a, b) => {
-          if (a.order === undefined && b.order === undefined) return 0;
-          if (a.order === undefined) return 1;
-          if (b.order === undefined) return -1;
-          return a.order - b.order;
-        })
-        .map((mode) => mode.modeName)
-    : null;
-
-  await mergeDirectory(buildPath, modeNamesInOrder);
+  await mergeDirectory(buildPath);
 }
 
-async function writeFigmaManifest(collection: string, modes: Mode[]) {
+async function writeFigmaManifest(category: Category, modes: Mode[]) {
   await Bun.write(
-    `dist/figma/${collection}/manifest.json`,
+    `${getBuildPath("figma", category)}/manifest.json`,
     JSON.stringify(
       {
-        name: `Launchpad ${collection} tokens`,
+        name: `Launchpad ${category} tokens`,
         collections: {
-          [collection]: {
+          [category]: {
             modes: modes.reduce<Record<string, [string]>>(
               (acc, { modeName }) => {
                 acc[modeName] = [`${modeName}.json`];
@@ -163,10 +150,7 @@ async function writeFigmaManifest(collection: string, modes: Mode[]) {
   );
 }
 
-async function mergeDirectory(
-  directory: string,
-  modeNamesInOrder: string[] | null,
-) {
+async function mergeDirectory(directory: string) {
   const files = (
     await readdir(directory, {
       withFileTypes: true,
@@ -174,13 +158,13 @@ async function mergeDirectory(
     })
   ).filter((file) => file.isFile());
 
-  if (modeNamesInOrder) {
-    files.sort((a, b) => {
-      const aName = a.name.replace(/\.css$/, "");
-      const bName = b.name.replace(/\.css$/, "");
-      return modeNamesInOrder.indexOf(aName) - modeNamesInOrder.indexOf(bName);
-    });
-  }
+  files.sort((a, b) => {
+    const aNum = Number.parseInt(a.name.replace(/\.css$/, ""));
+    const bNum = Number.parseInt(b.name.replace(/\.css$/, ""));
+    if (Number.isNaN(aNum) || Number.isNaN(bNum))
+      return a.name.localeCompare(b.name);
+    return aNum - bNum;
+  });
 
   if (files.length === 0) {
     console.warn(`No files found in directory: ${directory}`);
@@ -211,8 +195,4 @@ async function mergeDirectory(
   console.log(`Merged files into: ${outputPath}`);
 
   await rm(directory, { recursive: true });
-}
-
-function getBaseCategoryPath(category: string): string {
-  return `src/tokens/semantic/${category}`;
 }
