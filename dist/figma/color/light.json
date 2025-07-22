@@ -193,49 +193,49 @@
           "$type": "color"
         },
         "positive": {
-          "$value": "#0E8420",
+          "$value": "{tmp.color.positive}",
           "$type": "color"
         },
         "negative": {
-          "$value": "#C7162B",
+          "$value": "{tmp.color.negative}",
           "$type": "color"
         },
         "information": {
-          "$value": "#24598F",
+          "$value": "{tmp.color.information}",
           "$type": "color"
         },
         "caution": {
-          "$value": "#CC7900",
+          "$value": "{tmp.color.caution}",
           "$type": "color"
         }
       },
       "icon": {
         "default": {
-          "$value": "#000000",
+          "$value": "{tmp.color.text.default}",
           "$type": "color"
         },
         "muted": {
-          "$value": "rgba(0, 0, 0, 0.60)",
+          "$value": "{tmp.color.text.muted}",
           "$type": "color"
         },
         "positive": {
-          "$value": "#0E8420",
+          "$value": "{tmp.color.positive}",
           "$type": "color"
         },
         "negative": {
-          "$value": "#C7162B",
+          "$value": "{tmp.color.negative}",
           "$type": "color"
         },
         "information": {
-          "$value": "#24598F",
+          "$value": "{tmp.color.information}",
           "$type": "color"
         },
         "caution": {
-          "$value": "#CC7900",
+          "$value": "{tmp.color.caution}",
           "$type": "color"
         },
         "link": {
-          "$value": "#0066cc",
+          "$value": "{tmp.color.text.link.default}",
           "$type": "color"
         },
         "status": {
@@ -282,7 +282,7 @@
       "fill": {
         "positive": {
           "default": {
-            "$value": "#0E8420",
+            "$value": "{tmp.color.positive}",
             "$type": "color"
           },
           "hover": {
@@ -296,7 +296,7 @@
         },
         "negative": {
           "default": {
-            "$value": "#C7162B",
+            "$value": "{tmp.color.negative}",
             "$type": "color"
           },
           "hover": {

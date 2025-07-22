@@ -2,7 +2,7 @@ import { readdir, rm } from "node:fs/promises";
 import type { PlatformConfig, TransformedToken } from "style-dictionary";
 import { StyleDictionary } from "style-dictionary-utils";
 import { formats } from "style-dictionary/enums";
-import { baseConfig, logOptions } from "./baseConfig.js";
+import { baseConfig, customFormats, logOptions } from "./baseConfig.js";
 import { commonModesComponentName } from "./consts.js";
 import { isSemantic } from "./filters.js";
 
@@ -70,7 +70,7 @@ export async function buildSimpleModes(category: string, modes: Mode[]) {
             files: [
               {
                 destination: `${modeName}.json`,
-                format: formats.json,
+                format: customFormats.figma,
                 filter: isSemantic,
               },
             ],
