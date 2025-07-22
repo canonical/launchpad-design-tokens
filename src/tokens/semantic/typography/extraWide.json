@@ -5,19 +5,19 @@
         "$type": "dimension",
         "xs": {
           "$value": {
-            "value": 0.75,
+            "value": 0.875,
             "unit": "rem"
           }
         },
         "s": {
           "$value": {
-            "value": 0.875,
+            "value": 1,
             "unit": "rem"
           }
         },
         "m": {
           "$value": {
-            "value": 1,
+            "value": 1.125,
             "unit": "rem"
           }
         },
@@ -44,19 +44,19 @@
         "$type": "dimension",
         "xs": {
           "$value": {
-            "value": 1.125,
+            "value": 1.25,
             "unit": "rem"
           }
         },
         "s": {
           "$value": {
-            "value": 1.3125,
+            "value": 1.5,
             "unit": "rem"
           }
         },
         "m": {
           "$value": {
-            "value": 1.5,
+            "value": 1.6875,
             "unit": "rem"
           }
         },

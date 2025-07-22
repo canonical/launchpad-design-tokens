@@ -162,15 +162,15 @@
       },
       "fontSize": {
         "xs": {
-          "$value": "12px",
-          "$type": "dimension"
-        },
-        "s": {
           "$value": "14px",
           "$type": "dimension"
         },
-        "m": {
+        "s": {
           "$value": "16px",
+          "$type": "dimension"
+        },
+        "m": {
+          "$value": "18px",
           "$type": "dimension"
         },
         "l": {
@@ -188,15 +188,15 @@
       },
       "lineHeight": {
         "xs": {
-          "$value": "18px",
+          "$value": "20px",
           "$type": "dimension"
         },
         "s": {
-          "$value": "21px",
+          "$value": "24px",
           "$type": "dimension"
         },
         "m": {
-          "$value": "24px",
+          "$value": "27px",
           "$type": "dimension"
         },
         "l": {
