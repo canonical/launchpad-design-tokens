@@ -37,6 +37,10 @@
     "dimension": {
       "spacing": {
         "inline": {
+          "minimum": {
+            "$value": "2px",
+            "$type": "dimension"
+          },
           "xxxs": {
             "$value": "4px",
             "$type": "dimension"
@@ -75,6 +79,10 @@
           }
         },
         "block": {
+          "minimum": {
+            "$value": "2px",
+            "$type": "dimension"
+          },
           "xxxs": {
             "$value": "4px",
             "$type": "dimension"

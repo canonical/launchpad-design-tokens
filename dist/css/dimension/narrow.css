@@ -10,6 +10,7 @@
   --dimension-radius-medium: 0px;
   --dimension-radius-large: 0px;
   --dimension-radius-full: 9999px;
+  --tmp-dimension-spacing-inline-minimum: 0rem;
   --tmp-dimension-spacing-inline-xxxs: 0.125rem;
   --tmp-dimension-spacing-inline-xxs: 0.25rem;
   --tmp-dimension-spacing-inline-xs: 0.375rem;
@@ -19,6 +20,7 @@
   --tmp-dimension-spacing-inline-xl: 1.25rem;
   --tmp-dimension-spacing-inline-xxl: 1.5rem;
   --tmp-dimension-spacing-inline-xxxl: 2rem;
+  --tmp-dimension-spacing-block-minimum: 0rem;
   --tmp-dimension-spacing-block-xxxs: 0.125rem;
   --tmp-dimension-spacing-block-xxs: 0.25rem;
   --tmp-dimension-spacing-block-xs: 0.375rem;
