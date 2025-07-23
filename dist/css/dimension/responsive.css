@@ -10,6 +10,7 @@
   --dimension-radius-medium: 0px;
   --dimension-radius-large: 0px;
   --dimension-radius-full: 9999px;
+  --tmp-dimension-spacing-inline-minimum: 0rem;
   --tmp-dimension-spacing-inline-xxxs: 0.125rem;
   --tmp-dimension-spacing-inline-xxs: 0.25rem;
   --tmp-dimension-spacing-inline-xs: 0.375rem;
@@ -19,6 +20,7 @@
   --tmp-dimension-spacing-inline-xl: 1.25rem;
   --tmp-dimension-spacing-inline-xxl: 1.5rem;
   --tmp-dimension-spacing-inline-xxxl: 2rem;
+  --tmp-dimension-spacing-block-minimum: 0rem;
   --tmp-dimension-spacing-block-xxxs: 0.125rem;
   --tmp-dimension-spacing-block-xxs: 0.25rem;
   --tmp-dimension-spacing-block-xs: 0.375rem;
@@ -37,6 +39,7 @@
 
 @media (min-width: 621px) {
   :root {
+    --tmp-dimension-spacing-inline-minimum: 0rem;
     --tmp-dimension-spacing-inline-xxxs: 0.125rem;
     --tmp-dimension-spacing-inline-xxs: 0.25rem;
     --tmp-dimension-spacing-inline-xs: 0.5rem;
@@ -46,6 +49,7 @@
     --tmp-dimension-spacing-inline-xl: 2rem;
     --tmp-dimension-spacing-inline-xxl: 2.5rem;
     --tmp-dimension-spacing-inline-xxxl: 3rem;
+    --tmp-dimension-spacing-block-minimum: 0rem;
     --tmp-dimension-spacing-block-xxxs: 0.125rem;
     --tmp-dimension-spacing-block-xxs: 0.25rem;
     --tmp-dimension-spacing-block-xs: 0.5rem;
@@ -65,6 +69,7 @@
 
 @media (min-width: 1037px) {
   :root {
+    --tmp-dimension-spacing-inline-minimum: 0rem;
     --tmp-dimension-spacing-inline-xxxs: 0.125rem;
     --tmp-dimension-spacing-inline-xxs: 0.25rem;
     --tmp-dimension-spacing-inline-xs: 0.5rem;
@@ -74,6 +79,7 @@
     --tmp-dimension-spacing-inline-xl: 2rem;
     --tmp-dimension-spacing-inline-xxl: 2.5rem;
     --tmp-dimension-spacing-inline-xxxl: 3rem;
+    --tmp-dimension-spacing-block-minimum: 0rem;
     --tmp-dimension-spacing-block-xxxs: 0.125rem;
     --tmp-dimension-spacing-block-xxs: 0.25rem;
     --tmp-dimension-spacing-block-xs: 0.5rem;
@@ -93,6 +99,7 @@
 
 @media (min-width: 1681px) {
   :root {
+    --tmp-dimension-spacing-inline-minimum: 0.125rem;
     --tmp-dimension-spacing-inline-xxxs: 0.25rem;
     --tmp-dimension-spacing-inline-xxs: 0.5rem;
     --tmp-dimension-spacing-inline-xs: 0.75rem;
@@ -102,6 +109,7 @@
     --tmp-dimension-spacing-inline-xl: 2.5rem;
     --tmp-dimension-spacing-inline-xxl: 3rem;
     --tmp-dimension-spacing-inline-xxxl: 3.5rem;
+    --tmp-dimension-spacing-block-minimum: 0.125rem;
     --tmp-dimension-spacing-block-xxxs: 0.25rem;
     --tmp-dimension-spacing-block-xxs: 0.5rem;
     --tmp-dimension-spacing-block-xs: 0.75rem;

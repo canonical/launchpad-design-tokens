@@ -4,6 +4,9 @@
       "$type": "dimension",
       "spacing": {
         "inline": {
+          "minimum": {
+            "$value": "{dimension.025}"
+          },
           "xxxs": {
             "$value": "{dimension.050}"
           },
@@ -33,6 +36,9 @@
           }
         },
         "block": {
+          "minimum": {
+            "$value": "{dimension.025}"
+          },
           "xxxs": {
             "$value": "{dimension.050}"
           },
