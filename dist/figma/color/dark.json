@@ -48,6 +48,10 @@
           "$value": "#000000",
           "$type": "color"
         },
+        "white": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
         "link": {
           "default": {
             "$value": "#6699cc",
@@ -75,6 +79,20 @@
         "alt": {
           "$value": "#202020",
           "$type": "color"
+        },
+        "brand": {
+          "default": {
+            "$value": "#e9542033",
+            "$type": "color"
+          },
+          "hover": {
+            "$value": "#e954204d",
+            "$type": "color"
+          },
+          "active": {
+            "$value": "#e954205c",
+            "$type": "color"
+          }
         },
         "neutral": {
           "default": {
@@ -265,6 +283,28 @@
             "$value": "#7c0e1b",
             "$type": "color"
           }
+        }
+      },
+      "status": {
+        "default": {
+          "$value": "#666666",
+          "$type": "color"
+        },
+        "positive": {
+          "$value": "#0E8420",
+          "$type": "color"
+        },
+        "negative": {
+          "$value": "#C7162B",
+          "$type": "color"
+        },
+        "information": {
+          "$value": "#24598F",
+          "$type": "color"
+        },
+        "caution": {
+          "$value": "#CC7900",
+          "$type": "color"
         }
       }
     }
