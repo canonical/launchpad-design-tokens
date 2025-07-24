@@ -38,6 +38,9 @@
         "reversed": {
           "$value": "#000000"
         },
+        "white": {
+          "$value": "#ffffff"
+        },
         "link": {
           "default": {
             "$value": "#6699cc"
@@ -59,6 +62,17 @@
         },
         "alt": {
           "$value": "#202020"
+        },
+        "brand": {
+          "default": {
+            "$value": "#e9542033"
+          },
+          "hover": {
+            "$value": "#e954204d"
+          },
+          "active": {
+            "$value": "#e954205c"
+          }
         },
         "neutral": {
           "default": {
@@ -207,6 +221,23 @@
           "active": {
             "$value": "#7c0e1b"
           }
+        }
+      },
+      "status": {
+        "default": {
+          "$value": "#666666"
+        },
+        "positive": {
+          "$value": "#0E8420"
+        },
+        "negative": {
+          "$value": "#C7162B"
+        },
+        "information": {
+          "$value": "#24598F"
+        },
+        "caution": {
+          "$value": "#CC7900"
         }
       }
     }
