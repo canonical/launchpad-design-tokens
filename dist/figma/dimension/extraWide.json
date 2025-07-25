@@ -31,6 +31,44 @@
         "$value": "9999px",
         "$type": "dimension"
       }
+    },
+    "size": {
+      "xxxs": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "xxs": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "xs": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "s": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "m": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "l": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "xl": {
+        "$value": "40px",
+        "$type": "dimension"
+      },
+      "xxl": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "xxxl": {
+        "$value": "64px",
+        "$type": "dimension"
+      }
     }
   },
   "tmp": {
