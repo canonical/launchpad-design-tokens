@@ -143,6 +143,9 @@
         "highlight": {
           "$value": "#000000"
         },
+        "focus": {
+          "$value": "#2E96FF"
+        },
         "high-contrast": {
           "$value": "#707070"
         },

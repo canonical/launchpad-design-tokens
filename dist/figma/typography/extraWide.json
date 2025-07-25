@@ -59,12 +59,30 @@
           "$type": "typography"
         }
       },
+      "h1": {
+        "$value": {
+          "fontFamily": "{tmp.typography.fontFamily.default}",
+          "fontSize": "{tmp.typography.fontSize.xxl}",
+          "fontWeight": "{tmp.typography.weight.medium}",
+          "lineHeight": "{tmp.typography.lineHeight.xxl}"
+        },
+        "$type": "typography"
+      },
+      "h2": {
+        "$value": {
+          "fontFamily": "{tmp.typography.fontFamily.default}",
+          "fontSize": "{tmp.typography.fontSize.xxl}",
+          "fontWeight": "{tmp.typography.weight.extraThin}",
+          "lineHeight": "{tmp.typography.lineHeight.xxl}"
+        },
+        "$type": "typography"
+      },
       "h3": {
         "$value": {
           "fontFamily": "{tmp.typography.fontFamily.default}",
           "fontSize": "{tmp.typography.fontSize.xl}",
           "fontWeight": "{tmp.typography.weight.medium}",
-          "lineHeight": "{tmp.typography.lineHeight.l}"
+          "lineHeight": "{tmp.typography.lineHeight.xl}"
         },
         "$type": "typography"
       },
@@ -73,7 +91,7 @@
           "fontFamily": "{tmp.typography.fontFamily.default}",
           "fontSize": "{tmp.typography.fontSize.xl}",
           "fontWeight": "{tmp.typography.weight.thin}",
-          "lineHeight": "{tmp.typography.lineHeight.l}"
+          "lineHeight": "{tmp.typography.lineHeight.xl}"
         },
         "$type": "typography"
       },
@@ -200,7 +218,15 @@
           "$type": "dimension"
         },
         "l": {
-          "$value": "32px",
+          "$value": "30px",
+          "$type": "dimension"
+        },
+        "xl": {
+          "$value": "38px",
+          "$type": "dimension"
+        },
+        "xxl": {
+          "$value": "45px",
           "$type": "dimension"
         }
       }

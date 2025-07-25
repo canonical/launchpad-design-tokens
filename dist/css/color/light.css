@@ -43,6 +43,7 @@
   --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
   --tmp-color-border-default: rgba(0, 0, 0, 0.2);
   --tmp-color-border-highlight: #000000;
+  --tmp-color-border-focus: #2e96ff;
   --tmp-color-border-high-contrast: #707070;
   --tmp-color-border-low-contrast: rgba(0, 0, 0, 0.1);
   --tmp-color-border-neutral: rgba(0, 0, 0, 0.56);

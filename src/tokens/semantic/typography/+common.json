@@ -55,13 +55,31 @@
           }
         }
       },
+      "h1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{tmp.typography.fontFamily.default}",
+          "fontSize": "{tmp.typography.fontSize.xxl}",
+          "fontWeight": "{tmp.typography.weight.medium}",
+          "lineHeight": "{tmp.typography.lineHeight.xxl}"
+        }
+      },
+      "h2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{tmp.typography.fontFamily.default}",
+          "fontSize": "{tmp.typography.fontSize.xxl}",
+          "fontWeight": "{tmp.typography.weight.extraThin}",
+          "lineHeight": "{tmp.typography.lineHeight.xxl}"
+        }
+      },
       "h3": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{tmp.typography.fontFamily.default}",
           "fontSize": "{tmp.typography.fontSize.xl}",
           "fontWeight": "{tmp.typography.weight.medium}",
-          "lineHeight": "{tmp.typography.lineHeight.l}"
+          "lineHeight": "{tmp.typography.lineHeight.xl}"
         }
       },
       "h4": {
@@ -70,7 +88,7 @@
           "fontFamily": "{tmp.typography.fontFamily.default}",
           "fontSize": "{tmp.typography.fontSize.xl}",
           "fontWeight": "{tmp.typography.weight.thin}",
-          "lineHeight": "{tmp.typography.lineHeight.l}"
+          "lineHeight": "{tmp.typography.lineHeight.xl}"
         }
       },
       "h5": {

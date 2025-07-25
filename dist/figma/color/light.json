@@ -182,6 +182,10 @@
           "$value": "#000000",
           "$type": "color"
         },
+        "focus": {
+          "$value": "#2E96FF",
+          "$type": "color"
+        },
         "high-contrast": {
           "$value": "#707070",
           "$type": "color"

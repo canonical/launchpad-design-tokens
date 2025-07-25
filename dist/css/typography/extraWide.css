@@ -22,15 +22,19 @@
   --tmp-typography-line-height-xs: 1.25rem;
   --tmp-typography-line-height-s: 1.5rem;
   --tmp-typography-line-height-m: 1.6875rem;
-  --tmp-typography-line-height-l: 2rem;
+  --tmp-typography-line-height-l: 1.875rem;
+  --tmp-typography-line-height-xl: 2.375rem;
+  --tmp-typography-line-height-xxl: 2.8125rem;
   --tmp-typography-paragraph-xs: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-default);
   --tmp-typography-paragraph-s: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-default);
   --tmp-typography-paragraph-default: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-default);
   --tmp-typography-code-xs: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-mono);
   --tmp-typography-code-s: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-mono);
   --tmp-typography-code-default: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-mono);
-  --tmp-typography-h3: var(--tmp-typography-weight-medium) var(--tmp-typography-font-size-xl)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
-  --tmp-typography-h4: var(--tmp-typography-weight-thin) var(--tmp-typography-font-size-xl)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
+  --tmp-typography-h1: var(--tmp-typography-weight-medium) var(--tmp-typography-font-size-xxl)/var(--tmp-typography-line-height-xxl) var(--tmp-typography-font-family-default);
+  --tmp-typography-h2: var(--tmp-typography-weight-extra-thin) var(--tmp-typography-font-size-xxl)/var(--tmp-typography-line-height-xxl) var(--tmp-typography-font-family-default);
+  --tmp-typography-h3: var(--tmp-typography-weight-medium) var(--tmp-typography-font-size-xl)/var(--tmp-typography-line-height-xl) var(--tmp-typography-font-family-default);
+  --tmp-typography-h4: var(--tmp-typography-weight-thin) var(--tmp-typography-font-size-xl)/var(--tmp-typography-line-height-xl) var(--tmp-typography-font-family-default);
   --tmp-typography-h5: var(--tmp-typography-weight-medium) var(--tmp-typography-font-size-l)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
   --tmp-typography-h6: var(--tmp-typography-weight-light) var(--tmp-typography-font-size-l)/var(--tmp-typography-line-height-l) var(--tmp-typography-font-family-default);
 }
