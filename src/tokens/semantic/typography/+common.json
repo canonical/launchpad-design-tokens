@@ -125,6 +125,9 @@
         },
         "medium": {
           "$value": 450
+        },
+        "bold": {
+          "$value": 550
         }
       },
       "letterSpacing": {
