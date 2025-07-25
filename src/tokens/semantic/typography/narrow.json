@@ -23,7 +23,7 @@
         },
         "l": {
           "$value": {
-            "value": 1.3125,
+            "value": 1.125,
             "unit": "rem"
           }
         },
@@ -35,7 +35,7 @@
         },
         "xxl": {
           "$value": {
-            "value": 1.75,
+            "value": 2,
             "unit": "rem"
           }
         }
@@ -62,7 +62,19 @@
         },
         "l": {
           "$value": {
-            "value": 1.75,
+            "value": 1.5,
+            "unit": "rem"
+          }
+        },
+        "xl": {
+          "$value": {
+            "value": 2,
+            "unit": "rem"
+          }
+        },
+        "xxl": {
+          "$value": {
+            "value": 2.5,
             "unit": "rem"
           }
         }
