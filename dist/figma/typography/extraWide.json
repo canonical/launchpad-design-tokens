@@ -133,6 +133,10 @@
         "medium": {
           "$value": 450,
           "$type": "fontWeight"
+        },
+        "bold": {
+          "$value": 550,
+          "$type": "fontWeight"
         }
       },
       "letterSpacing": {
