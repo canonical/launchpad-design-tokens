@@ -11,7 +11,12 @@ export const commonModesTokensName = "+common.json";
 
 export const baseTokensPath = "src/tokens";
 export const baseBuildPath = "dist";
-export const categories = ["color", "typography", "dimension"] as const;
+export const categories = [
+  "color",
+  "typography",
+  "dimension",
+  "opacity",
+] as const;
 export const tokenTypes = ["primitives", "semantic"] as const;
 export const platforms = ["css", "figma"] as const;
 

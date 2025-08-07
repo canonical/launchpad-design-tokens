@@ -1,0 +1,12 @@
+{
+  "name": "Launchpad opacity tokens",
+  "collections": {
+    "opacity": {
+      "modes": {
+        "opacity": [
+          "opacity.json"
+        ]
+      }
+    }
+  }
+}
