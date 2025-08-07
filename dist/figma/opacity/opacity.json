@@ -1,0 +1,22 @@
+{
+  "tmp": {
+    "opacity": {
+      "faint": {
+        "$value": 0.1,
+        "$type": "number"
+      },
+      "muted": {
+        "$value": 0.33,
+        "$type": "number"
+      },
+      "soft": {
+        "$value": 0.5,
+        "$type": "number"
+      },
+      "strong": {
+        "$value": 0.75,
+        "$type": "number"
+      }
+    }
+  }
+}
