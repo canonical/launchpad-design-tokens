@@ -27,8 +27,12 @@
   --tmp-typography-line-height-xl: 2.375rem;
   --tmp-typography-line-height-xxl: 2.8125rem;
   --tmp-typography-paragraph-xs: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-xs-strong: var(--tmp-typography-weight-bold) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-default);
   --tmp-typography-paragraph-s: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-s-strong: var(--tmp-typography-weight-bold) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-default);
   --tmp-typography-paragraph-default: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-default-strong: var(--tmp-typography-weight-bold) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-default);
+  --tmp-typography-paragraph-default-small-caps: small-caps var(--tmp-typography-weight-bold) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-default); /** `letter-spacing` in CSS is not a constituent of `font` and as such it is skipped in the output of this composite token. Be sure to apply `tmp.typography.letterSpacing.l` separately whenever design requires it. */
   --tmp-typography-code-xs: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-xs)/var(--tmp-typography-line-height-xs) var(--tmp-typography-font-family-mono);
   --tmp-typography-code-s: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-s)/var(--tmp-typography-line-height-s) var(--tmp-typography-font-family-mono);
   --tmp-typography-code-default: var(--tmp-typography-weight-regular) var(--tmp-typography-font-size-m)/var(--tmp-typography-line-height-m) var(--tmp-typography-font-family-mono);
