@@ -1,0 +1,13 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --tmp-transition-timing-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --tmp-transition-timing-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --tmp-transition-duration-snap: 0ms;
+  --tmp-transition-duration-fast: 0ms;
+  --tmp-transition-duration-brisk: 0ms;
+  --tmp-transition-duration-slow: 0ms;
+  --tmp-transition-duration-sleepy: 0ms;
+}
