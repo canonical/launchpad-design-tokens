@@ -1,0 +1,15 @@
+{
+  "name": "Launchpad transition tokens",
+  "collections": {
+    "transition": {
+      "modes": {
+        "normal": [
+          "normal.json"
+        ],
+        "reduced-motion": [
+          "reduced-motion.json"
+        ]
+      }
+    }
+  }
+}

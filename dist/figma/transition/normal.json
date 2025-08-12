@@ -1,0 +1,48 @@
+{
+  "tmp": {
+    "transition": {
+      "timing": {
+        "easeOut": {
+          "$value": [
+            0.215,
+            0.61,
+            0.355,
+            1
+          ],
+          "$type": "cubicBezier"
+        },
+        "easeIn": {
+          "$value": [
+            0.55,
+            0.055,
+            0.675,
+            0.19
+          ],
+          "$type": "cubicBezier"
+        }
+      },
+      "duration": {
+        "snap": {
+          "$value": "100ms",
+          "$type": "duration"
+        },
+        "fast": {
+          "$value": "165ms",
+          "$type": "duration"
+        },
+        "brisk": {
+          "$value": "333ms",
+          "$type": "duration"
+        },
+        "slow": {
+          "$value": "500ms",
+          "$type": "duration"
+        },
+        "sleepy": {
+          "$value": "1s",
+          "$type": "duration"
+        }
+      }
+    }
+  }
+}

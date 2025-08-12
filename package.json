@@ -16,11 +16,12 @@
   },
   "license": "LGPL-3.0",
   "scripts": {
-    "build": "bun run build:color && bun run build:typography && bun run build:dimension && bun run build:opacity",
+    "build": "bun run build:color && bun run build:typography && bun run build:dimension && bun run build:opacity && bun run build:transition",
     "build:color": "bun run src/build/color.ts",
     "build:typography": "bun run src/build/typography.ts",
     "build:dimension": "bun run src/build/dimension.ts",
     "build:opacity": "bun run src/build/opacity.ts",
+    "build:transition": "bun run src/build/transition.ts",
     "check": "bun run check:biome && bun run check:ts",
     "check:fix": "bun run check:biome:fix && bun run check:ts",
     "check:biome": "biome check",

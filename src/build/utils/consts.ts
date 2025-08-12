@@ -16,6 +16,7 @@ export const categories = [
   "typography",
   "dimension",
   "opacity",
+  "transition",
 ] as const;
 export const tokenTypes = ["primitives", "semantic"] as const;
 export const platforms = ["css", "figma"] as const;

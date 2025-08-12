@@ -1,0 +1,24 @@
+{
+  "tmp": {
+    "transition": {
+      "duration": {
+        "$type": "duration",
+        "snap": {
+          "$value": "0ms"
+        },
+        "fast": {
+          "$value": "0ms"
+        },
+        "brisk": {
+          "$value": "0ms"
+        },
+        "slow": {
+          "$value": "0ms"
+        },
+        "sleepy": {
+          "$value": "0ms"
+        }
+      }
+    }
+  }
+}

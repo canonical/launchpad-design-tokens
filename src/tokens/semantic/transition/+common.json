@@ -1,0 +1,15 @@
+{
+  "tmp": {
+    "transition": {
+      "timing": {
+        "$type": "cubicBezier",
+        "easeOut": {
+          "$value": [0.215, 0.61, 0.355, 1]
+        },
+        "easeIn": {
+          "$value": [0.55, 0.055, 0.675, 0.19]
+        }
+      }
+    }
+  }
+}
