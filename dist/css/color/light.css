@@ -21,6 +21,7 @@
   --tmp-color-background-hover: #f2f2f2;
   --tmp-color-background-active: #ebebeb;
   --tmp-color-background-alt: #f7f7f7;
+  --tmp-color-background-alt-reversed: #202020;
   --tmp-color-background-brand-default: rgba(233, 84, 32, 0.1);
   --tmp-color-background-brand-hover: rgba(233, 84, 32, 0.15);
   --tmp-color-background-brand-active: rgba(233, 84, 32, 0.1);
@@ -41,7 +42,6 @@
   --tmp-color-background-caution-active: rgba(199, 90, 0, 0.18);
   --tmp-color-background-input: #f5f5f5;
   --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
-  --tmp-color-background-tooltip: #202020;
   --tmp-color-border-default: rgba(0, 0, 0, 0.2);
   --tmp-color-border-highlight: #000000;
   --tmp-color-border-focus: #2e96ff;
