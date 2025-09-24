@@ -171,6 +171,10 @@
         "overlay": {
           "$value": "#111111d9",
           "$type": "color"
+        },
+        "tooltip": {
+          "$value": "#202020",
+          "$type": "color"
         }
       },
       "border": {

@@ -134,6 +134,9 @@
         },
         "overlay": {
           "$value": "#111111d9"
+        },
+        "tooltip": {
+          "$value": "#F7F7F7"
         }
       },
       "border": {
