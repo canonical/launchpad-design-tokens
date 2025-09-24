@@ -63,6 +63,9 @@
         "alt": {
           "$value": "#202020"
         },
+        "altReversed": {
+          "$value": "#F7F7F7"
+        },
         "brand": {
           "default": {
             "$value": "#e9542033"
@@ -134,9 +137,6 @@
         },
         "overlay": {
           "$value": "#111111d9"
-        },
-        "tooltip": {
-          "$value": "#F7F7F7"
         }
       },
       "border": {
