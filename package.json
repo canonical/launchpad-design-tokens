@@ -1,6 +1,6 @@
 {
   "name": "@canonical/launchpad-design-tokens",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Design tokens for Canonical's Launchpad",
   "files": ["dist/css"],
   "type": "module",
