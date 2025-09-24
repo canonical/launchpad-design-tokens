@@ -41,6 +41,7 @@
   --tmp-color-background-caution-active: rgba(255, 115, 0, 0.36);
   --tmp-color-background-input: #2f2f2f;
   --tmp-color-background-overlay: rgba(17, 17, 17, 0.85);
+  --tmp-color-background-tooltip: #f7f7f7;
   --tmp-color-border-default: rgba(255, 255, 255, 0.2);
   --tmp-color-border-highlight: #ffffff;
   --tmp-color-border-focus: #99ccff;
