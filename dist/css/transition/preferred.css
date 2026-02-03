@@ -3,8 +3,8 @@
  */
 
 :root {
-  --tmp-transition-timing-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
-  --tmp-transition-timing-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --lp-transition-timing-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --lp-transition-timing-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 
@@ -14,11 +14,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    --tmp-transition-duration-snap: 100ms;
-    --tmp-transition-duration-fast: 165ms;
-    --tmp-transition-duration-brisk: 333ms;
-    --tmp-transition-duration-slow: 500ms;
-    --tmp-transition-duration-sleepy: 1s;
+    --lp-transition-duration-snap: 100ms;
+    --lp-transition-duration-fast: 165ms;
+    --lp-transition-duration-brisk: 333ms;
+    --lp-transition-duration-slow: 500ms;
+    --lp-transition-duration-sleepy: 1s;
   }
 }
 
@@ -29,10 +29,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   :root {
-    --tmp-transition-duration-snap: 0ms;
-    --tmp-transition-duration-fast: 0ms;
-    --tmp-transition-duration-brisk: 0ms;
-    --tmp-transition-duration-slow: 0ms;
-    --tmp-transition-duration-sleepy: 0ms;
+    --lp-transition-duration-snap: 0ms;
+    --lp-transition-duration-fast: 0ms;
+    --lp-transition-duration-brisk: 0ms;
+    --lp-transition-duration-slow: 0ms;
+    --lp-transition-duration-sleepy: 0ms;
   }
 }

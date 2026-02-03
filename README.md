@@ -36,6 +36,16 @@ The package provides CSS files with custom properties for different categories:
 - `dist/css/dimension/extraWide.css` - Dimensions for extra wide screens
 - `dist/css/dimension/responsive.css` - Responsive dimension system
 
+#### Opacity
+
+- `dist/css/opacity/opacity.css` - Opacity levels for transparency effects
+
+#### Transition
+
+- `dist/css/transition/normal.css` - Standard transition timings
+- `dist/css/transition/preferred.css` - Transitions based on prefers-motion setting
+- `dist/css/transition/reduced-motion.css` - Transitions for reduced motion preferences
+
 ### Figma Tokens
 
 Figma-compatible token files are available in `dist/figma/` with the same structure as CSS tokens, plus manifest files for easy import.
@@ -62,6 +72,8 @@ bun run build
 bun run build:color
 bun run build:typography
 bun run build:dimension
+bun run build:opacity
+bun run build:transition
 
 # Run linting and type checking
 bun run check
@@ -79,11 +91,15 @@ src/
 │   └── semantic/       # Semantic token definitions
 │       ├── color/
 │       ├── typography/
-│       └── dimension/
+│       ├── dimension/
+│       ├── opacity/
+│       └── transition/
 └── build/              # Build scripts
     ├── color.ts
     ├── typography.ts
-    └── dimension.ts
+    ├── dimension.ts
+    ├── opacity.ts
+    └── transition.ts
 ```
 
 ## Token Categories
@@ -105,6 +121,17 @@ src/
 - Spacing and layout dimensions
 - Responsive sizing systems
 - Breakpoint-specific dimension scales
+
+### Opacity
+
+- Transparency level definitions
+- Semantic opacity values for consistent visual hierarchy
+
+### Transition
+
+- Animation and transition timing functions
+- Motion preferences support (normal and reduced motion)
+- Consistent animation durations
 
 ## License
 

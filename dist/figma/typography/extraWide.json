@@ -1,154 +1,154 @@
 {
-  "tmp": {
+  "lp": {
     "typography": {
       "paragraph": {
         "xs": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.xs}",
-            "fontWeight": "{tmp.typography.weight.regular}",
-            "lineHeight": "{tmp.typography.lineHeight.xs}"
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.xs}",
+            "fontWeight": "{lp.typography.weight.regular}",
+            "lineHeight": "{lp.typography.lineHeight.xs}"
           },
           "$type": "typography"
         },
         "xs-strong": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.xs}",
-            "fontWeight": "{tmp.typography.weight.bold}",
-            "lineHeight": "{tmp.typography.lineHeight.xs}"
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.xs}",
+            "fontWeight": "{lp.typography.weight.bold}",
+            "lineHeight": "{lp.typography.lineHeight.xs}"
           },
           "$type": "typography"
         },
         "s": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.s}",
-            "fontWeight": "{tmp.typography.weight.regular}",
-            "lineHeight": "{tmp.typography.lineHeight.s}"
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.s}",
+            "fontWeight": "{lp.typography.weight.regular}",
+            "lineHeight": "{lp.typography.lineHeight.s}"
           },
           "$type": "typography"
         },
         "s-strong": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.s}",
-            "fontWeight": "{tmp.typography.weight.bold}",
-            "lineHeight": "{tmp.typography.lineHeight.s}"
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.s}",
+            "fontWeight": "{lp.typography.weight.bold}",
+            "lineHeight": "{lp.typography.lineHeight.s}"
           },
           "$type": "typography"
         },
         "default": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.m}",
-            "fontWeight": "{tmp.typography.weight.regular}",
-            "lineHeight": "{tmp.typography.lineHeight.m}"
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.m}",
+            "fontWeight": "{lp.typography.weight.regular}",
+            "lineHeight": "{lp.typography.lineHeight.m}"
           },
           "$type": "typography"
         },
         "default-strong": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.m}",
-            "fontWeight": "{tmp.typography.weight.bold}",
-            "lineHeight": "{tmp.typography.lineHeight.m}"
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.m}",
+            "fontWeight": "{lp.typography.weight.bold}",
+            "lineHeight": "{lp.typography.lineHeight.m}"
           },
           "$type": "typography"
         },
         "default-smallCaps": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.default}",
-            "fontSize": "{tmp.typography.fontSize.m}",
-            "fontWeight": "{tmp.typography.weight.bold}",
-            "lineHeight": "{tmp.typography.lineHeight.m}",
-            "letterSpacing": "{tmp.typography.letterSpacing.l}",
+            "fontFamily": "{lp.typography.fontFamily.default}",
+            "fontSize": "{lp.typography.fontSize.m}",
+            "fontWeight": "{lp.typography.weight.bold}",
+            "lineHeight": "{lp.typography.lineHeight.m}",
+            "letterSpacing": "{lp.typography.letterSpacing.l}",
             "fontVariant": "small-caps"
           },
           "$type": "typography",
-          "$description": "`letter-spacing` in CSS is not a constituent of `font` and as such it is skipped in the output of this composite token. Be sure to apply `tmp.typography.letterSpacing.l` separately whenever design requires it."
+          "$description": "`letter-spacing` in CSS is not a constituent of `font` and as such it is skipped in the output of this composite token. Be sure to apply `lp.typography.letterSpacing.l` separately whenever design requires it."
         }
       },
       "code": {
         "xs": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.mono}",
-            "fontSize": "{tmp.typography.fontSize.xs}",
-            "fontWeight": "{tmp.typography.weight.regular}",
-            "lineHeight": "{tmp.typography.lineHeight.xs}"
+            "fontFamily": "{lp.typography.fontFamily.mono}",
+            "fontSize": "{lp.typography.fontSize.xs}",
+            "fontWeight": "{lp.typography.weight.regular}",
+            "lineHeight": "{lp.typography.lineHeight.xs}"
           },
           "$type": "typography"
         },
         "s": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.mono}",
-            "fontSize": "{tmp.typography.fontSize.s}",
-            "fontWeight": "{tmp.typography.weight.regular}",
-            "lineHeight": "{tmp.typography.lineHeight.s}"
+            "fontFamily": "{lp.typography.fontFamily.mono}",
+            "fontSize": "{lp.typography.fontSize.s}",
+            "fontWeight": "{lp.typography.weight.regular}",
+            "lineHeight": "{lp.typography.lineHeight.s}"
           },
           "$type": "typography"
         },
         "default": {
           "$value": {
-            "fontFamily": "{tmp.typography.fontFamily.mono}",
-            "fontSize": "{tmp.typography.fontSize.m}",
-            "fontWeight": "{tmp.typography.weight.regular}",
-            "lineHeight": "{tmp.typography.lineHeight.m}"
+            "fontFamily": "{lp.typography.fontFamily.mono}",
+            "fontSize": "{lp.typography.fontSize.m}",
+            "fontWeight": "{lp.typography.weight.regular}",
+            "lineHeight": "{lp.typography.lineHeight.m}"
           },
           "$type": "typography"
         }
       },
       "h1": {
         "$value": {
-          "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.xxl}",
-          "fontWeight": "{tmp.typography.weight.medium}",
-          "lineHeight": "{tmp.typography.lineHeight.xxl}"
+          "fontFamily": "{lp.typography.fontFamily.default}",
+          "fontSize": "{lp.typography.fontSize.xxl}",
+          "fontWeight": "{lp.typography.weight.medium}",
+          "lineHeight": "{lp.typography.lineHeight.xxl}"
         },
         "$type": "typography"
       },
       "h2": {
         "$value": {
-          "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.xxl}",
-          "fontWeight": "{tmp.typography.weight.extraThin}",
-          "lineHeight": "{tmp.typography.lineHeight.xxl}"
+          "fontFamily": "{lp.typography.fontFamily.default}",
+          "fontSize": "{lp.typography.fontSize.xxl}",
+          "fontWeight": "{lp.typography.weight.extraThin}",
+          "lineHeight": "{lp.typography.lineHeight.xxl}"
         },
         "$type": "typography"
       },
       "h3": {
         "$value": {
-          "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.xl}",
-          "fontWeight": "{tmp.typography.weight.medium}",
-          "lineHeight": "{tmp.typography.lineHeight.xl}"
+          "fontFamily": "{lp.typography.fontFamily.default}",
+          "fontSize": "{lp.typography.fontSize.xl}",
+          "fontWeight": "{lp.typography.weight.medium}",
+          "lineHeight": "{lp.typography.lineHeight.xl}"
         },
         "$type": "typography"
       },
       "h4": {
         "$value": {
-          "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.xl}",
-          "fontWeight": "{tmp.typography.weight.thin}",
-          "lineHeight": "{tmp.typography.lineHeight.xl}"
+          "fontFamily": "{lp.typography.fontFamily.default}",
+          "fontSize": "{lp.typography.fontSize.xl}",
+          "fontWeight": "{lp.typography.weight.thin}",
+          "lineHeight": "{lp.typography.lineHeight.xl}"
         },
         "$type": "typography"
       },
       "h5": {
         "$value": {
-          "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.l}",
-          "fontWeight": "{tmp.typography.weight.medium}",
-          "lineHeight": "{tmp.typography.lineHeight.l}"
+          "fontFamily": "{lp.typography.fontFamily.default}",
+          "fontSize": "{lp.typography.fontSize.l}",
+          "fontWeight": "{lp.typography.weight.medium}",
+          "lineHeight": "{lp.typography.lineHeight.l}"
         },
         "$type": "typography"
       },
       "h6": {
         "$value": {
-          "fontFamily": "{tmp.typography.fontFamily.default}",
-          "fontSize": "{tmp.typography.fontSize.l}",
-          "fontWeight": "{tmp.typography.weight.light}",
-          "lineHeight": "{tmp.typography.lineHeight.l}"
+          "fontFamily": "{lp.typography.fontFamily.default}",
+          "fontSize": "{lp.typography.fontSize.l}",
+          "fontWeight": "{lp.typography.weight.light}",
+          "lineHeight": "{lp.typography.lineHeight.l}"
         },
         "$type": "typography"
       },

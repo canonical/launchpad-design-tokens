@@ -1,5 +1,5 @@
 {
-  "tmp": {
+  "lp": {
     "color": {
       "$type": "color",
       "brand": {
@@ -159,39 +159,39 @@
           "$value": "#0000008f"
         },
         "positive": {
-          "$value": "{tmp.color.positive}"
+          "$value": "{lp.color.positive}"
         },
         "negative": {
-          "$value": "{tmp.color.negative}"
+          "$value": "{lp.color.negative}"
         },
         "information": {
-          "$value": "{tmp.color.information}"
+          "$value": "{lp.color.information}"
         },
         "caution": {
-          "$value": "{tmp.color.caution}"
+          "$value": "{lp.color.caution}"
         }
       },
       "icon": {
         "default": {
-          "$value": "{tmp.color.text.default}"
+          "$value": "{lp.color.text.default}"
         },
         "muted": {
-          "$value": "{tmp.color.text.muted}"
+          "$value": "{lp.color.text.muted}"
         },
         "positive": {
-          "$value": "{tmp.color.positive}"
+          "$value": "{lp.color.positive}"
         },
         "negative": {
-          "$value": "{tmp.color.negative}"
+          "$value": "{lp.color.negative}"
         },
         "information": {
-          "$value": "{tmp.color.information}"
+          "$value": "{lp.color.information}"
         },
         "caution": {
-          "$value": "{tmp.color.caution}"
+          "$value": "{lp.color.caution}"
         },
         "link": {
-          "$value": "{tmp.color.text.link.default}"
+          "$value": "{lp.color.text.link.default}"
         },
         "status": {
           "shade-1": {
@@ -208,7 +208,7 @@
       "fill": {
         "positive": {
           "default": {
-            "$value": "{tmp.color.positive}"
+            "$value": "{lp.color.positive}"
           },
           "hover": {
             "$value": "#0c6d1a"
@@ -219,7 +219,7 @@
         },
         "negative": {
           "default": {
-            "$value": "{tmp.color.negative}"
+            "$value": "{lp.color.negative}"
           },
           "hover": {
             "$value": "#b01326"
