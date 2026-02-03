@@ -48,7 +48,7 @@
       }
     }
   },
-  "tmp": {
+  "lp": {
     "dimension": {
       "$type": "dimension",
       "size": {

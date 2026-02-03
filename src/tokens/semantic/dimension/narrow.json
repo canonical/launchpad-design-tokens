@@ -1,11 +1,11 @@
 {
-  "tmp": {
+  "lp": {
     "dimension": {
       "$type": "dimension",
       "spacing": {
         "inline": {
           "minimum": {
-            "$value": "{tmp.dimension.000}"
+            "$value": "{lp.dimension.000}"
           },
           "xxxs": {
             "$value": "{dimension.025}"
@@ -14,7 +14,7 @@
             "$value": "{dimension.050}"
           },
           "xs": {
-            "$value": "{tmp.dimension.075}"
+            "$value": "{lp.dimension.075}"
           },
           "s": {
             "$value": "{dimension.100}"
@@ -37,7 +37,7 @@
         },
         "block": {
           "minimum": {
-            "$value": "{tmp.dimension.000}"
+            "$value": "{lp.dimension.000}"
           },
           "xxxs": {
             "$value": "{dimension.025}"
@@ -46,7 +46,7 @@
             "$value": "{dimension.050}"
           },
           "xs": {
-            "$value": "{tmp.dimension.075}"
+            "$value": "{lp.dimension.075}"
           },
           "s": {
             "$value": "{dimension.100}"

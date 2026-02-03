@@ -3,8 +3,8 @@
  */
 
 :root {
-  --tmp-opacity-faint: 0.1;
-  --tmp-opacity-muted: 0.33;
-  --tmp-opacity-soft: 0.5;
-  --tmp-opacity-strong: 0.75;
+  --lp-opacity-faint: 0.1;
+  --lp-opacity-muted: 0.33;
+  --lp-opacity-soft: 0.5;
+  --lp-opacity-strong: 0.75;
 }

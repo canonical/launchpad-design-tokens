@@ -1,5 +1,5 @@
 {
-  "tmp": {
+  "lp": {
     "color": {
       "brand": {
         "default": {
@@ -203,49 +203,49 @@
           "$type": "color"
         },
         "positive": {
-          "$value": "{tmp.color.positive}",
+          "$value": "{lp.color.positive}",
           "$type": "color"
         },
         "negative": {
-          "$value": "{tmp.color.negative}",
+          "$value": "{lp.color.negative}",
           "$type": "color"
         },
         "information": {
-          "$value": "{tmp.color.information}",
+          "$value": "{lp.color.information}",
           "$type": "color"
         },
         "caution": {
-          "$value": "{tmp.color.caution}",
+          "$value": "{lp.color.caution}",
           "$type": "color"
         }
       },
       "icon": {
         "default": {
-          "$value": "{tmp.color.text.default}",
+          "$value": "{lp.color.text.default}",
           "$type": "color"
         },
         "muted": {
-          "$value": "{tmp.color.text.muted}",
+          "$value": "{lp.color.text.muted}",
           "$type": "color"
         },
         "positive": {
-          "$value": "{tmp.color.positive}",
+          "$value": "{lp.color.positive}",
           "$type": "color"
         },
         "negative": {
-          "$value": "{tmp.color.negative}",
+          "$value": "{lp.color.negative}",
           "$type": "color"
         },
         "information": {
-          "$value": "{tmp.color.information}",
+          "$value": "{lp.color.information}",
           "$type": "color"
         },
         "caution": {
-          "$value": "{tmp.color.caution}",
+          "$value": "{lp.color.caution}",
           "$type": "color"
         },
         "link": {
-          "$value": "{tmp.color.text.link.default}",
+          "$value": "{lp.color.text.link.default}",
           "$type": "color"
         },
         "status": {
@@ -266,7 +266,7 @@
       "fill": {
         "positive": {
           "default": {
-            "$value": "{tmp.color.positive}",
+            "$value": "{lp.color.positive}",
             "$type": "color"
           },
           "hover": {
@@ -280,7 +280,7 @@
         },
         "negative": {
           "default": {
-            "$value": "{tmp.color.negative}",
+            "$value": "{lp.color.negative}",
             "$type": "color"
           },
           "hover": {
