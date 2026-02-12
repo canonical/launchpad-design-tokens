@@ -5,74 +5,67 @@ on:
   push:
     branches: [main]
     paths:
-      - "src/**"
       - "package.json"
 
+# https://docs.npmjs.com/trusted-publishers#github-actions-configuration
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    outputs:
+      is_new_version: ${{ steps.check.outputs.is_new_version }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          # Only download package.json. Nothing else.
+          sparse-checkout: package.json
+          sparse-checkout-cone-mode: false
+
+      - name: Check if version exists in registry
+        id: check
+        run: |
+          PACKAGE_NAME=$(npm pkg get name | tr -d '"')
+          PACKAGE_VERSION=$(npm pkg get version | tr -d '"')
+
+          echo "Checking $PACKAGE_NAME@$PACKAGE_VERSION..."
+
+          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version > /dev/null 2>&1; then
+            echo "Version found. Skipping..."
+            echo "is_new_version=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Version not found. Proceeding..."
+            echo "is_new_version=true" >> "$GITHUB_OUTPUT"
+          fi
+
   publish:
+    needs: check-version
+    if: needs.check-version.outputs.is_new_version == 'true'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+      - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: Cache dependencies
-        uses: actions/cache@v4
+      - uses: actions/cache@v4
         with:
           path: ~/.bun/install/cache
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-bun-
 
-      - name: Install dependencies
-        run: bun install
+      - run: bun install
 
-      - name: Run linting and type checking
-        run: bun run check
+      - run: bun run check
 
-      - name: Build package
-        run: bun run build
+      - run: bun run build
 
-      - name: Bump patch version if needed
-        run: |
-          PACKAGE_VERSION=$(bun -e "console.log(require('./package.json').version)")
-          PACKAGE_NAME=$(bun -e "console.log(require('./package.json').name)")
+      # Required for Trusted publishing (https://docs.npmjs.com/trusted-publishers#step-2-configure-your-cicd-workflow)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
 
-          # Check if version already exists on npm
-          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version 2>/dev/null; then
-            echo "Version $PACKAGE_VERSION already exists, bumping patch version"
-            
-            # Extract version parts
-            IFS='.' read -ra VERSION_PARTS <<< "$PACKAGE_VERSION"
-            MAJOR=${VERSION_PARTS[0]}
-            MINOR=${VERSION_PARTS[1]}
-            PATCH=${VERSION_PARTS[2]}
-            
-            # Bump patch version
-            NEW_PATCH=$((PATCH + 1))
-            NEW_VERSION="${MAJOR}.${MINOR}.${NEW_PATCH}"
-            
-            echo "Bumping to version: $NEW_VERSION"
-            
-            # Update package.json
-            bunx bumpp $NEW_VERSION -y --no-commit --no-tag --push=false
-          else
-            echo "Version $PACKAGE_VERSION is new, proceeding with current version"
-          fi
-
-      - name: Publish to NPM
-        run: bun publish --access public
-        env:
-          NPM_CONFIG_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-
-      - name: Commit version bump
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add package.json
-          git commit -m "Bump version after publish" || exit 0
-          git push || exit 0
+      - run: npm publish --access public
