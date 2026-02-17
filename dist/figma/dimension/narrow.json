@@ -1,40 +1,38 @@
 {
-  "dimension": {
-    "stroke-thickness": {
-      "default": {
-        "$value": "1px",
-        "$type": "dimension"
-      },
-      "large": {
-        "$value": "3px",
-        "$type": "dimension"
-      }
-    },
-    "radius": {
-      "none": {
-        "$value": "0px",
-        "$type": "dimension"
-      },
-      "small": {
-        "$value": "0px",
-        "$type": "dimension"
-      },
-      "medium": {
-        "$value": "0px",
-        "$type": "dimension"
-      },
-      "large": {
-        "$value": "0px",
-        "$type": "dimension"
-      },
-      "full": {
-        "$value": "9999px",
-        "$type": "dimension"
-      }
-    }
-  },
   "lp": {
     "dimension": {
+      "stroke-thickness": {
+        "default": {
+          "$value": "1px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "3px",
+          "$type": "dimension"
+        }
+      },
+      "radius": {
+        "none": {
+          "$value": "0px",
+          "$type": "dimension"
+        },
+        "small": {
+          "$value": "0px",
+          "$type": "dimension"
+        },
+        "medium": {
+          "$value": "0px",
+          "$type": "dimension"
+        },
+        "large": {
+          "$value": "0px",
+          "$type": "dimension"
+        },
+        "full": {
+          "$value": "9999px",
+          "$type": "dimension"
+        }
+      },
       "size": {
         "xxxs": {
           "$value": "8px",

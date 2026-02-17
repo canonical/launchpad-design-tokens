@@ -3,13 +3,13 @@
  */
 
 :root {
-  --dimension-stroke-thickness-default: 1px;
-  --dimension-stroke-thickness-large: 3px;
-  --dimension-radius-none: 0px;
-  --dimension-radius-small: 0px;
-  --dimension-radius-medium: 0px;
-  --dimension-radius-large: 0px;
-  --dimension-radius-full: 9999px;
+  --lp-dimension-stroke-thickness-default: 1px;
+  --lp-dimension-stroke-thickness-large: 3px;
+  --lp-dimension-radius-none: 0px;
+  --lp-dimension-radius-small: 0px;
+  --lp-dimension-radius-medium: 0px;
+  --lp-dimension-radius-large: 0px;
+  --lp-dimension-radius-full: 9999px;
   --lp-dimension-size-xxxs: 0.5rem;
   --lp-dimension-size-xxs: 0.75rem;
   --lp-dimension-size-xs: 1rem;
