@@ -1,56 +1,53 @@
 {
-  "dimension": {
-    "$type": "dimension",
-    "stroke-thickness": {
-      "default": {
-        "$value": {
-          "value": 1,
-          "unit": "px"
-        }
-      },
-      "large": {
-        "$value": {
-          "value": 3,
-          "unit": "px"
-        }
-      }
-    },
-    "radius": {
-      "none": {
-        "$value": {
-          "value": 0,
-          "unit": "px"
-        }
-      },
-      "small": {
-        "$value": {
-          "value": 0,
-          "unit": "px"
-        }
-      },
-      "medium": {
-        "$value": {
-          "value": 0,
-          "unit": "px"
-        }
-      },
-      "large": {
-        "$value": {
-          "value": 0,
-          "unit": "px"
-        }
-      },
-      "full": {
-        "$value": {
-          "value": 9999,
-          "unit": "px"
-        }
-      }
-    }
-  },
   "lp": {
     "dimension": {
       "$type": "dimension",
+      "stroke-thickness": {
+        "default": {
+          "$value": {
+            "value": 1,
+            "unit": "px"
+          }
+        },
+        "large": {
+          "$value": {
+            "value": 3,
+            "unit": "px"
+          }
+        }
+      },
+      "radius": {
+        "none": {
+          "$value": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "small": {
+          "$value": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "medium": {
+          "$value": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "large": {
+          "$value": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "full": {
+          "$value": {
+            "value": 9999,
+            "unit": "px"
+          }
+        }
+      },
       "size": {
         "xxxs": {
           "$value": "{dimension.100}"
