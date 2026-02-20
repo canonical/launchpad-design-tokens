@@ -1,11 +1,12 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "launchpad-design-tokens",
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "@canonical/biome-config": "^0.9.0",
+        "@canonical/biome-config": "^0.15.0",
         "@canonical/typescript-config-base": "^0.9.0",
         "@types/bun": "latest",
         "style-dictionary": "^5.0.1",
@@ -39,7 +40,7 @@
 
     "@bundled-es-modules/memfs": ["@bundled-es-modules/memfs@4.17.0", "", { "dependencies": { "assert": "^2.1.0", "buffer": "^6.0.3", "events": "^3.3.0", "memfs": "^4.17.0", "path": "^0.12.7", "stream": "^0.0.3", "util": "^0.12.5" } }, "sha512-ykdrkEmQr9BV804yd37ikXfNnvxrwYfY9Z2/EtMHFEFadEjsQXJ1zL9bVZrKNLDtm91UdUOEHso6Aweg93K6xQ=="],
 
-    "@canonical/biome-config": ["@canonical/biome-config@0.9.0", "", { "peerDependencies": { "@biomejs/biome": "^1.9.4" } }, "sha512-PKwqno4qGEfnQEZWaWv/AgiEKDnlbTAtINFBfgTD4rCOHkWz1BChkjHKx07yrmTP6siHlNBA5abjHqwWYfw/VQ=="],
+    "@canonical/biome-config": ["@canonical/biome-config@0.15.0", "", { "peerDependencies": { "@biomejs/biome": "2.3.11" } }, "sha512-hNTv97nM1mcs9Zy7RbUmRFBWQBetfuUMijIrtKmD1S4LUyv482rV8jzHRdvT1oYZbUqYi59HM6+QmVz4JG0czw=="],
 
     "@canonical/typescript-config-base": ["@canonical/typescript-config-base@0.9.0", "", { "peerDependencies": { "typescript": "^5.8.2" } }, "sha512-tvyi2gbxmZKR2TCRFnemn2h1GihuprR3wQxcGXfNquv5tqC6SRRILP6Vzle5zN7sz2pney9LWrBFm2mXzZuSbg=="],
 

@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@canonical/biome-config": "^0.9.0",
+    "@canonical/biome-config": "^0.15.0",
     "@canonical/typescript-config-base": "^0.9.0",
     "@types/bun": "latest",
     "style-dictionary": "^5.0.1",
