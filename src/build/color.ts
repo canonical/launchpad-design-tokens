@@ -62,6 +62,28 @@ await buildSimpleModes(category, simpleModes);
       filesOptions: {
         rules: [
           {
+            atRule: "@media (prefers-color-scheme: light)",
+            matcher: () => true,
+          },
+        ],
+      },
+    },
+    {
+      modeName: "dark",
+      filesOptions: {
+        rules: [
+          {
+            atRule: "@media (prefers-color-scheme: dark)",
+            matcher: () => true,
+          },
+        ],
+      },
+    },
+    {
+      modeName: "light",
+      filesOptions: {
+        rules: [
+          {
             selector: ".light",
             matcher: () => true,
           },
