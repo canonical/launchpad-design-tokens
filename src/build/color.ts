@@ -62,7 +62,7 @@ await buildSimpleModes(category, simpleModes);
       filesOptions: {
         rules: [
           {
-            selector: ".is-light, .is-paper",
+            selector: ".light",
             matcher: () => true,
           },
         ],
@@ -73,7 +73,7 @@ await buildSimpleModes(category, simpleModes);
       filesOptions: {
         rules: [
           {
-            selector: ".is-dark",
+            selector: ".dark",
             matcher: () => true,
           },
         ],

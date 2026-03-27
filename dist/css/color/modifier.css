@@ -2,8 +2,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-.is-light,
-.is-paper {
+.light {
   --lp-color-brand-default: #e95420;
   --lp-color-brand-hover: #da4816;
   --lp-color-brand-active: #cc4414;
@@ -81,7 +80,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-.is-dark {
+.dark {
   --lp-color-brand-default: #e95420;
   --lp-color-brand-hover: #da4816;
   --lp-color-brand-active: #cc4414;
