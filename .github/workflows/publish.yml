@@ -63,7 +63,7 @@ jobs:
       - run: bun run build
 
       # Required for Trusted publishing (https://docs.npmjs.com/trusted-publishers#step-2-configure-your-cicd-workflow)
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: "24"
           registry-url: "https://registry.npmjs.org"
