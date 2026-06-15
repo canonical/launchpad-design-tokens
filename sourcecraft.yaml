@@ -1,0 +1,21 @@
+name: launchpad-design-tokens
+version: "1.1.1"
+summary: Design tokens for Canonical's Launchpad
+license: LGPL-3.0
+description: |
+  Auto-generated sourcecraft.yaml for npm package launchpad-design-tokens
+  Original source: https://github.com/canonical/launchpad-design-tokens.git
+
+base: ubuntu@24.04
+
+platforms:
+  amd64:
+
+parts:
+  lib:
+    plugin: npm
+    source: .
+    npm-include-node: false
+    build-packages:
+      - nodejs
+      - npm
