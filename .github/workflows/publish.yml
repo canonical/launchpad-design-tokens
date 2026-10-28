@@ -65,7 +65,7 @@ jobs:
       # Required for Trusted publishing (https://docs.npmjs.com/trusted-publishers#step-2-configure-your-cicd-workflow)
       - uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: "26"
           registry-url: "https://registry.npmjs.org"
 
       - run: npm publish --access public
